@@ -1,0 +1,2981 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+  <Document>
+    <name>Ruta 105</name>
+    <description>Parque Jocotenango, Z. 2 / 9a avenida y 9a calle Z. 7</description>
+    <Style id="icon-1899-DB4436-normal">
+      <IconStyle>
+        <color>ff3644db</color>
+        <scale>1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+        <hotSpot x="32" xunits="pixels" y="64" yunits="insetPixels"/>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+    </Style>
+    <Style id="icon-1899-DB4436-highlight">
+      <IconStyle>
+        <color>ff3644db</color>
+        <scale>1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+        <hotSpot x="32" xunits="pixels" y="64" yunits="insetPixels"/>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1</scale>
+      </LabelStyle>
+    </Style>
+    <StyleMap id="icon-1899-DB4436">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-1899-DB4436-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-1899-DB4436-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="icon-1899-DB4436-nodesc-normal">
+      <IconStyle>
+        <color>ff3644db</color>
+        <scale>1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+        <hotSpot x="32" xunits="pixels" y="64" yunits="insetPixels"/>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <Style id="icon-1899-DB4436-nodesc-highlight">
+      <IconStyle>
+        <color>ff3644db</color>
+        <scale>1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+        <hotSpot x="32" xunits="pixels" y="64" yunits="insetPixels"/>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1</scale>
+      </LabelStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <StyleMap id="icon-1899-DB4436-nodesc">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-1899-DB4436-nodesc-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-1899-DB4436-nodesc-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="line-FFD600-2163-nodesc-normal">
+      <LineStyle>
+        <color>ff00d6ff</color>
+        <width>2.163</width>
+      </LineStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <Style id="line-FFD600-2163-nodesc-highlight">
+      <LineStyle>
+        <color>ff00d6ff</color>
+        <width>3.2445</width>
+      </LineStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <StyleMap id="line-FFD600-2163-nodesc">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#line-FFD600-2163-nodesc-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#line-FFD600-2163-nodesc-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="line-FFD600-2356-normal">
+      <LineStyle>
+        <color>ff00d6ff</color>
+        <width>2.356</width>
+      </LineStyle>
+    </Style>
+    <Style id="line-FFD600-2356-highlight">
+      <LineStyle>
+        <color>ff00d6ff</color>
+        <width>3.534</width>
+      </LineStyle>
+    </Style>
+    <StyleMap id="line-FFD600-2356">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#line-FFD600-2356-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#line-FFD600-2356-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="line-FFD600-2356-nodesc-normal">
+      <LineStyle>
+        <color>ff00d6ff</color>
+        <width>2.356</width>
+      </LineStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <Style id="line-FFD600-2356-nodesc-highlight">
+      <LineStyle>
+        <color>ff00d6ff</color>
+        <width>3.534</width>
+      </LineStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <StyleMap id="line-FFD600-2356-nodesc">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#line-FFD600-2356-nodesc-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#line-FFD600-2356-nodesc-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="line-FFD600-2550-nodesc-normal">
+      <LineStyle>
+        <color>ff00d6ff</color>
+        <width>2.55</width>
+      </LineStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <Style id="line-FFD600-2550-nodesc-highlight">
+      <LineStyle>
+        <color>ff00d6ff</color>
+        <width>3.825</width>
+      </LineStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <StyleMap id="line-FFD600-2550-nodesc">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#line-FFD600-2550-nodesc-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#line-FFD600-2550-nodesc-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="line-FFD600-2744-nodesc-normal">
+      <LineStyle>
+        <color>ff00d6ff</color>
+        <width>2.744</width>
+      </LineStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <Style id="line-FFD600-2744-nodesc-highlight">
+      <LineStyle>
+        <color>ff00d6ff</color>
+        <width>4.116</width>
+      </LineStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <StyleMap id="line-FFD600-2744-nodesc">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#line-FFD600-2744-nodesc-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#line-FFD600-2744-nodesc-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="line-FFD600-2938-nodesc-normal">
+      <LineStyle>
+        <color>ff00d6ff</color>
+        <width>2.938</width>
+      </LineStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <Style id="line-FFD600-2938-nodesc-highlight">
+      <LineStyle>
+        <color>ff00d6ff</color>
+        <width>4.407</width>
+      </LineStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <StyleMap id="line-FFD600-2938-nodesc">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#line-FFD600-2938-nodesc-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#line-FFD600-2938-nodesc-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="line-FFD600-3131-nodesc-normal">
+      <LineStyle>
+        <color>ff00d6ff</color>
+        <width>3.131</width>
+      </LineStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <Style id="line-FFD600-3131-nodesc-highlight">
+      <LineStyle>
+        <color>ff00d6ff</color>
+        <width>4.6965</width>
+      </LineStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <StyleMap id="line-FFD600-3131-nodesc">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#line-FFD600-3131-nodesc-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#line-FFD600-3131-nodesc-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="line-FFD600-3325-nodesc-normal">
+      <LineStyle>
+        <color>ff00d6ff</color>
+        <width>3.325</width>
+      </LineStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <Style id="line-FFD600-3325-nodesc-highlight">
+      <LineStyle>
+        <color>ff00d6ff</color>
+        <width>4.9875</width>
+      </LineStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <StyleMap id="line-FFD600-3325-nodesc">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#line-FFD600-3325-nodesc-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#line-FFD600-3325-nodesc-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="line-FFD600-3519-nodesc-normal">
+      <LineStyle>
+        <color>ff00d6ff</color>
+        <width>3.519</width>
+      </LineStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <Style id="line-FFD600-3519-nodesc-highlight">
+      <LineStyle>
+        <color>ff00d6ff</color>
+        <width>5.2785</width>
+      </LineStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <StyleMap id="line-FFD600-3519-nodesc">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#line-FFD600-3519-nodesc-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#line-FFD600-3519-nodesc-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Folder>
+      <name>Paradas Ruta 105</name>
+      <Placemark>
+        <name>Parada #154 / Parque Jocotenango</name>
+        <description><![CDATA[Avenida Simeón Cañas y 4ª calle, Parque Jocotenango, zona 2<br><br>descriptio: <br>tessellate: <br>extrude: <br>visibility: <br>X: <br>Y: <br>ID DMU: <br>km: ]]></description>
+        <styleUrl>#icon-1899-DB4436</styleUrl>
+        <ExtendedData>
+          <Data name="descriptio">
+            <value/>
+          </Data>
+          <Data name="tessellate">
+            <value/>
+          </Data>
+          <Data name="extrude">
+            <value/>
+          </Data>
+          <Data name="visibility">
+            <value/>
+          </Data>
+          <Data name="X">
+            <value/>
+          </Data>
+          <Data name="Y">
+            <value/>
+          </Data>
+          <Data name="ID DMU">
+            <value/>
+          </Data>
+          <Data name="km">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -90.513134,14.65129,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Parada #155 / 7ª avenida</name>
+        <description><![CDATA[7ª avenida y 4ª calle, zona 2<br><br>descriptio: <br>tessellate: <br>extrude: <br>visibility: <br>X: <br>Y: <br>ID DMU: <br>km: ]]></description>
+        <styleUrl>#icon-1899-DB4436</styleUrl>
+        <ExtendedData>
+          <Data name="descriptio">
+            <value/>
+          </Data>
+          <Data name="tessellate">
+            <value/>
+          </Data>
+          <Data name="extrude">
+            <value/>
+          </Data>
+          <Data name="visibility">
+            <value/>
+          </Data>
+          <Data name="X">
+            <value/>
+          </Data>
+          <Data name="Y">
+            <value/>
+          </Data>
+          <Data name="ID DMU">
+            <value/>
+          </Data>
+          <Data name="km">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -90.511183,14.650657,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Parada #156 / Cervecería Centro Americana</name>
+        <description><![CDATA[Anillo Periférico y 6ª calle, Cervecería Centro Americana, zona 2<br><br>descriptio: Anillo Periférico y 6a calle zona 2<br>tessellate: -1<br>extrude: 0<br>visibility: -1<br>X: <br>Y: <br>ID DMU: <br>km: ]]></description>
+        <styleUrl>#icon-1899-DB4436</styleUrl>
+        <ExtendedData>
+          <Data name="descriptio">
+            <value>Anillo Periférico y 6a calle zona 2</value>
+          </Data>
+          <Data name="tessellate">
+            <value>-1</value>
+          </Data>
+          <Data name="extrude">
+            <value>0</value>
+          </Data>
+          <Data name="visibility">
+            <value>-1</value>
+          </Data>
+          <Data name="X">
+            <value/>
+          </Data>
+          <Data name="Y">
+            <value/>
+          </Data>
+          <Data name="ID DMU">
+            <value/>
+          </Data>
+          <Data name="km">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -90.514477,14.653005,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Parada #157 / Blvr. Castillo Lara</name>
+        <description><![CDATA[3ª avenida, Bulevar Castillo Lara, zona 2<br><br>descriptio: <br>tessellate: -1<br>extrude: 0<br>visibility: -1<br>X: -90.514748<br>Y: 14.656138<br>ID DMU: 4<br>km: ]]></description>
+        <styleUrl>#icon-1899-DB4436</styleUrl>
+        <ExtendedData>
+          <Data name="descriptio">
+            <value/>
+          </Data>
+          <Data name="tessellate">
+            <value>-1</value>
+          </Data>
+          <Data name="extrude">
+            <value>0</value>
+          </Data>
+          <Data name="visibility">
+            <value>-1</value>
+          </Data>
+          <Data name="X">
+            <value>-90.514748</value>
+          </Data>
+          <Data name="Y">
+            <value>14.656138</value>
+          </Data>
+          <Data name="ID DMU">
+            <value>4</value>
+          </Data>
+          <Data name="km">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -90.514748,14.656138,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Parada #158 / Blvr. Castillo Lara</name>
+        <description><![CDATA[6ª calle, Bulevar Castillo Lara, zona 2<br><br>descriptio: <br>tessellate: -1<br>extrude: 0<br>visibility: -1<br>X: -90.516826<br>Y: 14.653152<br>ID DMU: 5<br>km: ]]></description>
+        <styleUrl>#icon-1899-DB4436</styleUrl>
+        <ExtendedData>
+          <Data name="descriptio">
+            <value/>
+          </Data>
+          <Data name="tessellate">
+            <value>-1</value>
+          </Data>
+          <Data name="extrude">
+            <value>0</value>
+          </Data>
+          <Data name="visibility">
+            <value>-1</value>
+          </Data>
+          <Data name="X">
+            <value>-90.516826</value>
+          </Data>
+          <Data name="Y">
+            <value>14.653152</value>
+          </Data>
+          <Data name="ID DMU">
+            <value>5</value>
+          </Data>
+          <Data name="km">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -90.516826,14.653152,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Parada #159 / INCA/Parque El Sauce</name>
+        <description><![CDATA[2ª avenida y 1ª calle, INCA/Parque El Sauce, zona 1. Cercanía con TuBus a ±2 minutos caminando: Parada #115 de Ruta 802.<br><br>descriptio: <br>tessellate: -1<br>extrude: 0<br>visibility: -1<br>X: <br>Y: <br>ID DMU: <br>km: ]]></description>
+        <styleUrl>#icon-1899-DB4436</styleUrl>
+        <ExtendedData>
+          <Data name="descriptio">
+            <value/>
+          </Data>
+          <Data name="tessellate">
+            <value>-1</value>
+          </Data>
+          <Data name="extrude">
+            <value>0</value>
+          </Data>
+          <Data name="visibility">
+            <value>-1</value>
+          </Data>
+          <Data name="X">
+            <value/>
+          </Data>
+          <Data name="Y">
+            <value/>
+          </Data>
+          <Data name="ID DMU">
+            <value/>
+          </Data>
+          <Data name="km">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -90.517378,14.649034,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Parada #160 / 2ª avenida</name>
+        <description><![CDATA[2ª avenida y 4ª avenida, zona 1. Cercanía con TuBus a ±2 minutos caminando: Parada #127 de Ruta 802.<br><br>descriptio: <br>tessellate: -1<br>extrude: 0<br>visibility: -1<br>X: <br>Y: <br>ID DMU: <br>km: ]]></description>
+        <styleUrl>#icon-1899-DB4436</styleUrl>
+        <ExtendedData>
+          <Data name="descriptio">
+            <value/>
+          </Data>
+          <Data name="tessellate">
+            <value>-1</value>
+          </Data>
+          <Data name="extrude">
+            <value>0</value>
+          </Data>
+          <Data name="visibility">
+            <value>-1</value>
+          </Data>
+          <Data name="X">
+            <value/>
+          </Data>
+          <Data name="Y">
+            <value/>
+          </Data>
+          <Data name="ID DMU">
+            <value/>
+          </Data>
+          <Data name="km">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -90.517831,14.645469,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Parada #128 / Avenida Elena, Barrio Recolección</name>
+        <description><![CDATA[4ª calle y Avenida Elena, Barrio Recolección, zona 1. Parada con dos o más rutas: 105 y 802.<br><br>descriptio: 4a calle y Avenida Elena zona 1<br>tessellate: -1<br>extrude: 0<br>visibility: -1<br>X: <br>Y: <br>ID DMU: <br>km: ]]></description>
+        <styleUrl>#icon-1899-DB4436</styleUrl>
+        <ExtendedData>
+          <Data name="descriptio">
+            <value>4a calle y Avenida Elena zona 1</value>
+          </Data>
+          <Data name="tessellate">
+            <value>-1</value>
+          </Data>
+          <Data name="extrude">
+            <value>0</value>
+          </Data>
+          <Data name="visibility">
+            <value>-1</value>
+          </Data>
+          <Data name="X">
+            <value/>
+          </Data>
+          <Data name="Y">
+            <value/>
+          </Data>
+          <Data name="ID DMU">
+            <value/>
+          </Data>
+          <Data name="km">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -90.520647,14.645762,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Parada #161 / Avenida Elena</name>
+        <description><![CDATA[Avenida Elena y 6ª calle, zona 3.<br><br>descriptio: Avenida Elena y 6a calle zona 3<br>tessellate: -1<br>extrude: 0<br>visibility: -1<br>X: <br>Y: <br>ID DMU: <br>km: ]]></description>
+        <styleUrl>#icon-1899-DB4436</styleUrl>
+        <ExtendedData>
+          <Data name="descriptio">
+            <value>Avenida Elena y 6a calle zona 3</value>
+          </Data>
+          <Data name="tessellate">
+            <value>-1</value>
+          </Data>
+          <Data name="extrude">
+            <value>0</value>
+          </Data>
+          <Data name="visibility">
+            <value>-1</value>
+          </Data>
+          <Data name="X">
+            <value/>
+          </Data>
+          <Data name="Y">
+            <value/>
+          </Data>
+          <Data name="ID DMU">
+            <value/>
+          </Data>
+          <Data name="km">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -90.521384,14.643756,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Parada #162 / Avenida Elena, Hospital San Juan de Dios</name>
+        <description><![CDATA[Avenida Elena y 10ª calle, Hospital San Juan de Dios, zona 3<br><br>descriptio: <br>tessellate: -1<br>extrude: 0<br>visibility: -1<br>X: <br>Y: <br>ID DMU: <br>km: ]]></description>
+        <styleUrl>#icon-1899-DB4436</styleUrl>
+        <ExtendedData>
+          <Data name="descriptio">
+            <value/>
+          </Data>
+          <Data name="tessellate">
+            <value>-1</value>
+          </Data>
+          <Data name="extrude">
+            <value>0</value>
+          </Data>
+          <Data name="visibility">
+            <value>-1</value>
+          </Data>
+          <Data name="X">
+            <value/>
+          </Data>
+          <Data name="Y">
+            <value/>
+          </Data>
+          <Data name="ID DMU">
+            <value/>
+          </Data>
+          <Data name="km">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -90.522054,14.639924,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Parada #163 / Avenida Elena, CAI</name>
+        <description><![CDATA[Avenida Elena y 13 calle, CAI, zona 3<br><br>descriptio: <br>tessellate: -1<br>extrude: 0<br>visibility: -1<br>X: <br>Y: <br>ID DMU: <br>km: ]]></description>
+        <styleUrl>#icon-1899-DB4436</styleUrl>
+        <ExtendedData>
+          <Data name="descriptio">
+            <value/>
+          </Data>
+          <Data name="tessellate">
+            <value>-1</value>
+          </Data>
+          <Data name="extrude">
+            <value>0</value>
+          </Data>
+          <Data name="visibility">
+            <value>-1</value>
+          </Data>
+          <Data name="X">
+            <value/>
+          </Data>
+          <Data name="Y">
+            <value/>
+          </Data>
+          <Data name="ID DMU">
+            <value/>
+          </Data>
+          <Data name="km">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -90.5224412,14.6374434,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Parada #164 / Avenida Elena, Teatro de Bellas Artes</name>
+        <description><![CDATA[Avenida Elena y 15 calle, Teatro de Bellas Artes, zona 3<br><br>descriptio: <br>tessellate: -1<br>extrude: 0<br>visibility: -1<br>X: <br>Y: <br>ID DMU: <br>km: ]]></description>
+        <styleUrl>#icon-1899-DB4436</styleUrl>
+        <ExtendedData>
+          <Data name="descriptio">
+            <value/>
+          </Data>
+          <Data name="tessellate">
+            <value>-1</value>
+          </Data>
+          <Data name="extrude">
+            <value>0</value>
+          </Data>
+          <Data name="visibility">
+            <value>-1</value>
+          </Data>
+          <Data name="X">
+            <value/>
+          </Data>
+          <Data name="Y">
+            <value/>
+          </Data>
+          <Data name="ID DMU">
+            <value/>
+          </Data>
+          <Data name="km">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -90.522801,14.634952,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Parada #165 / Avenida Elena, Mercado Cervantes</name>
+        <description><![CDATA[Avenida Elena y 18 calle, Mercado Cervantes, zona 3.<br><br>descriptio: <br>tessellate: -1<br>extrude: 0<br>visibility: -1<br>X: <br>Y: <br>ID DMU: <br>km: ]]></description>
+        <styleUrl>#icon-1899-DB4436</styleUrl>
+        <ExtendedData>
+          <Data name="descriptio">
+            <value/>
+          </Data>
+          <Data name="tessellate">
+            <value>-1</value>
+          </Data>
+          <Data name="extrude">
+            <value>0</value>
+          </Data>
+          <Data name="visibility">
+            <value>-1</value>
+          </Data>
+          <Data name="X">
+            <value/>
+          </Data>
+          <Data name="Y">
+            <value/>
+          </Data>
+          <Data name="ID DMU">
+            <value/>
+          </Data>
+          <Data name="km">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -90.523176,14.632417,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Parada #166 / 19 calle</name>
+        <description><![CDATA[19 calle y 2ª avenida, zona 1. Cercanía con TuBus a ±3 minutos caminando: Parada #122 de Ruta 802.<br><br>descriptio: 19 calle y 2a avenida zona 1<br>tessellate: -1<br>extrude: 0<br>visibility: -1<br>X: <br>Y: <br>ID DMU: <br>km: ]]></description>
+        <styleUrl>#icon-1899-DB4436</styleUrl>
+        <ExtendedData>
+          <Data name="descriptio">
+            <value>19 calle y 2a avenida zona 1</value>
+          </Data>
+          <Data name="tessellate">
+            <value>-1</value>
+          </Data>
+          <Data name="extrude">
+            <value>0</value>
+          </Data>
+          <Data name="visibility">
+            <value>-1</value>
+          </Data>
+          <Data name="X">
+            <value/>
+          </Data>
+          <Data name="Y">
+            <value/>
+          </Data>
+          <Data name="ID DMU">
+            <value/>
+          </Data>
+          <Data name="km">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -90.519946,14.630834,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Parada #167 / Plaza El Amate</name>
+        <description><![CDATA[4ª avenida y 20 calle, Plaza El Amate, zona 1<br><br>descriptio: <br>tessellate: -1<br>extrude: 0<br>visibility: -1<br>X: -90.517430<br>Y: 14.630164<br>ID DMU: 15<br>km: ]]></description>
+        <styleUrl>#icon-1899-DB4436</styleUrl>
+        <ExtendedData>
+          <Data name="descriptio">
+            <value/>
+          </Data>
+          <Data name="tessellate">
+            <value>-1</value>
+          </Data>
+          <Data name="extrude">
+            <value>0</value>
+          </Data>
+          <Data name="visibility">
+            <value>-1</value>
+          </Data>
+          <Data name="X">
+            <value>-90.517430</value>
+          </Data>
+          <Data name="Y">
+            <value>14.630164</value>
+          </Data>
+          <Data name="ID DMU">
+            <value>15</value>
+          </Data>
+          <Data name="km">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -90.51743,14.630164,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Parada #168 / 20 calle</name>
+        <description><![CDATA[20 calle y 1ª avenida "A", zona 1<br><br>descriptio: <br>tessellate: -1<br>extrude: 0<br>visibility: -1<br>X: -90.520562<br>Y: 14.630055<br>ID DMU: 16<br>km: ]]></description>
+        <styleUrl>#icon-1899-DB4436</styleUrl>
+        <ExtendedData>
+          <Data name="descriptio">
+            <value/>
+          </Data>
+          <Data name="tessellate">
+            <value>-1</value>
+          </Data>
+          <Data name="extrude">
+            <value>0</value>
+          </Data>
+          <Data name="visibility">
+            <value>-1</value>
+          </Data>
+          <Data name="X">
+            <value>-90.520562</value>
+          </Data>
+          <Data name="Y">
+            <value>14.630055</value>
+          </Data>
+          <Data name="ID DMU">
+            <value>16</value>
+          </Data>
+          <Data name="km">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -90.520562,14.630055,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Parada #169 / Asilo San Vicente de Paúl</name>
+        <description><![CDATA[20 calle y Avenida Elena, Asilo San Vicente de Paúl, zona 1<br><br>descriptio: <br>tessellate: -1<br>extrude: 0<br>visibility: -1<br>X: <br>Y: <br>ID DMU: <br>km: ]]></description>
+        <styleUrl>#icon-1899-DB4436</styleUrl>
+        <ExtendedData>
+          <Data name="descriptio">
+            <value/>
+          </Data>
+          <Data name="tessellate">
+            <value>-1</value>
+          </Data>
+          <Data name="extrude">
+            <value>0</value>
+          </Data>
+          <Data name="visibility">
+            <value>-1</value>
+          </Data>
+          <Data name="X">
+            <value/>
+          </Data>
+          <Data name="Y">
+            <value/>
+          </Data>
+          <Data name="ID DMU">
+            <value/>
+          </Data>
+          <Data name="km">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -90.522913,14.630397,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Parada #170 / Cementerio General</name>
+        <description><![CDATA[Avenida del Cementerio y 21 calle, Cementerio General, zona 3<br><br>descriptio: <br>tessellate: -1<br>extrude: 0<br>visibility: -1<br>X: <br>Y: <br>ID DMU: <br>km: ]]></description>
+        <styleUrl>#icon-1899-DB4436</styleUrl>
+        <ExtendedData>
+          <Data name="descriptio">
+            <value/>
+          </Data>
+          <Data name="tessellate">
+            <value>-1</value>
+          </Data>
+          <Data name="extrude">
+            <value>0</value>
+          </Data>
+          <Data name="visibility">
+            <value>-1</value>
+          </Data>
+          <Data name="X">
+            <value/>
+          </Data>
+          <Data name="Y">
+            <value/>
+          </Data>
+          <Data name="ID DMU">
+            <value/>
+          </Data>
+          <Data name="km">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -90.526981,14.630312,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Parada #171 / Centro de Salud zona 3</name>
+        <description><![CDATA[26 calle y 6ª avenida, Centro de Salud z. 3, zona 3<br><br>descriptio: <br>tessellate: -1<br>extrude: 0<br>visibility: -1<br>X: <br>Y: <br>ID DMU: <br>km: ]]></description>
+        <styleUrl>#icon-1899-DB4436</styleUrl>
+        <ExtendedData>
+          <Data name="descriptio">
+            <value/>
+          </Data>
+          <Data name="tessellate">
+            <value>-1</value>
+          </Data>
+          <Data name="extrude">
+            <value>0</value>
+          </Data>
+          <Data name="visibility">
+            <value>-1</value>
+          </Data>
+          <Data name="X">
+            <value/>
+          </Data>
+          <Data name="Y">
+            <value/>
+          </Data>
+          <Data name="ID DMU">
+            <value/>
+          </Data>
+          <Data name="km">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -90.5289451,14.6260646,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Parada #172 / 6ª avenida</name>
+        <description><![CDATA[6ª avenida y 28 calle, zona 3<br><br>descriptio: 6a avenida y 28 calle zona 3<br>tessellate: -1<br>extrude: 0<br>visibility: -1<br>X: <br>Y: <br>ID DMU: <br>km: ]]></description>
+        <styleUrl>#icon-1899-DB4436</styleUrl>
+        <ExtendedData>
+          <Data name="descriptio">
+            <value>6a avenida y 28 calle zona 3</value>
+          </Data>
+          <Data name="tessellate">
+            <value>-1</value>
+          </Data>
+          <Data name="extrude">
+            <value>0</value>
+          </Data>
+          <Data name="visibility">
+            <value>-1</value>
+          </Data>
+          <Data name="X">
+            <value/>
+          </Data>
+          <Data name="Y">
+            <value/>
+          </Data>
+          <Data name="ID DMU">
+            <value/>
+          </Data>
+          <Data name="km">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -90.529499,14.624165,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Parada #173 / 6ª avenida</name>
+        <description><![CDATA[6ª avenida y 32 calle, zona 3<br><br>descriptio: 6a avenida y 32 calle zona 3<br>tessellate: -1<br>extrude: 0<br>visibility: -1<br>X: <br>Y: <br>ID DMU: <br>km: ]]></description>
+        <styleUrl>#icon-1899-DB4436</styleUrl>
+        <ExtendedData>
+          <Data name="descriptio">
+            <value>6a avenida y 32 calle zona 3</value>
+          </Data>
+          <Data name="tessellate">
+            <value>-1</value>
+          </Data>
+          <Data name="extrude">
+            <value>0</value>
+          </Data>
+          <Data name="visibility">
+            <value>-1</value>
+          </Data>
+          <Data name="X">
+            <value/>
+          </Data>
+          <Data name="Y">
+            <value/>
+          </Data>
+          <Data name="ID DMU">
+            <value/>
+          </Data>
+          <Data name="km">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -90.530023,14.620275,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Parada #174 / MuniTec zona 3</name>
+        <description><![CDATA[7ª avenida y 38 calle, MuniTec z. 3, zona 3<br><br>descriptio: 7a avenida y 38 calle zona 3<br>tessellate: -1<br>extrude: 0<br>visibility: -1<br>X: <br>Y: <br>ID DMU: <br>km: ]]></description>
+        <styleUrl>#icon-1899-DB4436</styleUrl>
+        <ExtendedData>
+          <Data name="descriptio">
+            <value>7a avenida y 38 calle zona 3</value>
+          </Data>
+          <Data name="tessellate">
+            <value>-1</value>
+          </Data>
+          <Data name="extrude">
+            <value>0</value>
+          </Data>
+          <Data name="visibility">
+            <value>-1</value>
+          </Data>
+          <Data name="X">
+            <value/>
+          </Data>
+          <Data name="Y">
+            <value/>
+          </Data>
+          <Data name="ID DMU">
+            <value/>
+          </Data>
+          <Data name="km">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -90.533456,14.617502,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Parada #175 / Colonia Landívar</name>
+        <description><![CDATA[8ª calle y 4ª avenida, Colonia Landívar, zona 7<br><br>descriptio: <br>tessellate: -1<br>extrude: 0<br>visibility: -1<br>X: <br>Y: <br>ID DMU: <br>km: ]]></description>
+        <styleUrl>#icon-1899-DB4436</styleUrl>
+        <ExtendedData>
+          <Data name="descriptio">
+            <value/>
+          </Data>
+          <Data name="tessellate">
+            <value>-1</value>
+          </Data>
+          <Data name="extrude">
+            <value>0</value>
+          </Data>
+          <Data name="visibility">
+            <value>-1</value>
+          </Data>
+          <Data name="X">
+            <value/>
+          </Data>
+          <Data name="Y">
+            <value/>
+          </Data>
+          <Data name="ID DMU">
+            <value/>
+          </Data>
+          <Data name="km">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -90.536553,14.619422,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Parada #176 / Colonia Landívar</name>
+        <description><![CDATA[8ª calle y 7ª avenida, Colonia Landívar, zona 7<br><br>descriptio: 8a calle y 7a avenida, zona 7<br>tessellate: -1<br>extrude: 0<br>visibility: -1<br>X: -90.539327<br>Y: 14.620546<br>ID DMU: 24<br>km: ]]></description>
+        <styleUrl>#icon-1899-DB4436</styleUrl>
+        <ExtendedData>
+          <Data name="descriptio">
+            <value>8a calle y 7a avenida, zona 7</value>
+          </Data>
+          <Data name="tessellate">
+            <value>-1</value>
+          </Data>
+          <Data name="extrude">
+            <value>0</value>
+          </Data>
+          <Data name="visibility">
+            <value>-1</value>
+          </Data>
+          <Data name="X">
+            <value>-90.539327</value>
+          </Data>
+          <Data name="Y">
+            <value>14.620546</value>
+          </Data>
+          <Data name="ID DMU">
+            <value>24</value>
+          </Data>
+          <Data name="km">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -90.539327,14.620546,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Parada #177 / 9ª avenida</name>
+        <description><![CDATA[9ª avenida y 9ª calle, zona 7. Cercanía con TuBus a ±3-5 minutos caminando: Parada #078 y Parada #097 de Ruta 801.<br><br>descriptio: 9a avenida y 9a calle zona 7<br>tessellate: -1<br>extrude: 0<br>visibility: -1<br>X: -90.540399<br>Y: 14.623010<br>ID DMU: 25<br>km: ]]></description>
+        <styleUrl>#icon-1899-DB4436</styleUrl>
+        <ExtendedData>
+          <Data name="descriptio">
+            <value>9a avenida y 9a calle zona 7</value>
+          </Data>
+          <Data name="tessellate">
+            <value>-1</value>
+          </Data>
+          <Data name="extrude">
+            <value>0</value>
+          </Data>
+          <Data name="visibility">
+            <value>-1</value>
+          </Data>
+          <Data name="X">
+            <value>-90.540399</value>
+          </Data>
+          <Data name="Y">
+            <value>14.623010</value>
+          </Data>
+          <Data name="ID DMU">
+            <value>25</value>
+          </Data>
+          <Data name="km">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -90.540399,14.62301,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Parada #178 / Colonia Landívar</name>
+        <description><![CDATA[7ª calle y 4ª avenida, Colonia Landívar, zona 7<br><br>descriptio: 7a calle y 4a avenida zona 7<br>tessellate: -1<br>extrude: 0<br>visibility: -1<br>X: <br>Y: <br>ID DMU: <br>km: ]]></description>
+        <styleUrl>#icon-1899-DB4436</styleUrl>
+        <ExtendedData>
+          <Data name="descriptio">
+            <value>7a calle y 4a avenida zona 7</value>
+          </Data>
+          <Data name="tessellate">
+            <value>-1</value>
+          </Data>
+          <Data name="extrude">
+            <value>0</value>
+          </Data>
+          <Data name="visibility">
+            <value>-1</value>
+          </Data>
+          <Data name="X">
+            <value/>
+          </Data>
+          <Data name="Y">
+            <value/>
+          </Data>
+          <Data name="ID DMU">
+            <value/>
+          </Data>
+          <Data name="km">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -90.537366,14.618795,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Parada #179 / Colonia Landívar</name>
+        <description><![CDATA[7ª calle y 2ª avenida, Colonia Landívar, zona 7<br><br>descriptio: 7a calle y 2a avenida zona 7<br>tessellate: -1<br>extrude: 0<br>visibility: -1<br>X: <br>Y: <br>ID DMU: <br>km: ]]></description>
+        <styleUrl>#icon-1899-DB4436</styleUrl>
+        <ExtendedData>
+          <Data name="descriptio">
+            <value>7a calle y 2a avenida zona 7</value>
+          </Data>
+          <Data name="tessellate">
+            <value>-1</value>
+          </Data>
+          <Data name="extrude">
+            <value>0</value>
+          </Data>
+          <Data name="visibility">
+            <value>-1</value>
+          </Data>
+          <Data name="X">
+            <value/>
+          </Data>
+          <Data name="Y">
+            <value/>
+          </Data>
+          <Data name="ID DMU">
+            <value/>
+          </Data>
+          <Data name="km">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -90.53547,14.617975,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Parada #180 / 8ª avenida</name>
+        <description><![CDATA[8ª avenida y 37 calle, zona 3<br><br>descriptio: <br>tessellate: -1<br>extrude: 0<br>visibility: -1<br>X: <br>Y: <br>ID DMU: <br>km: ]]></description>
+        <styleUrl>#icon-1899-DB4436</styleUrl>
+        <ExtendedData>
+          <Data name="descriptio">
+            <value/>
+          </Data>
+          <Data name="tessellate">
+            <value>-1</value>
+          </Data>
+          <Data name="extrude">
+            <value>0</value>
+          </Data>
+          <Data name="visibility">
+            <value>-1</value>
+          </Data>
+          <Data name="X">
+            <value/>
+          </Data>
+          <Data name="Y">
+            <value/>
+          </Data>
+          <Data name="ID DMU">
+            <value/>
+          </Data>
+          <Data name="km">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -90.53213,14.617705,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Parada #181 / 32 calle</name>
+        <description><![CDATA[32 calle y 4ª avenida, zona 3. Cercanía con Transmetro a ±3 minuto caminando: Estación Bolívar (Dirección a Centra Sur) de Línea 12.<br><br>descriptio: <br>tessellate: -1<br>extrude: 0<br>visibility: -1<br>X: <br>Y: <br>ID DMU: <br>km: ]]></description>
+        <styleUrl>#icon-1899-DB4436</styleUrl>
+        <ExtendedData>
+          <Data name="descriptio">
+            <value/>
+          </Data>
+          <Data name="tessellate">
+            <value>-1</value>
+          </Data>
+          <Data name="extrude">
+            <value>0</value>
+          </Data>
+          <Data name="visibility">
+            <value>-1</value>
+          </Data>
+          <Data name="X">
+            <value/>
+          </Data>
+          <Data name="Y">
+            <value/>
+          </Data>
+          <Data name="ID DMU">
+            <value/>
+          </Data>
+          <Data name="km">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -90.528372,14.619512,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Parada #182 / Radio Cultural TGN</name>
+        <description><![CDATA[4ª avenida y 30 calle, Radio Cultural TGN, zona 3<br><br>descriptio: 4a avenida y 30 calle zona 3<br>tessellate: -1<br>extrude: 0<br>visibility: -1<br>X: <br>Y: <br>ID DMU: <br>km: ]]></description>
+        <styleUrl>#icon-1899-DB4436</styleUrl>
+        <ExtendedData>
+          <Data name="descriptio">
+            <value>4a avenida y 30 calle zona 3</value>
+          </Data>
+          <Data name="tessellate">
+            <value>-1</value>
+          </Data>
+          <Data name="extrude">
+            <value>0</value>
+          </Data>
+          <Data name="visibility">
+            <value>-1</value>
+          </Data>
+          <Data name="X">
+            <value/>
+          </Data>
+          <Data name="Y">
+            <value/>
+          </Data>
+          <Data name="ID DMU">
+            <value/>
+          </Data>
+          <Data name="km">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -90.527944,14.621668,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Parada #183 / Altura 3</name>
+        <description><![CDATA[4ª avenida y 26 calle, Proyecto Vivienda Prioritaria Altura 3, zona 3<br><br>descriptio: <br>tessellate: -1<br>extrude: 0<br>visibility: -1<br>X: <br>Y: <br>ID DMU: <br>km: ]]></description>
+        <styleUrl>#icon-1899-DB4436</styleUrl>
+        <ExtendedData>
+          <Data name="descriptio">
+            <value/>
+          </Data>
+          <Data name="tessellate">
+            <value>-1</value>
+          </Data>
+          <Data name="extrude">
+            <value>0</value>
+          </Data>
+          <Data name="visibility">
+            <value>-1</value>
+          </Data>
+          <Data name="X">
+            <value/>
+          </Data>
+          <Data name="Y">
+            <value/>
+          </Data>
+          <Data name="ID DMU">
+            <value/>
+          </Data>
+          <Data name="km">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -90.527418,14.625596,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Parada #184 / Avenida del Cementerio, Cementerio General</name>
+        <description><![CDATA[Avenida del Cementerio y 22 calle, Cementerio General, zona 3<br><br>descriptio: <br>tessellate: -1<br>extrude: 0<br>visibility: -1<br>X: <br>Y: <br>ID DMU: <br>km: ]]></description>
+        <styleUrl>#icon-1899-DB4436</styleUrl>
+        <ExtendedData>
+          <Data name="descriptio">
+            <value/>
+          </Data>
+          <Data name="tessellate">
+            <value>-1</value>
+          </Data>
+          <Data name="extrude">
+            <value>0</value>
+          </Data>
+          <Data name="visibility">
+            <value>-1</value>
+          </Data>
+          <Data name="X">
+            <value/>
+          </Data>
+          <Data name="Y">
+            <value/>
+          </Data>
+          <Data name="ID DMU">
+            <value/>
+          </Data>
+          <Data name="km">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -90.527014,14.628607,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Parada #185 / Avenida del Cementerio, Cementerio General</name>
+        <description><![CDATA[Avenida del Cementerio y 19 calle, Cementerio General, zona 3<br><br>descriptio: <br>tessellate: -1<br>extrude: 0<br>visibility: -1<br>X: <br>Y: <br>ID DMU: <br>km: ]]></description>
+        <styleUrl>#icon-1899-DB4436</styleUrl>
+        <ExtendedData>
+          <Data name="descriptio">
+            <value/>
+          </Data>
+          <Data name="tessellate">
+            <value>-1</value>
+          </Data>
+          <Data name="extrude">
+            <value>0</value>
+          </Data>
+          <Data name="visibility">
+            <value>-1</value>
+          </Data>
+          <Data name="X">
+            <value/>
+          </Data>
+          <Data name="Y">
+            <value/>
+          </Data>
+          <Data name="ID DMU">
+            <value/>
+          </Data>
+          <Data name="km">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -90.52665,14.631271,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Parada #186 / Avenida del Cementerio</name>
+        <description><![CDATA[Avenida del Cementerio y 16 calle, zona 3<br><br>descriptio: Avenida del Cementerio y 16 calle zona 3<br>tessellate: -1<br>extrude: 0<br>visibility: -1<br>X: <br>Y: <br>ID DMU: <br>km: ]]></description>
+        <styleUrl>#icon-1899-DB4436</styleUrl>
+        <ExtendedData>
+          <Data name="descriptio">
+            <value>Avenida del Cementerio y 16 calle zona 3</value>
+          </Data>
+          <Data name="tessellate">
+            <value>-1</value>
+          </Data>
+          <Data name="extrude">
+            <value>0</value>
+          </Data>
+          <Data name="visibility">
+            <value>-1</value>
+          </Data>
+          <Data name="X">
+            <value/>
+          </Data>
+          <Data name="Y">
+            <value/>
+          </Data>
+          <Data name="ID DMU">
+            <value/>
+          </Data>
+          <Data name="km">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -90.525529,14.633783,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name><![CDATA[Parada #187 / Avenida del Cementerio, Centro de Educación Especial "Álida España"]]></name>
+        <description><![CDATA[Avenida del Cementerio y 13 calle "B", Centro de Educación Especial "Álida España", zona 3<br><br>descriptio: <br>tessellate: -1<br>extrude: 0<br>visibility: -1<br>X: <br>Y: <br>ID DMU: <br>km: ]]></description>
+        <styleUrl>#icon-1899-DB4436</styleUrl>
+        <ExtendedData>
+          <Data name="descriptio">
+            <value/>
+          </Data>
+          <Data name="tessellate">
+            <value>-1</value>
+          </Data>
+          <Data name="extrude">
+            <value>0</value>
+          </Data>
+          <Data name="visibility">
+            <value>-1</value>
+          </Data>
+          <Data name="X">
+            <value/>
+          </Data>
+          <Data name="Y">
+            <value/>
+          </Data>
+          <Data name="ID DMU">
+            <value/>
+          </Data>
+          <Data name="km">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -90.523402,14.636968,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Parada #188 / Avenida Elena, Hospital San Juan de Dios</name>
+        <description><![CDATA[Avenida Elena y 10ª calle, Hosp. San Juan de Dios, zona 1<br><br>descriptio: <br>tessellate: -1<br>extrude: 0<br>visibility: -1<br>X: <br>Y: <br>ID DMU: <br>km: ]]></description>
+        <styleUrl>#icon-1899-DB4436</styleUrl>
+        <ExtendedData>
+          <Data name="descriptio">
+            <value/>
+          </Data>
+          <Data name="tessellate">
+            <value>-1</value>
+          </Data>
+          <Data name="extrude">
+            <value>0</value>
+          </Data>
+          <Data name="visibility">
+            <value>-1</value>
+          </Data>
+          <Data name="X">
+            <value/>
+          </Data>
+          <Data name="Y">
+            <value/>
+          </Data>
+          <Data name="ID DMU">
+            <value/>
+          </Data>
+          <Data name="km">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -90.521853,14.639958,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Parada #189 / Avenida Elena, Liga Nacional Contra la Tuberculosis</name>
+        <description><![CDATA[Avenida Elena y 9ª calle, Liga Nacional Contra la Tuberculosis, zona 1. Cercanía con Transmetro a ±2 minutos caminando: Estación Santuario de Guadalupe y Estación San Juan de Dios de Línea 7.<br><br>descriptio: <br>tessellate: -1<br>extrude: 0<br>visibility: -1<br>X: -90.521528<br>Y: 14.642090<br>ID DMU: 37<br>km: ]]></description>
+        <styleUrl>#icon-1899-DB4436</styleUrl>
+        <ExtendedData>
+          <Data name="descriptio">
+            <value/>
+          </Data>
+          <Data name="tessellate">
+            <value>-1</value>
+          </Data>
+          <Data name="extrude">
+            <value>0</value>
+          </Data>
+          <Data name="visibility">
+            <value>-1</value>
+          </Data>
+          <Data name="X">
+            <value>-90.521528</value>
+          </Data>
+          <Data name="Y">
+            <value>14.642090</value>
+          </Data>
+          <Data name="ID DMU">
+            <value>37</value>
+          </Data>
+          <Data name="km">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -90.521528,14.64209,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Parada #190 / Avenida Elena</name>
+        <description><![CDATA[Avenida Elena y 4ª calle, zona 1<br><br>descriptio: Avenida Elena y 4a calle zona 1<br>tessellate: -1<br>extrude: 0<br>visibility: -1<br>X: <br>Y: <br>ID DMU: <br>km: ]]></description>
+        <styleUrl>#icon-1899-DB4436</styleUrl>
+        <ExtendedData>
+          <Data name="descriptio">
+            <value>Avenida Elena y 4a calle zona 1</value>
+          </Data>
+          <Data name="tessellate">
+            <value>-1</value>
+          </Data>
+          <Data name="extrude">
+            <value>0</value>
+          </Data>
+          <Data name="visibility">
+            <value>-1</value>
+          </Data>
+          <Data name="X">
+            <value/>
+          </Data>
+          <Data name="Y">
+            <value/>
+          </Data>
+          <Data name="ID DMU">
+            <value/>
+          </Data>
+          <Data name="km">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -90.520964,14.645685,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Parada #191 / 3ª calle</name>
+        <description><![CDATA[3ª calle y 2ª avenida "A", zona 1<br><br>descriptio: <br>tessellate: -1<br>extrude: 0<br>visibility: -1<br>X: <br>Y: <br>ID DMU: <br>km: ]]></description>
+        <styleUrl>#icon-1899-DB4436</styleUrl>
+        <ExtendedData>
+          <Data name="descriptio">
+            <value/>
+          </Data>
+          <Data name="tessellate">
+            <value>-1</value>
+          </Data>
+          <Data name="extrude">
+            <value>0</value>
+          </Data>
+          <Data name="visibility">
+            <value>-1</value>
+          </Data>
+          <Data name="X">
+            <value/>
+          </Data>
+          <Data name="Y">
+            <value/>
+          </Data>
+          <Data name="ID DMU">
+            <value/>
+          </Data>
+          <Data name="km">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -90.517105,14.646401,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Parada #192 / INCA</name>
+        <description><![CDATA[3ª avenida y 1ª calle, INCA, zona 1<br><br>descriptio: 3a avenida y 1a calle zona 1<br>tessellate: -1<br>extrude: 0<br>visibility: -1<br>X: <br>Y: <br>ID DMU: <br>km: ]]></description>
+        <styleUrl>#icon-1899-DB4436</styleUrl>
+        <ExtendedData>
+          <Data name="descriptio">
+            <value>3a avenida y 1a calle zona 1</value>
+          </Data>
+          <Data name="tessellate">
+            <value>-1</value>
+          </Data>
+          <Data name="extrude">
+            <value>0</value>
+          </Data>
+          <Data name="visibility">
+            <value>-1</value>
+          </Data>
+          <Data name="X">
+            <value/>
+          </Data>
+          <Data name="Y">
+            <value/>
+          </Data>
+          <Data name="ID DMU">
+            <value/>
+          </Data>
+          <Data name="km">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -90.51602,14.648655,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Parada #193 / Alcaldía Auxiliar zona 2</name>
+        <description><![CDATA[3ª avenida y 4ª calle, Alcaldía Auxiliar z. 2, zona 2<br><br>descriptio: 3a avenida y 4a calle zona 2<br>tessellate: -1<br>extrude: 0<br>visibility: -1<br>X: <br>Y: <br>ID DMU: <br>km: ]]></description>
+        <styleUrl>#icon-1899-DB4436</styleUrl>
+        <ExtendedData>
+          <Data name="descriptio">
+            <value>3a avenida y 4a calle zona 2</value>
+          </Data>
+          <Data name="tessellate">
+            <value>-1</value>
+          </Data>
+          <Data name="extrude">
+            <value>0</value>
+          </Data>
+          <Data name="visibility">
+            <value>-1</value>
+          </Data>
+          <Data name="X">
+            <value/>
+          </Data>
+          <Data name="Y">
+            <value/>
+          </Data>
+          <Data name="ID DMU">
+            <value/>
+          </Data>
+          <Data name="km">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -90.515623,14.651471,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Ruta 105</name>
+        <description><![CDATA[<br><br>descriptio: <br>tessellate: <br>extrude: <br>visibility: <br>X: <br>Y: <br>ID DMU: <br>km: 16.34]]></description>
+        <styleUrl>#line-FFD600-2356</styleUrl>
+        <ExtendedData>
+          <Data name="descriptio">
+            <value/>
+          </Data>
+          <Data name="tessellate">
+            <value/>
+          </Data>
+          <Data name="extrude">
+            <value/>
+          </Data>
+          <Data name="visibility">
+            <value/>
+          </Data>
+          <Data name="X">
+            <value/>
+          </Data>
+          <Data name="Y">
+            <value/>
+          </Data>
+          <Data name="ID DMU">
+            <value/>
+          </Data>
+          <Data name="km">
+            <value>16.34</value>
+          </Data>
+        </ExtendedData>
+        <LineString>
+          <tessellate>1</tessellate>
+          <coordinates>
+            -90.513093,14.651281,0
+            -90.513168,14.650657,0
+            -90.513161,14.650618,0
+            -90.513146,14.65058,0
+            -90.513126,14.650548,0
+            -90.513106,14.650522,0
+            -90.513087,14.650505,0
+            -90.513057,14.650492,0
+            -90.513025,14.650482,0
+            -90.512976,14.65047,0
+            -90.512908,14.650446,0
+            -90.51285,14.650419,0
+            -90.512803,14.650395,0
+            -90.512744,14.65036,0
+            -90.5127,14.650338,0
+            -90.512658,14.650321,0
+            -90.512619,14.650308,0
+            -90.512582,14.650298,0
+            -90.512546,14.65029,0
+            -90.512507,14.650283,0
+            -90.512465,14.650277,0
+            -90.512416,14.650269,0
+            -90.512369,14.650263,0
+            -90.512329,14.650258,0
+            -90.511374,14.650132,0
+            -90.511336,14.650135,0
+            -90.511303,14.650156,0
+            -90.511287,14.650182,0
+            -90.511059,14.651774,0
+            -90.511067,14.651831,0
+            -90.511087,14.65187,0
+            -90.511114,14.651895,0
+            -90.511164,14.651916,0
+            -90.512111,14.652018,0
+            -90.51216,14.652033,0
+            -90.512191,14.652062,0
+            -90.512242,14.652136,0
+            -90.512285,14.652243,0
+            -90.512332,14.652478,0
+            -90.51238,14.652587,0
+            -90.51244,14.65267,0
+            -90.512518,14.652738,0
+            -90.512603,14.652795,0
+            -90.5127,14.652835,0
+            -90.512801,14.652867,0
+            -90.512905,14.652892,0
+            -90.513014,14.652907,0
+            -90.514545,14.652964,0
+            -90.514575,14.65297,0
+            -90.514603,14.652979,0
+            -90.514623,14.652995,0
+            -90.514636,14.653016,0
+            -90.514642,14.65304,0
+            -90.514644,14.653067,0
+            -90.514647,14.653093,0
+            -90.514642,14.653125,0
+            -90.514628,14.653164,0
+            -90.5146,14.653223,0
+            -90.514563,14.653281,0
+            -90.514469,14.653421,0
+            -90.51443,14.653473,0
+            -90.51439,14.653517,0
+            -90.51435,14.653554,0
+            -90.513967,14.653903,0
+            -90.513774,14.654065,0
+            -90.513667,14.654168,0
+            -90.513612,14.654219,0
+            -90.513576,14.654266,0
+            -90.513537,14.654321,0
+            -90.513508,14.654369,0
+            -90.513467,14.654445,0
+            -90.513407,14.654557,0
+            -90.513343,14.6547,0
+            -90.51331,14.654774,0
+            -90.51329,14.654835,0
+            -90.513272,14.6549,0
+            -90.513257,14.654966,0
+            -90.513251,14.655006,0
+            -90.513248,14.655052,0
+            -90.513245,14.655098,0
+            -90.513246,14.655157,0
+            -90.513247,14.65523,0
+            -90.513255,14.655302,0
+            -90.513271,14.65537,0
+            -90.513288,14.655435,0
+            -90.513325,14.655525,0
+            -90.513354,14.655588,0
+            -90.513394,14.655652,0
+            -90.513438,14.65571,0
+            -90.51349,14.655763,0
+            -90.513552,14.65582,0
+            -90.513617,14.655867,0
+            -90.5137,14.65591,0
+            -90.513773,14.65594,0
+            -90.513814,14.655954,0
+            -90.513871,14.655971,0
+            -90.513915,14.655982,0
+            -90.513955,14.65599,0
+            -90.514314,14.656029,0
+            -90.514962,14.656122,0
+            -90.515685,14.65621,0
+            -90.516058,14.656256,0
+            -90.516129,14.656268,0
+            -90.516187,14.656283,0
+            -90.516233,14.656299,0
+            -90.51627,14.656315,0
+            -90.516313,14.656333,0
+            -90.51636,14.656357,0
+            -90.516406,14.656376,0
+            -90.516432,14.656385,0
+            -90.516453,14.656392,0
+            -90.516473,14.656396,0
+            -90.516495,14.656398,0
+            -90.516518,14.656393,0
+            -90.51654,14.656385,0
+            -90.51656,14.656371,0
+            -90.516572,14.656351,0
+            -90.516584,14.656326,0
+            -90.516595,14.656302,0
+            -90.516603,14.656285,0
+            -90.516611,14.656272,0
+            -90.516622,14.656257,0
+            -90.516629,14.656241,0
+            -90.516633,14.656225,0
+            -90.516636,14.656206,0
+            -90.516638,14.656186,0
+            -90.516651,14.6561,0
+            -90.516667,14.655999,0
+            -90.516676,14.655928,0
+            -90.516684,14.655873,0
+            -90.516694,14.655822,0
+            -90.516708,14.655756,0
+            -90.516728,14.655699,0
+            -90.516753,14.655641,0
+            -90.516812,14.655523,0
+            -90.516883,14.655378,0
+            -90.516922,14.655281,0
+            -90.516969,14.655157,0
+            -90.516988,14.655103,0
+            -90.517004,14.655036,0
+            -90.517014,14.654982,0
+            -90.51702,14.654923,0
+            -90.517019,14.654861,0
+            -90.517009,14.65472,0
+            -90.51699,14.654589,0
+            -90.51697,14.654496,0
+            -90.516942,14.654412,0
+            -90.516927,14.654357,0
+            -90.516915,14.654308,0
+            -90.516906,14.654252,0
+            -90.516898,14.654194,0
+            -90.516891,14.654148,0
+            -90.516877,14.654104,0
+            -90.516856,14.654052,0
+            -90.516827,14.653983,0
+            -90.5168,14.653924,0
+            -90.51678,14.653871,0
+            -90.51676,14.653825,0
+            -90.516744,14.653786,0
+            -90.516733,14.653747,0
+            -90.516731,14.653719,0
+            -90.516729,14.653657,0
+            -90.516732,14.653541,0
+            -90.516735,14.653283,0
+            -90.516741,14.652958,0
+            -90.516745,14.652803,0
+            -90.516744,14.652688,0
+            -90.516738,14.652586,0
+            -90.516723,14.652452,0
+            -90.516709,14.652344,0
+            -90.516695,14.652228,0
+            -90.516674,14.652062,0
+            -90.516661,14.651905,0
+            -90.516652,14.651803,0
+            -90.516647,14.651726,0
+            -90.516651,14.651647,0
+            -90.516779,14.650652,0
+            -90.5168,14.650517,0
+            -90.516814,14.650457,0
+            -90.516835,14.650394,0
+            -90.516861,14.650357,0
+            -90.516889,14.650335,0
+            -90.516921,14.650325,0
+            -90.51696,14.650312,0
+            -90.516987,14.650286,0
+            -90.517007,14.650256,0
+            -90.517017,14.650211,0
+            -90.517021,14.650146,0
+            -90.517012,14.650095,0
+            -90.517002,14.650052,0
+            -90.517,14.650009,0
+            -90.517006,14.649956,0
+            -90.517277,14.649175,0
+            -90.517289,14.649142,0
+            -90.517305,14.649102,0
+            -90.517318,14.649048,0
+            -90.517323,14.649,0
+            -90.517326,14.648949,0
+            -90.517321,14.6489,0
+            -90.517312,14.648855,0
+            -90.517309,14.648817,0
+            -90.517618,14.646616,0
+            -90.517804,14.645358,0
+            -90.517818,14.645323,0
+            -90.517849,14.645301,0
+            -90.517878,14.645301,0
+            -90.519036,14.645478,0
+            -90.520934,14.645767,0
+            -90.520969,14.64577,0
+            -90.521006,14.645766,0
+            -90.52103,14.645748,0
+            -90.521045,14.645716,0
+            -90.521366,14.643726,0
+            -90.521379,14.643688,0
+            -90.521397,14.643657,0
+            -90.521419,14.643635,0
+            -90.521439,14.643617,0
+            -90.521451,14.643595,0
+            -90.521458,14.64357,0
+            -90.522013,14.639906,0
+            -90.522389,14.637406,0
+            -90.523137,14.632408,0
+            -90.523231,14.631797,0
+            -90.523237,14.631698,0
+            -90.523228,14.631615,0
+            -90.523214,14.631516,0
+            -90.523183,14.631445,0
+            -90.523119,14.631378,0
+            -90.523056,14.631332,0
+            -90.522983,14.631293,0
+            -90.522882,14.631269,0
+            -90.521594,14.631112,0
+            -90.520166,14.6309,0
+            -90.519192,14.630772,0
+            -90.518295,14.630642,0
+            -90.518242,14.630634,0
+            -90.518209,14.630626,0
+            -90.518172,14.630609,0
+            -90.518143,14.630595,0
+            -90.518104,14.630581,0
+            -90.518048,14.63057,0
+            -90.517933,14.630556,0
+            -90.517795,14.630546,0
+            -90.517636,14.630529,0
+            -90.517542,14.630519,0
+            -90.517465,14.630507,0
+            -90.51744,14.630499,0
+            -90.517418,14.630481,0
+            -90.517401,14.630452,0
+            -90.517395,14.630418,0
+            -90.517395,14.630361,0
+            -90.5174,14.630278,0
+            -90.517403,14.630189,0
+            -90.517407,14.630109,0
+            -90.517416,14.630057,0
+            -90.517438,14.629999,0
+            -90.517464,14.629941,0
+            -90.517491,14.629891,0
+            -90.517525,14.629836,0
+            -90.517572,14.629785,0
+            -90.51762,14.629739,0
+            -90.517684,14.629685,0
+            -90.517729,14.629656,0
+            -90.51778,14.629638,0
+            -90.517825,14.629624,0
+            -90.517876,14.62962,0
+            -90.517919,14.629623,0
+            -90.519366,14.629842,0
+            -90.521011,14.630062,0
+            -90.522591,14.630283,0
+            -90.52355,14.630404,0
+            -90.524597,14.630526,0
+            -90.526672,14.630839,0
+            -90.526756,14.63084,0
+            -90.526828,14.630801,0
+            -90.526869,14.630731,0
+            -90.527283,14.628218,0
+            -90.527696,14.625834,0
+            -90.527707,14.625792,0
+            -90.527736,14.625767,0
+            -90.527775,14.625761,0
+            -90.528931,14.625896,0
+            -90.52904,14.625903,0
+            -90.529136,14.62589,0
+            -90.529204,14.625842,0
+            -90.529244,14.625767,0
+            -90.529455,14.624053,0
+            -90.529962,14.620249,0
+            -90.529986,14.620201,0
+            -90.530033,14.620165,0
+            -90.53009,14.62016,0
+            -90.530819,14.620265,0
+            -90.530877,14.620258,0
+            -90.530924,14.620222,0
+            -90.530954,14.620168,0
+            -90.531047,14.619438,0
+            -90.531072,14.619308,0
+            -90.531116,14.619131,0
+            -90.531172,14.618956,0
+            -90.531212,14.618844,0
+            -90.531266,14.618722,0
+            -90.531327,14.618604,0
+            -90.531383,14.61851,0
+            -90.531473,14.618405,0
+            -90.531562,14.618328,0
+            -90.531682,14.618224,0
+            -90.53183,14.61812,0
+            -90.531992,14.618007,0
+            -90.532333,14.617813,0
+            -90.532545,14.617686,0
+            -90.532666,14.617616,0
+            -90.532804,14.617548,0
+            -90.5329,14.617509,0
+            -90.533094,14.617473,0
+            -90.533301,14.61745,0
+            -90.53347,14.617434,0
+            -90.533699,14.617429,0
+            -90.533849,14.61744,0
+            -90.534003,14.617463,0
+            -90.534145,14.617502,0
+            -90.534318,14.617561,0
+            -90.534617,14.617676,0
+            -90.534819,14.617765,0
+            -90.535015,14.617853,0
+            -90.535051,14.617872,0
+            -90.535084,14.617896,0
+            -90.535114,14.617929,0
+            -90.535137,14.61797,0
+            -90.535158,14.618012,0
+            -90.535167,14.618056,0
+            -90.535168,14.618116,0
+            -90.535156,14.618176,0
+            -90.535133,14.618233,0
+            -90.535096,14.618312,0
+            -90.535061,14.61838,0
+            -90.535012,14.618455,0
+            -90.534959,14.618537,0
+            -90.534915,14.6186,0
+            -90.534894,14.618624,0
+            -90.534883,14.618638,0
+            -90.534878,14.618655,0
+            -90.534878,14.618673,0
+            -90.534886,14.61869,0
+            -90.534898,14.6187,0
+            -90.534917,14.618709,0
+            -90.534941,14.618718,0
+            -90.535353,14.618908,0
+            -90.53939,14.620543,0
+            -90.53941,14.620577,0
+            -90.539414,14.620626,0
+            -90.539408,14.620674,0
+            -90.539394,14.620718,0
+            -90.539315,14.620882,0
+            -90.539163,14.621192,0
+            -90.53911,14.621285,0
+            -90.539064,14.621356,0
+            -90.539052,14.621381,0
+            -90.539043,14.621404,0
+            -90.53904,14.621424,0
+            -90.539037,14.621446,0
+            -90.539036,14.621472,0
+            -90.539032,14.621552,0
+            -90.53903,14.621721,0
+            -90.539033,14.621862,0
+            -90.539038,14.621919,0
+            -90.539044,14.62196,0
+            -90.539053,14.621996,0
+            -90.539068,14.622028,0
+            -90.539091,14.622062,0
+            -90.539122,14.622101,0
+            -90.539151,14.622136,0
+            -90.539177,14.622168,0
+            -90.53921,14.622209,0
+            -90.539234,14.62224,0
+            -90.539252,14.622261,0
+            -90.539643,14.622741,0
+            -90.539994,14.623168,0
+            -90.540017,14.623182,0
+            -90.540045,14.623183,0
+            -90.540067,14.623176,0
+            -90.540415,14.622923,0
+            -90.540447,14.6229,0
+            -90.540473,14.622879,0
+            -90.540497,14.622852,0
+            -90.540514,14.622827,0
+            -90.540521,14.622797,0
+            -90.540515,14.622768,0
+            -90.540501,14.622744,0
+            -90.540142,14.6223,0
+            -90.539689,14.621737,0
+            -90.539633,14.62166,0
+            -90.539585,14.621572,0
+            -90.539535,14.621471,0
+            -90.539492,14.621376,0
+            -90.53947,14.621254,0
+            -90.539459,14.621164,0
+            -90.539451,14.621039,0
+            -90.539449,14.620927,0
+            -90.539449,14.620847,0
+            -90.539455,14.620783,0
+            -90.539479,14.620711,0
+            -90.539532,14.62061,0
+            -90.539796,14.620135,0
+            -90.539891,14.619961,0
+            -90.539895,14.619922,0
+            -90.539883,14.619887,0
+            -90.539861,14.619854,0
+            -90.539833,14.619832,0
+            -90.539806,14.619819,0
+            -90.537286,14.618785,0
+            -90.535679,14.618134,0
+            -90.53514,14.617836,0
+            -90.534899,14.617719,0
+            -90.534458,14.617525,0
+            -90.533991,14.617369,0
+            -90.533802,14.617344,0
+            -90.533539,14.617343,0
+            -90.533259,14.617356,0
+            -90.532947,14.617406,0
+            -90.532702,14.617489,0
+            -90.532504,14.617575,0
+            -90.532296,14.617686,0
+            -90.53206,14.617831,0
+            -90.531727,14.61805,0
+            -90.531526,14.618199,0
+            -90.531389,14.618345,0
+            -90.531239,14.618522,0
+            -90.531101,14.618768,0
+            -90.53102,14.618897,0
+            -90.530951,14.618989,0
+            -90.530867,14.619072,0
+            -90.530771,14.619147,0
+            -90.530665,14.619206,0
+            -90.530598,14.619237,0
+            -90.53049,14.61925,0
+            -90.530358,14.619243,0
+            -90.529271,14.619095,0
+            -90.529223,14.619094,0
+            -90.529187,14.61911,0
+            -90.529157,14.619138,0
+            -90.529141,14.619188,0
+            -90.529035,14.619905,0
+            -90.529012,14.619952,0
+            -90.528971,14.619989,0
+            -90.528907,14.620005,0
+            -90.528846,14.620002,0
+            -90.528795,14.619984,0
+            -90.528409,14.619619,0
+            -90.528368,14.619609,0
+            -90.52833,14.619617,0
+            -90.528303,14.619643,0
+            -90.528287,14.619688,0
+            -90.528019,14.621686,0
+            -90.527483,14.625613,0
+            -90.527474,14.625646,0
+            -90.527461,14.625674,0
+            -90.527449,14.625708,0
+            -90.527438,14.625737,0
+            -90.527428,14.625776,0
+            -90.527422,14.625819,0
+            -90.526698,14.631177,0
+            -90.526532,14.632288,0
+            -90.526493,14.632409,0
+            -90.526444,14.632504,0
+            -90.52637,14.632609,0
+            -90.525958,14.633208,0
+            -90.525056,14.634545,0
+            -90.524243,14.63574,0
+            -90.523183,14.637325,0
+            -90.523142,14.637369,0
+            -90.523094,14.637396,0
+            -90.523038,14.637402,0
+            -90.522466,14.637319,0
+            -90.522422,14.637311,0
+            -90.522372,14.63731,0
+            -90.522331,14.637325,0
+            -90.522304,14.637349,0
+            -90.522287,14.63738,0
+            -90.522135,14.638369,0
+            -90.522053,14.638857,0
+            -90.521898,14.639882,0
+            -90.521574,14.642001,0
+            -90.521003,14.645687,0
+            -90.520805,14.646909,0
+            -90.520786,14.646944,0
+            -90.520755,14.646972,0
+            -90.520713,14.646981,0
+            -90.517771,14.646563,0
+            -90.516447,14.646341,0
+            -90.516414,14.64635,0
+            -90.516385,14.646372,0
+            -90.51637,14.646397,0
+            -90.516165,14.647967,0
+            -90.515649,14.651514,0
+            -90.515539,14.652321,0
+            -90.515526,14.65235,0
+            -90.515505,14.652366,0
+            -90.51547,14.652371,0
+            -90.513055,14.652122,0
+            -90.513029,14.652119,0
+            -90.513003,14.652108,0
+            -90.512986,14.652087,0
+            -90.512979,14.652058,0
+            -90.513093,14.65128,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+    </Folder>
+    <Folder>
+      <name>Cercanía con Transmetro/TuBus a minutos caminando_105</name>
+      <Placemark>
+        <name>Estación Jocotenango de Línea 2</name>
+        <styleUrl>#icon-1899-DB4436-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -90.5131341,14.650847,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Hacia Estación Jocotenango de Línea 2</name>
+        <styleUrl>#line-FFD600-2163-nodesc</styleUrl>
+        <LineString>
+          <tessellate>1</tessellate>
+          <coordinates>
+            -90.5131234,14.651292,0
+            -90.5130456,14.6512868,0
+            -90.5131247,14.6508379,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <name>Parada #115 de la Ruta 802 de TuBus</name>
+        <styleUrl>#icon-1899-DB4436-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -90.5163504,14.6487455,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Hacia Parada #115 de la Ruta 802 de TuBus</name>
+        <styleUrl>#line-FFD600-2938-nodesc</styleUrl>
+        <LineString>
+          <tessellate>1</tessellate>
+          <coordinates>
+            -90.517378,14.649034,0
+            -90.5173965,14.6488752,0
+            -90.5163612,14.6487221,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <name>Parada #127 de la Ruta 802 de TuBus</name>
+        <styleUrl>#icon-1899-DB4436-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -90.5176751,14.6452919,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Hacia Parada #127 de la Ruta 802 de TuBus</name>
+        <styleUrl>#line-FFD600-2938-nodesc</styleUrl>
+        <LineString>
+          <tessellate>1</tessellate>
+          <coordinates>
+            -90.517831,14.645469,0
+            -90.5178555,14.645326,0
+            -90.5176751,14.6452919,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <name>Parada #122 de la Ruta 802 de TuBus</name>
+        <styleUrl>#icon-1899-DB4436-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -90.5185937,14.6304198,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Hacia Parada #122 de la Ruta 802 de TuBus</name>
+        <styleUrl>#line-FFD600-3325-nodesc</styleUrl>
+        <LineString>
+          <tessellate>1</tessellate>
+          <coordinates>
+            -90.5199097,14.6308627,0
+            -90.5185527,14.6306574,0
+            -90.5185937,14.6304198,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <name>Parada #078 de la Ruta 801 de TuBus</name>
+        <styleUrl>#icon-1899-DB4436-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -90.5416936,14.622018,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Hacia Parada #078 de la Ruta 801 de TuBus</name>
+        <styleUrl>#line-FFD600-3131-nodesc</styleUrl>
+        <LineString>
+          <tessellate>1</tessellate>
+          <coordinates>
+            -90.540399,14.62301,0
+            -90.5416936,14.622018,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <name>Parada #097 de la Ruta 801 de TuBus</name>
+        <styleUrl>#icon-1899-DB4436-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -90.5422998,14.6233183,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Hacia Parada #097 de la Ruta 801 de TuBus</name>
+        <styleUrl>#line-FFD600-3325-nodesc</styleUrl>
+        <LineString>
+          <tessellate>1</tessellate>
+          <coordinates>
+            -90.5404182,14.6230029,0
+            -90.5413838,14.6222607,0
+            -90.5422368,14.6233287,0
+            -90.5423038,14.6232949,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <name>Estación Bolívar (Dirección Centra Sur) de Línea 12</name>
+        <styleUrl>#icon-1899-DB4436-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -90.5270433,14.6199378,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Hacia Estación Bolívar (Dirección Centra Sur) de Línea 12</name>
+        <styleUrl>#line-FFD600-3519-nodesc</styleUrl>
+        <LineString>
+          <tessellate>1</tessellate>
+          <coordinates>
+            -90.528372,14.619512,0
+            -90.5279821,14.6191228,0
+            -90.527054,14.6201246,0
+            -90.5270219,14.6200935,0
+            -90.5269199,14.6201869,0
+            -90.5268529,14.6201143,0
+            -90.5270433,14.6199378,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <name>Estación San Juan de Dios de Línea 7</name>
+        <styleUrl>#icon-1899-DB4436-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -90.5189977,14.6412624,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Hacia Estación San Juan de Dios de Línea 7</name>
+        <styleUrl>#line-FFD600-3519-nodesc</styleUrl>
+        <LineString>
+          <tessellate>1</tessellate>
+          <coordinates>
+            -90.521528,14.64209,0
+            -90.5216003,14.6416098,0
+            -90.5190307,14.641246,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <name>Estación Santuario de Guadalupe de Línea 7</name>
+        <styleUrl>#icon-1899-DB4436-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -90.5189776,14.6420306,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Hacia Estación Santuario de Guadalupe de Línea 7</name>
+        <styleUrl>#line-FFD600-3131-nodesc</styleUrl>
+        <LineString>
+          <tessellate>1</tessellate>
+          <coordinates>
+            -90.5215326,14.6421111,0
+            -90.5214777,14.6424446,0
+            -90.5189776,14.6420306,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+    </Folder>
+    <Folder>
+      <name>Flechas 105</name>
+      <Placemark>
+        <name>Flecha 105</name>
+        <styleUrl>#line-FFD600-2163-nodesc</styleUrl>
+        <LineString>
+          <tessellate>1</tessellate>
+          <coordinates>
+            -90.5131496,14.6511079,0
+            -90.5131201,14.6510538,0
+            -90.5130823,14.6511002,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <name>Flecha 105</name>
+        <styleUrl>#line-FFD600-2550-nodesc</styleUrl>
+        <LineString>
+          <tessellate>1</tessellate>
+          <coordinates>
+            -90.5122333,14.6502683,0
+            -90.5122108,14.6502426,0
+            -90.512237,14.6502208,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <name>Flecha 105</name>
+        <styleUrl>#line-FFD600-2550-nodesc</styleUrl>
+        <LineString>
+          <tessellate>1</tessellate>
+          <coordinates>
+            -90.5112061,14.6509339,0
+            -90.5111753,14.6509631,0
+            -90.5111522,14.6509255,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <name>Flecha 105</name>
+        <styleUrl>#line-FFD600-2550-nodesc</styleUrl>
+        <LineString>
+          <tessellate>1</tessellate>
+          <coordinates>
+            -90.5117255,14.651994,0
+            -90.5117497,14.6519791,0
+            -90.5117262,14.6519622,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <name>Flecha 105</name>
+        <styleUrl>#line-FFD600-2356-nodesc</styleUrl>
+        <LineString>
+          <tessellate>1</tessellate>
+          <coordinates>
+            -90.513674,14.65295,0
+            -90.5136928,14.6529318,0
+            -90.5136726,14.6529123,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <name>Flecha 105</name>
+        <styleUrl>#line-FFD600-2744-nodesc</styleUrl>
+        <LineString>
+          <tessellate>1</tessellate>
+          <coordinates>
+            -90.5134794,14.6544776,0
+            -90.5134351,14.6545009,0
+            -90.5134271,14.6544516,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <name>Flecha 105</name>
+        <styleUrl>#line-FFD600-2356-nodesc</styleUrl>
+        <LineString>
+          <tessellate>1</tessellate>
+          <coordinates>
+            -90.5159208,14.6562063,0
+            -90.515953,14.6562452,0
+            -90.5159087,14.6562698,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <name>Flecha 105</name>
+        <styleUrl>#line-FFD600-2550-nodesc</styleUrl>
+        <LineString>
+          <tessellate>1</tessellate>
+          <coordinates>
+            -90.5170065,14.6545221,0
+            -90.5169649,14.6544819,0
+            -90.5169475,14.6545325,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <name>Flecha 105</name>
+        <styleUrl>#line-FFD600-2550-nodesc</styleUrl>
+        <LineString>
+          <tessellate>1</tessellate>
+          <coordinates>
+            -90.5167406,14.6514623,0
+            -90.516687,14.6513663,0
+            -90.5166038,14.6514545,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <name>Flecha 105</name>
+        <styleUrl>#line-FFD600-2163-nodesc</styleUrl>
+        <LineString>
+          <tessellate>1</tessellate>
+          <coordinates>
+            -90.5175734,14.6471693,0
+            -90.5175479,14.6471161,0
+            -90.517505,14.6471628,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <name>Flecha 105</name>
+        <styleUrl>#line-FFD600-2163-nodesc</styleUrl>
+        <LineString>
+          <tessellate>1</tessellate>
+          <coordinates>
+            -90.5182283,14.6453857,0
+            -90.5182835,14.6453627,0
+            -90.5182406,14.6453224,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <name>Flecha 105</name>
+        <styleUrl>#line-FFD600-2550-nodesc</styleUrl>
+        <LineString>
+          <tessellate>1</tessellate>
+          <coordinates>
+            -90.5211338,14.6454703,0
+            -90.5210976,14.6453912,0
+            -90.5210453,14.6454573,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <name>Flecha 105</name>
+        <styleUrl>#line-FFD600-2550-nodesc</styleUrl>
+        <LineString>
+          <tessellate>1</tessellate>
+          <coordinates>
+            -90.521111,14.645242,0
+            -90.5210601,14.6453133,0
+            -90.5210332,14.6452264,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <name>Flecha 105</name>
+        <styleUrl>#line-FFD600-2356-nodesc</styleUrl>
+        <LineString>
+          <tessellate>1</tessellate>
+          <coordinates>
+            -90.5218546,14.641242,0
+            -90.521821,14.6411564,0
+            -90.5217687,14.6412304,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <name>Flecha 105</name>
+        <styleUrl>#line-FFD600-2550-nodesc</styleUrl>
+        <LineString>
+          <tessellate>1</tessellate>
+          <coordinates>
+            -90.5217728,14.641015,0
+            -90.5217097,14.6411123,0
+            -90.5216762,14.6409981,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <name>Flecha 105</name>
+        <styleUrl>#line-FFD600-2550-nodesc</styleUrl>
+        <LineString>
+          <tessellate>1</tessellate>
+          <coordinates>
+            -90.5224905,14.6371289,0
+            -90.5224449,14.6370069,0
+            -90.5223671,14.6371082,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <name>Flecha 105</name>
+        <styleUrl>#line-FFD600-2356-nodesc</styleUrl>
+        <LineString>
+          <tessellate>1</tessellate>
+          <coordinates>
+            -90.5217099,14.6312067,0
+            -90.5216268,14.6311133,0
+            -90.5217341,14.6310613,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <name>Flecha 105</name>
+        <styleUrl>#line-FFD600-2163-nodesc</styleUrl>
+        <LineString>
+          <tessellate>1</tessellate>
+          <coordinates>
+            -90.5176347,14.6298274,0
+            -90.5176481,14.6297158,0
+            -90.5175113,14.6297392,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <name>Flecha 105</name>
+        <styleUrl>#line-FFD600-2356-nodesc</styleUrl>
+        <LineString>
+          <tessellate>1</tessellate>
+          <coordinates>
+            -90.5216014,14.6300578,0
+            -90.5216725,14.6301551,0
+            -90.5215638,14.6302109,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <name>Flecha 105</name>
+        <styleUrl>#line-FFD600-2163-nodesc</styleUrl>
+        <LineString>
+          <tessellate>1</tessellate>
+          <coordinates>
+            -90.5269555,14.6306512,0
+            -90.5269019,14.6305162,0
+            -90.5267973,14.6306356,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <name>Flecha 105</name>
+        <styleUrl>#line-FFD600-2356-nodesc</styleUrl>
+        <LineString>
+          <tessellate>1</tessellate>
+          <coordinates>
+            -90.5282027,14.6259259,0
+            -90.5283703,14.6258299,0
+            -90.5282242,14.6256949,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <name>Flecha 105</name>
+        <styleUrl>#line-FFD600-2163-nodesc</styleUrl>
+        <LineString>
+          <tessellate>1</tessellate>
+          <coordinates>
+            -90.5298228,14.6223441,0
+            -90.5297155,14.6221105,0
+            -90.5295385,14.6223182,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <name>Flecha 105</name>
+        <styleUrl>#line-FFD600-2356-nodesc</styleUrl>
+        <LineString>
+          <tessellate>1</tessellate>
+          <coordinates>
+            -90.5317865,14.6182551,0
+            -90.53183,14.61812,0
+            -90.5316819,14.6181279,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <name>Flecha 105</name>
+        <styleUrl>#line-FFD600-2550-nodesc</styleUrl>
+        <LineString>
+          <tessellate>1</tessellate>
+          <coordinates>
+            -90.5383567,14.6200211,0
+            -90.5384157,14.6201482,0
+            -90.5382709,14.6201794,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <name>Flecha 105</name>
+        <styleUrl>#line-FFD600-2356-nodesc</styleUrl>
+        <LineString>
+          <tessellate>1</tessellate>
+          <coordinates>
+            -90.5396262,14.6225601,0
+            -90.539643,14.622741,0
+            -90.5394518,14.6226613,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <name>Flecha 105</name>
+        <styleUrl>#line-FFD600-2356-nodesc</styleUrl>
+        <LineString>
+          <tessellate>1</tessellate>
+          <coordinates>
+            -90.5400929,14.622074,0
+            -90.5399266,14.6220273,0
+            -90.5399159,14.6221778,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <name>Flecha 105</name>
+        <styleUrl>#line-FFD600-2550-nodesc</styleUrl>
+        <LineString>
+          <tessellate>1</tessellate>
+          <coordinates>
+            -90.5392509,14.619444,0
+            -90.5390577,14.6195167,0
+            -90.5391597,14.619688,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <name>Flecha 105</name>
+        <styleUrl>#line-FFD600-2356-nodesc</styleUrl>
+        <LineString>
+          <tessellate>1</tessellate>
+          <coordinates>
+            -90.5330404,14.6174585,0
+            -90.5328875,14.6174273,0
+            -90.5329908,14.6173144,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <name>Flecha 105</name>
+        <styleUrl>#line-FFD600-2356-nodesc</styleUrl>
+        <LineString>
+          <tessellate>1</tessellate>
+          <coordinates>
+            -90.5301523,14.6192835,0
+            -90.530045,14.6191979,0
+            -90.5301657,14.619133,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <name>Flecha 105</name>
+        <styleUrl>#line-FFD600-2356-nodesc</styleUrl>
+        <LineString>
+          <tessellate>1</tessellate>
+          <coordinates>
+            -90.5282682,14.6208696,0
+            -90.5280966,14.6211084,0
+            -90.5279946,14.6208333,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <name>Flecha 105</name>
+        <styleUrl>#line-FFD600-2356-nodesc</styleUrl>
+        <LineString>
+          <tessellate>1</tessellate>
+          <coordinates>
+            -90.5270281,14.6293463,0
+            -90.5269208,14.6295176,0
+            -90.5268511,14.6293255,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <name>Flecha 105</name>
+        <styleUrl>#line-FFD600-2550-nodesc</styleUrl>
+        <LineString>
+          <tessellate>1</tessellate>
+          <coordinates>
+            -90.5261985,14.6331252,0
+            -90.525958,14.633208,0
+            -90.5259302,14.6329643,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <name>Flecha 105</name>
+        <styleUrl>#line-FFD600-2163-nodesc</styleUrl>
+        <LineString>
+          <tessellate>1</tessellate>
+          <coordinates>
+            -90.5229074,14.6375162,0
+            -90.5227585,14.6373631,0
+            -90.5229691,14.6372515,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <name>Flecha 105</name>
+        <styleUrl>#line-FFD600-2550-nodesc</styleUrl>
+        <LineString>
+          <tessellate>1</tessellate>
+          <coordinates>
+            -90.5193399,14.6468561,0
+            -90.5192567,14.6467731,0
+            -90.5193627,14.6467226,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <name>Flecha 105</name>
+        <styleUrl>#line-FFD600-2163-nodesc</styleUrl>
+        <LineString>
+          <tessellate>1</tessellate>
+          <coordinates>
+            -90.5162321,14.6479855,0
+            -90.5161436,14.6481127,0
+            -90.5160846,14.6479622,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <name>Flecha 105</name>
+        <styleUrl>#line-FFD600-2356-nodesc</styleUrl>
+        <LineString>
+          <tessellate>1</tessellate>
+          <coordinates>
+            -90.5143815,14.6523396,0
+            -90.5142904,14.6522462,0
+            -90.5144057,14.6521683,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+    </Folder>
+  </Document>
+</kml>
