@@ -1,0 +1,2278 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+  <Document>
+    <name>RUTA 402 - Sistema TuBus</name>
+    <description>Col. Santa Fe, 10a avenida y 28 calle Z. 13 / Avenida Petapa y 9a avenida Z. 12</description>
+    <Style id="icon-1899-DB4436-normal">
+      <IconStyle>
+        <color>ff3644db</color>
+        <scale>1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+        <hotSpot x="32" xunits="pixels" y="64" yunits="insetPixels"/>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+    </Style>
+    <Style id="icon-1899-DB4436-highlight">
+      <IconStyle>
+        <color>ff3644db</color>
+        <scale>1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+        <hotSpot x="32" xunits="pixels" y="64" yunits="insetPixels"/>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1</scale>
+      </LabelStyle>
+    </Style>
+    <StyleMap id="icon-1899-DB4436">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-1899-DB4436-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-1899-DB4436-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="icon-1899-DB4436-nodesc-normal">
+      <IconStyle>
+        <color>ff3644db</color>
+        <scale>1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+        <hotSpot x="32" xunits="pixels" y="64" yunits="insetPixels"/>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <Style id="icon-1899-DB4436-nodesc-highlight">
+      <IconStyle>
+        <color>ff3644db</color>
+        <scale>1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+        <hotSpot x="32" xunits="pixels" y="64" yunits="insetPixels"/>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1</scale>
+      </LabelStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <StyleMap id="icon-1899-DB4436-nodesc">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-1899-DB4436-nodesc-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-1899-DB4436-nodesc-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="line-0F9D58-1969-normal">
+      <LineStyle>
+        <color>ff589d0f</color>
+        <width>1.969</width>
+      </LineStyle>
+    </Style>
+    <Style id="line-0F9D58-1969-highlight">
+      <LineStyle>
+        <color>ff589d0f</color>
+        <width>2.9535</width>
+      </LineStyle>
+    </Style>
+    <StyleMap id="line-0F9D58-1969">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#line-0F9D58-1969-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#line-0F9D58-1969-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="line-0F9D58-2355-nodesc-normal">
+      <LineStyle>
+        <color>ff589d0f</color>
+        <width>2.355</width>
+      </LineStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <Style id="line-0F9D58-2355-nodesc-highlight">
+      <LineStyle>
+        <color>ff589d0f</color>
+        <width>3.5325</width>
+      </LineStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <StyleMap id="line-0F9D58-2355-nodesc">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#line-0F9D58-2355-nodesc-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#line-0F9D58-2355-nodesc-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="line-0F9D58-2356-nodesc-normal">
+      <LineStyle>
+        <color>ff589d0f</color>
+        <width>2.356</width>
+      </LineStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <Style id="line-0F9D58-2356-nodesc-highlight">
+      <LineStyle>
+        <color>ff589d0f</color>
+        <width>3.534</width>
+      </LineStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <StyleMap id="line-0F9D58-2356-nodesc">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#line-0F9D58-2356-nodesc-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#line-0F9D58-2356-nodesc-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="line-0F9D58-2550-nodesc-normal">
+      <LineStyle>
+        <color>ff589d0f</color>
+        <width>2.55</width>
+      </LineStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <Style id="line-0F9D58-2550-nodesc-highlight">
+      <LineStyle>
+        <color>ff589d0f</color>
+        <width>3.825</width>
+      </LineStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <StyleMap id="line-0F9D58-2550-nodesc">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#line-0F9D58-2550-nodesc-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#line-0F9D58-2550-nodesc-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="line-0F9D58-2744-nodesc-normal">
+      <LineStyle>
+        <color>ff589d0f</color>
+        <width>2.744</width>
+      </LineStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <Style id="line-0F9D58-2744-nodesc-highlight">
+      <LineStyle>
+        <color>ff589d0f</color>
+        <width>4.116</width>
+      </LineStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <StyleMap id="line-0F9D58-2744-nodesc">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#line-0F9D58-2744-nodesc-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#line-0F9D58-2744-nodesc-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Folder>
+      <name>Paradas Ruta 402</name>
+      <Placemark>
+        <name>Parada #194 / Col. Santa Fe</name>
+        <description><![CDATA[10ª avenida y 28 calle, Colonia Santa Fe, zona 13<br><br>descriptio: <br>tessellate: <br>extrude: <br>visibility: <br>X: <br>Y: <br>ID DMU: ]]></description>
+        <styleUrl>#icon-1899-DB4436</styleUrl>
+        <ExtendedData>
+          <Data name="descriptio">
+            <value/>
+          </Data>
+          <Data name="tessellate">
+            <value/>
+          </Data>
+          <Data name="extrude">
+            <value/>
+          </Data>
+          <Data name="visibility">
+            <value/>
+          </Data>
+          <Data name="X">
+            <value/>
+          </Data>
+          <Data name="Y">
+            <value/>
+          </Data>
+          <Data name="ID DMU">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -90.535976,14.567495,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Parada #196 / Hospital de la Fuerza Aérea Guatemalteca</name>
+        <description><![CDATA[10ª avenida y 24 calle, Hosp. de la Fuerza Aérea Guatemalteca, zona 13<br><br>descriptio: <br>tessellate: <br>extrude: <br>visibility: <br>X: <br>Y: <br>ID DMU: ]]></description>
+        <styleUrl>#icon-1899-DB4436</styleUrl>
+        <ExtendedData>
+          <Data name="descriptio">
+            <value/>
+          </Data>
+          <Data name="tessellate">
+            <value/>
+          </Data>
+          <Data name="extrude">
+            <value/>
+          </Data>
+          <Data name="visibility">
+            <value/>
+          </Data>
+          <Data name="X">
+            <value/>
+          </Data>
+          <Data name="Y">
+            <value/>
+          </Data>
+          <Data name="ID DMU">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -90.534394,14.573078,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Parada #197 / 11 avenida</name>
+        <description><![CDATA[11 avenida y 21 calle, zona 13<br><br>descriptio: <br>tessellate: <br>extrude: <br>visibility: <br>X: <br>Y: <br>ID DMU: ]]></description>
+        <styleUrl>#icon-1899-DB4436</styleUrl>
+        <ExtendedData>
+          <Data name="descriptio">
+            <value/>
+          </Data>
+          <Data name="tessellate">
+            <value/>
+          </Data>
+          <Data name="extrude">
+            <value/>
+          </Data>
+          <Data name="visibility">
+            <value/>
+          </Data>
+          <Data name="X">
+            <value/>
+          </Data>
+          <Data name="Y">
+            <value/>
+          </Data>
+          <Data name="ID DMU">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -90.53156,14.576845,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Parada #198 / 11 avenida</name>
+        <description><![CDATA[11 avenida y 19 calle, zona 13<br><br>descriptio: <br>tessellate: <br>extrude: <br>visibility: <br>X: <br>Y: <br>ID DMU: ]]></description>
+        <styleUrl>#icon-1899-DB4436</styleUrl>
+        <ExtendedData>
+          <Data name="descriptio">
+            <value/>
+          </Data>
+          <Data name="tessellate">
+            <value/>
+          </Data>
+          <Data name="extrude">
+            <value/>
+          </Data>
+          <Data name="visibility">
+            <value/>
+          </Data>
+          <Data name="X">
+            <value/>
+          </Data>
+          <Data name="Y">
+            <value/>
+          </Data>
+          <Data name="ID DMU">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -90.530944,14.578856,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Parada #199 / Aeroclub Guatemala</name>
+        <description><![CDATA[11 avenida y 17 calle, Aeroclub Guatemala, zona 13<br><br>descriptio: <br>tessellate: <br>extrude: <br>visibility: <br>X: <br>Y: <br>ID DMU: ]]></description>
+        <styleUrl>#icon-1899-DB4436</styleUrl>
+        <ExtendedData>
+          <Data name="descriptio">
+            <value/>
+          </Data>
+          <Data name="tessellate">
+            <value/>
+          </Data>
+          <Data name="extrude">
+            <value/>
+          </Data>
+          <Data name="visibility">
+            <value/>
+          </Data>
+          <Data name="X">
+            <value/>
+          </Data>
+          <Data name="Y">
+            <value/>
+          </Data>
+          <Data name="ID DMU">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -90.529792,14.582456,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name><![CDATA[Parada #200 / 16 calle "A"]]></name>
+        <description><![CDATA[16 calle "A" y 10ª avenida, zona 13<br><br>descriptio: <br>tessellate: <br>extrude: <br>visibility: <br>X: <br>Y: <br>ID DMU: ]]></description>
+        <styleUrl>#icon-1899-DB4436</styleUrl>
+        <ExtendedData>
+          <Data name="descriptio">
+            <value/>
+          </Data>
+          <Data name="tessellate">
+            <value/>
+          </Data>
+          <Data name="extrude">
+            <value/>
+          </Data>
+          <Data name="visibility">
+            <value/>
+          </Data>
+          <Data name="X">
+            <value/>
+          </Data>
+          <Data name="Y">
+            <value/>
+          </Data>
+          <Data name="ID DMU">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -90.53043,14.58447,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Parada #201 / 17 calle</name>
+        <description><![CDATA[17 calle y 8ª avenida, zona 13<br><br>descriptio: <br>tessellate: <br>extrude: <br>visibility: <br>X: <br>Y: <br>ID DMU: ]]></description>
+        <styleUrl>#icon-1899-DB4436</styleUrl>
+        <ExtendedData>
+          <Data name="descriptio">
+            <value/>
+          </Data>
+          <Data name="tessellate">
+            <value/>
+          </Data>
+          <Data name="extrude">
+            <value/>
+          </Data>
+          <Data name="visibility">
+            <value/>
+          </Data>
+          <Data name="X">
+            <value/>
+          </Data>
+          <Data name="Y">
+            <value/>
+          </Data>
+          <Data name="ID DMU">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -90.532844,14.583485,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Parada #202 / 7ª avenida</name>
+        <description><![CDATA[7ª avenida y 15 calle, zona 13<br><br>descriptio: <br>tessellate: <br>extrude: <br>visibility: <br>X: <br>Y: <br>ID DMU: ]]></description>
+        <styleUrl>#icon-1899-DB4436</styleUrl>
+        <ExtendedData>
+          <Data name="descriptio">
+            <value/>
+          </Data>
+          <Data name="tessellate">
+            <value/>
+          </Data>
+          <Data name="extrude">
+            <value/>
+          </Data>
+          <Data name="visibility">
+            <value/>
+          </Data>
+          <Data name="X">
+            <value/>
+          </Data>
+          <Data name="Y">
+            <value/>
+          </Data>
+          <Data name="ID DMU">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -90.533138,14.586683,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Parada #203 / Aeropuerto Internacional La Aurora</name>
+        <description><![CDATA[Aeropuerto Internacional La Aurora y 8ª avenida, zona 13<br><br>descriptio: <br>tessellate: <br>extrude: <br>visibility: <br>X: <br>Y: <br>ID DMU: ]]></description>
+        <styleUrl>#icon-1899-DB4436</styleUrl>
+        <ExtendedData>
+          <Data name="descriptio">
+            <value/>
+          </Data>
+          <Data name="tessellate">
+            <value/>
+          </Data>
+          <Data name="extrude">
+            <value/>
+          </Data>
+          <Data name="visibility">
+            <value/>
+          </Data>
+          <Data name="X">
+            <value/>
+          </Data>
+          <Data name="Y">
+            <value/>
+          </Data>
+          <Data name="ID DMU">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -90.531434,14.588486,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Parada #204 / Blvr. Aeropuerto</name>
+        <description><![CDATA[Bulevar Aeropuerto y 6ª calle, zona 13<br><br>descriptio: <br>tessellate: <br>extrude: <br>visibility: <br>X: <br>Y: <br>ID DMU: ]]></description>
+        <styleUrl>#icon-1899-DB4436</styleUrl>
+        <ExtendedData>
+          <Data name="descriptio">
+            <value/>
+          </Data>
+          <Data name="tessellate">
+            <value/>
+          </Data>
+          <Data name="extrude">
+            <value/>
+          </Data>
+          <Data name="visibility">
+            <value/>
+          </Data>
+          <Data name="X">
+            <value/>
+          </Data>
+          <Data name="Y">
+            <value/>
+          </Data>
+          <Data name="ID DMU">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -90.525831,14.595936,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Parada #205 / 5ª calle</name>
+        <description><![CDATA[5ª calle y 8ª avenida, zona 13<br><br>descriptio: <br>tessellate: <br>extrude: <br>visibility: <br>X: <br>Y: <br>ID DMU: ]]></description>
+        <styleUrl>#icon-1899-DB4436</styleUrl>
+        <ExtendedData>
+          <Data name="descriptio">
+            <value/>
+          </Data>
+          <Data name="tessellate">
+            <value/>
+          </Data>
+          <Data name="extrude">
+            <value/>
+          </Data>
+          <Data name="visibility">
+            <value/>
+          </Data>
+          <Data name="X">
+            <value/>
+          </Data>
+          <Data name="Y">
+            <value/>
+          </Data>
+          <Data name="ID DMU">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -90.528249,14.597793,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Parada #206 / 5ª calle</name>
+        <description><![CDATA[5ª calle y 7ª avenida, zona 13<br><br>descriptio: <br>tessellate: <br>extrude: <br>visibility: <br>X: <br>Y: <br>ID DMU: ]]></description>
+        <styleUrl>#icon-1899-DB4436</styleUrl>
+        <ExtendedData>
+          <Data name="descriptio">
+            <value/>
+          </Data>
+          <Data name="tessellate">
+            <value/>
+          </Data>
+          <Data name="extrude">
+            <value/>
+          </Data>
+          <Data name="visibility">
+            <value/>
+          </Data>
+          <Data name="X">
+            <value/>
+          </Data>
+          <Data name="Y">
+            <value/>
+          </Data>
+          <Data name="ID DMU">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -90.530915,14.59943,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Parada #207 / 5ª calle</name>
+        <description><![CDATA[5ª calle y 4ª avenida, zona 13<br><br>descriptio: <br>tessellate: <br>extrude: <br>visibility: <br>X: <br>Y: <br>ID DMU: ]]></description>
+        <styleUrl>#icon-1899-DB4436</styleUrl>
+        <ExtendedData>
+          <Data name="descriptio">
+            <value/>
+          </Data>
+          <Data name="tessellate">
+            <value/>
+          </Data>
+          <Data name="extrude">
+            <value/>
+          </Data>
+          <Data name="visibility">
+            <value/>
+          </Data>
+          <Data name="X">
+            <value/>
+          </Data>
+          <Data name="Y">
+            <value/>
+          </Data>
+          <Data name="ID DMU">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -90.532846,14.601874,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Parada #208 / 8ª calle</name>
+        <description><![CDATA[8ª calle y 17 avenida, zona 13<br><br>descriptio: <br>tessellate: <br>extrude: <br>visibility: <br>X: <br>Y: <br>ID DMU: ]]></description>
+        <styleUrl>#icon-1899-DB4436</styleUrl>
+        <ExtendedData>
+          <Data name="descriptio">
+            <value/>
+          </Data>
+          <Data name="tessellate">
+            <value/>
+          </Data>
+          <Data name="extrude">
+            <value/>
+          </Data>
+          <Data name="visibility">
+            <value/>
+          </Data>
+          <Data name="X">
+            <value/>
+          </Data>
+          <Data name="Y">
+            <value/>
+          </Data>
+          <Data name="ID DMU">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -90.535483,14.604673,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Parada #209 / Avenida Petapa</name>
+        <description><![CDATA[Avenida Petapa y 7ª calle, zona 12<br><br>descriptio: <br>tessellate: <br>extrude: <br>visibility: <br>X: <br>Y: <br>ID DMU: ]]></description>
+        <styleUrl>#icon-1899-DB4436</styleUrl>
+        <ExtendedData>
+          <Data name="descriptio">
+            <value/>
+          </Data>
+          <Data name="tessellate">
+            <value/>
+          </Data>
+          <Data name="extrude">
+            <value/>
+          </Data>
+          <Data name="visibility">
+            <value/>
+          </Data>
+          <Data name="X">
+            <value/>
+          </Data>
+          <Data name="Y">
+            <value/>
+          </Data>
+          <Data name="ID DMU">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -90.537965,14.607657,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Parada #210 / 6ª avenida</name>
+        <description><![CDATA[6ª avenida y 4ª calle, zona 12<br><br>descriptio: <br>tessellate: <br>extrude: <br>visibility: <br>X: <br>Y: <br>ID DMU: ]]></description>
+        <styleUrl>#icon-1899-DB4436</styleUrl>
+        <ExtendedData>
+          <Data name="descriptio">
+            <value/>
+          </Data>
+          <Data name="tessellate">
+            <value/>
+          </Data>
+          <Data name="extrude">
+            <value/>
+          </Data>
+          <Data name="visibility">
+            <value/>
+          </Data>
+          <Data name="X">
+            <value/>
+          </Data>
+          <Data name="Y">
+            <value/>
+          </Data>
+          <Data name="ID DMU">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -90.537106,14.610539,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Parada #211 / Avenida Petapa</name>
+        <description><![CDATA[Avenida Petapa y  9ª avenida, zona 12. Cercanía con Transmetro a ±4 minutos caminando: Estación Trébol de Línea 12.<br><br>descriptio: <br>tessellate: <br>extrude: <br>visibility: <br>X: <br>Y: <br>ID DMU: ]]></description>
+        <styleUrl>#icon-1899-DB4436</styleUrl>
+        <ExtendedData>
+          <Data name="descriptio">
+            <value/>
+          </Data>
+          <Data name="tessellate">
+            <value/>
+          </Data>
+          <Data name="extrude">
+            <value/>
+          </Data>
+          <Data name="visibility">
+            <value/>
+          </Data>
+          <Data name="X">
+            <value/>
+          </Data>
+          <Data name="Y">
+            <value/>
+          </Data>
+          <Data name="ID DMU">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -90.534603,14.611389,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Parada #084 / Blvr. Liberación</name>
+        <description><![CDATA[Bulevar Liberación, antes de la pasarela IGSS Pamplona, zona 12. Parada con dos o más rutas: 402 y 801.<br><br>descriptio: <br>tessellate: <br>extrude: <br>visibility: <br>X: <br>Y: <br>ID DMU: ]]></description>
+        <styleUrl>#icon-1899-DB4436</styleUrl>
+        <ExtendedData>
+          <Data name="descriptio">
+            <value/>
+          </Data>
+          <Data name="tessellate">
+            <value/>
+          </Data>
+          <Data name="extrude">
+            <value/>
+          </Data>
+          <Data name="visibility">
+            <value/>
+          </Data>
+          <Data name="X">
+            <value/>
+          </Data>
+          <Data name="Y">
+            <value/>
+          </Data>
+          <Data name="ID DMU">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -90.532053,14.608548,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Parada #212 / Blvr. Liberación</name>
+        <description><![CDATA[Bulevar Liberación y 2ª avenida, zona 13<br><br>descriptio: <br>tessellate: <br>extrude: <br>visibility: <br>X: <br>Y: <br>ID DMU: ]]></description>
+        <styleUrl>#icon-1899-DB4436</styleUrl>
+        <ExtendedData>
+          <Data name="descriptio">
+            <value/>
+          </Data>
+          <Data name="tessellate">
+            <value/>
+          </Data>
+          <Data name="extrude">
+            <value/>
+          </Data>
+          <Data name="visibility">
+            <value/>
+          </Data>
+          <Data name="X">
+            <value/>
+          </Data>
+          <Data name="Y">
+            <value/>
+          </Data>
+          <Data name="ID DMU">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -90.530411,14.605904,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Parada #213 / Blvr. Liberación</name>
+        <description><![CDATA[Bulevar Liberación y 6ª avenida, zona 13<br><br>descriptio: <br>tessellate: <br>extrude: <br>visibility: <br>X: <br>Y: <br>ID DMU: ]]></description>
+        <styleUrl>#icon-1899-DB4436</styleUrl>
+        <ExtendedData>
+          <Data name="descriptio">
+            <value/>
+          </Data>
+          <Data name="tessellate">
+            <value/>
+          </Data>
+          <Data name="extrude">
+            <value/>
+          </Data>
+          <Data name="visibility">
+            <value/>
+          </Data>
+          <Data name="X">
+            <value/>
+          </Data>
+          <Data name="Y">
+            <value/>
+          </Data>
+          <Data name="ID DMU">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -90.528491,14.603377,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Parada #214 / 3ª calle</name>
+        <description><![CDATA[3ª calle y 7ª avenida, zona 13<br><br>descriptio: <br>tessellate: <br>extrude: <br>visibility: <br>X: <br>Y: <br>ID DMU: ]]></description>
+        <styleUrl>#icon-1899-DB4436</styleUrl>
+        <ExtendedData>
+          <Data name="descriptio">
+            <value/>
+          </Data>
+          <Data name="tessellate">
+            <value/>
+          </Data>
+          <Data name="extrude">
+            <value/>
+          </Data>
+          <Data name="visibility">
+            <value/>
+          </Data>
+          <Data name="X">
+            <value/>
+          </Data>
+          <Data name="Y">
+            <value/>
+          </Data>
+          <Data name="ID DMU">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -90.529648,14.600554,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Parada #215 / Instituto Técnico Vocacional Dr. Imrich Fischmann</name>
+        <description><![CDATA[7ª avenida, Instituto Técnico Vocacional Imrich Fischmann, zona 13<br><br>descriptio: <br>tessellate: <br>extrude: <br>visibility: <br>X: <br>Y: <br>ID DMU: ]]></description>
+        <styleUrl>#icon-1899-DB4436</styleUrl>
+        <ExtendedData>
+          <Data name="descriptio">
+            <value/>
+          </Data>
+          <Data name="tessellate">
+            <value/>
+          </Data>
+          <Data name="extrude">
+            <value/>
+          </Data>
+          <Data name="visibility">
+            <value/>
+          </Data>
+          <Data name="X">
+            <value/>
+          </Data>
+          <Data name="Y">
+            <value/>
+          </Data>
+          <Data name="ID DMU">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -90.530334,14.597497,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Parada #216 / Contraloría General de Cuentas</name>
+        <description><![CDATA[7ª avenida y 8ª calle, Contraloría General de Cuentas, zona 13<br><br>descriptio: <br>tessellate: <br>extrude: <br>visibility: <br>X: <br>Y: <br>ID DMU: ]]></description>
+        <styleUrl>#icon-1899-DB4436</styleUrl>
+        <ExtendedData>
+          <Data name="descriptio">
+            <value/>
+          </Data>
+          <Data name="tessellate">
+            <value/>
+          </Data>
+          <Data name="extrude">
+            <value/>
+          </Data>
+          <Data name="visibility">
+            <value/>
+          </Data>
+          <Data name="X">
+            <value/>
+          </Data>
+          <Data name="Y">
+            <value/>
+          </Data>
+          <Data name="ID DMU">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -90.531514,14.593052,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Parada #217 / Aeropuerto Internacional La Aurora dirección sur</name>
+        <description><![CDATA[8ª avenida, Aeropuerto Nacional La Aurora dirección sur, zona 13<br><br>descriptio: <br>tessellate: <br>extrude: <br>visibility: <br>X: <br>Y: <br>ID DMU: ]]></description>
+        <styleUrl>#icon-1899-DB4436</styleUrl>
+        <ExtendedData>
+          <Data name="descriptio">
+            <value/>
+          </Data>
+          <Data name="tessellate">
+            <value/>
+          </Data>
+          <Data name="extrude">
+            <value/>
+          </Data>
+          <Data name="visibility">
+            <value/>
+          </Data>
+          <Data name="X">
+            <value/>
+          </Data>
+          <Data name="Y">
+            <value/>
+          </Data>
+          <Data name="ID DMU">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -90.531586,14.588592,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Parada #218 / INSIVUMEH</name>
+        <description><![CDATA[15 calle y 7ª avenida, INSIVUMEH, zona 13<br><br>descriptio: <br>tessellate: <br>extrude: <br>visibility: <br>X: <br>Y: <br>ID DMU: ]]></description>
+        <styleUrl>#icon-1899-DB4436</styleUrl>
+        <ExtendedData>
+          <Data name="descriptio">
+            <value/>
+          </Data>
+          <Data name="tessellate">
+            <value/>
+          </Data>
+          <Data name="extrude">
+            <value/>
+          </Data>
+          <Data name="visibility">
+            <value/>
+          </Data>
+          <Data name="X">
+            <value/>
+          </Data>
+          <Data name="Y">
+            <value/>
+          </Data>
+          <Data name="ID DMU">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -90.532978,14.586978,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Parada #219 / 17 calle</name>
+        <description><![CDATA[17 calle y 8ª avenida, zona 13<br><br>descriptio: <br>tessellate: <br>extrude: <br>visibility: <br>X: <br>Y: <br>ID DMU: ]]></description>
+        <styleUrl>#icon-1899-DB4436</styleUrl>
+        <ExtendedData>
+          <Data name="descriptio">
+            <value/>
+          </Data>
+          <Data name="tessellate">
+            <value/>
+          </Data>
+          <Data name="extrude">
+            <value/>
+          </Data>
+          <Data name="visibility">
+            <value/>
+          </Data>
+          <Data name="X">
+            <value/>
+          </Data>
+          <Data name="Y">
+            <value/>
+          </Data>
+          <Data name="ID DMU">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -90.532976,14.583454,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Parada #220 / Club La Aurora</name>
+        <description><![CDATA[9ª avenida y 16 calle "A", Club La Aurora, zona 13 <br><br>descriptio: <br>tessellate: <br>extrude: <br>visibility: <br>X: <br>Y: <br>ID DMU: ]]></description>
+        <styleUrl>#icon-1899-DB4436</styleUrl>
+        <ExtendedData>
+          <Data name="descriptio">
+            <value/>
+          </Data>
+          <Data name="tessellate">
+            <value/>
+          </Data>
+          <Data name="extrude">
+            <value/>
+          </Data>
+          <Data name="visibility">
+            <value/>
+          </Data>
+          <Data name="X">
+            <value/>
+          </Data>
+          <Data name="Y">
+            <value/>
+          </Data>
+          <Data name="ID DMU">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -90.531369,14.584497,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Parada #221 / 11 avenida</name>
+        <description><![CDATA[11 avenida y 17 calle, zona 13<br><br>descriptio: <br>tessellate: <br>extrude: <br>visibility: <br>X: <br>Y: <br>ID DMU: ]]></description>
+        <styleUrl>#icon-1899-DB4436</styleUrl>
+        <ExtendedData>
+          <Data name="descriptio">
+            <value/>
+          </Data>
+          <Data name="tessellate">
+            <value/>
+          </Data>
+          <Data name="extrude">
+            <value/>
+          </Data>
+          <Data name="visibility">
+            <value/>
+          </Data>
+          <Data name="X">
+            <value/>
+          </Data>
+          <Data name="Y">
+            <value/>
+          </Data>
+          <Data name="ID DMU">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -90.529864,14.582635,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Parada #222 / 11 avenida</name>
+        <description><![CDATA[11 avenida y 19 calle, zona 13<br><br>descriptio: <br>tessellate: <br>extrude: <br>visibility: <br>X: <br>Y: <br>ID DMU: ]]></description>
+        <styleUrl>#icon-1899-DB4436</styleUrl>
+        <ExtendedData>
+          <Data name="descriptio">
+            <value/>
+          </Data>
+          <Data name="tessellate">
+            <value/>
+          </Data>
+          <Data name="extrude">
+            <value/>
+          </Data>
+          <Data name="visibility">
+            <value/>
+          </Data>
+          <Data name="X">
+            <value/>
+          </Data>
+          <Data name="Y">
+            <value/>
+          </Data>
+          <Data name="ID DMU">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -90.531056,14.57887,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Parada #223 / 11 avenida</name>
+        <description><![CDATA[11 avenida y 21 calle, zona 13<br><br>descriptio: <br>tessellate: <br>extrude: <br>visibility: <br>X: <br>Y: <br>ID DMU: ]]></description>
+        <styleUrl>#icon-1899-DB4436</styleUrl>
+        <ExtendedData>
+          <Data name="descriptio">
+            <value/>
+          </Data>
+          <Data name="tessellate">
+            <value/>
+          </Data>
+          <Data name="extrude">
+            <value/>
+          </Data>
+          <Data name="visibility">
+            <value/>
+          </Data>
+          <Data name="X">
+            <value/>
+          </Data>
+          <Data name="Y">
+            <value/>
+          </Data>
+          <Data name="ID DMU">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -90.531591,14.577085,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Parada #224 / Hospital de la Fuerza Aérea Guatemalteca dirección sur</name>
+        <description><![CDATA[10ª avenida y 24 calle, Hospital de la Fuerza Aérea Guatemalteca dirección sur, zona 13<br><br>descriptio: <br>tessellate: <br>extrude: <br>visibility: <br>X: <br>Y: <br>ID DMU: ]]></description>
+        <styleUrl>#icon-1899-DB4436</styleUrl>
+        <ExtendedData>
+          <Data name="descriptio">
+            <value/>
+          </Data>
+          <Data name="tessellate">
+            <value/>
+          </Data>
+          <Data name="extrude">
+            <value/>
+          </Data>
+          <Data name="visibility">
+            <value/>
+          </Data>
+          <Data name="X">
+            <value/>
+          </Data>
+          <Data name="Y">
+            <value/>
+          </Data>
+          <Data name="ID DMU">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -90.534662,14.572992,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Parada #225 / 10ª avenida </name>
+        <description><![CDATA[10ª avenida y 26 calle, zona 13 <br><br>descriptio: <br>tessellate: <br>extrude: <br>visibility: <br>X: <br>Y: <br>ID DMU: ]]></description>
+        <styleUrl>#icon-1899-DB4436</styleUrl>
+        <ExtendedData>
+          <Data name="descriptio">
+            <value/>
+          </Data>
+          <Data name="tessellate">
+            <value/>
+          </Data>
+          <Data name="extrude">
+            <value/>
+          </Data>
+          <Data name="visibility">
+            <value/>
+          </Data>
+          <Data name="X">
+            <value/>
+          </Data>
+          <Data name="Y">
+            <value/>
+          </Data>
+          <Data name="ID DMU">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -90.535548,14.570415,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Parada #195 / 10ª avenida</name>
+        <description><![CDATA[10ª avenida y 26 calle, zona 13<br><br>descriptio: <br>tessellate: <br>extrude: <br>visibility: <br>X: <br>Y: <br>ID DMU: ]]></description>
+        <styleUrl>#icon-1899-DB4436</styleUrl>
+        <ExtendedData>
+          <Data name="descriptio">
+            <value/>
+          </Data>
+          <Data name="tessellate">
+            <value/>
+          </Data>
+          <Data name="extrude">
+            <value/>
+          </Data>
+          <Data name="visibility">
+            <value/>
+          </Data>
+          <Data name="X">
+            <value/>
+          </Data>
+          <Data name="Y">
+            <value/>
+          </Data>
+          <Data name="ID DMU">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -90.53545,14.570318,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>RUTA 402</name>
+        <description><![CDATA[<br><br>descriptio: <br>tessellate: -1<br>extrude: 0<br>visibility: -1<br>X: <br>Y: <br>ID DMU: ]]></description>
+        <styleUrl>#line-0F9D58-1969</styleUrl>
+        <ExtendedData>
+          <Data name="descriptio">
+            <value/>
+          </Data>
+          <Data name="tessellate">
+            <value>-1</value>
+          </Data>
+          <Data name="extrude">
+            <value>0</value>
+          </Data>
+          <Data name="visibility">
+            <value>-1</value>
+          </Data>
+          <Data name="X">
+            <value/>
+          </Data>
+          <Data name="Y">
+            <value/>
+          </Data>
+          <Data name="ID DMU">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <LineString>
+          <tessellate>1</tessellate>
+          <coordinates>
+            -90.525198,14.596888,0
+            -90.525264,14.596886,0
+            -90.525371,14.596906,0
+            -90.525604,14.596969,0
+            -90.525859,14.597036,0
+            -90.526039,14.59708,0
+            -90.526194,14.597155,0
+            -90.526436,14.597231,0
+            -90.526594,14.597277,0
+            -90.526927,14.597376,0
+            -90.5272,14.597459,0
+            -90.527651,14.597576,0
+            -90.52794,14.597651,0
+            -90.528257,14.597724,0
+            -90.52852,14.597791,0
+            -90.529099,14.597939,0
+            -90.529703,14.5981,0
+            -90.529905,14.598154,0
+            -90.529934,14.598168,0
+            -90.529958,14.598179,0
+            -90.529993,14.598209,0
+            -90.530009,14.598248,0
+            -90.530011,14.598295,0
+            -90.529998,14.598342,0
+            -90.529951,14.59851,0
+            -90.529911,14.598671,0
+            -90.529889,14.598764,0
+            -90.529887,14.598828,0
+            -90.529905,14.598892,0
+            -90.529945,14.598934,0
+            -90.529996,14.598953,0
+            -90.530043,14.598954,0
+            -90.530153,14.598918,0
+            -90.530269,14.598886,0
+            -90.530347,14.598879,0
+            -90.530473,14.598894,0
+            -90.530542,14.59893,0
+            -90.53065,14.598995,0
+            -90.530859,14.599235,0
+            -90.531348,14.599813,0
+            -90.532016,14.600622,0
+            -90.532406,14.601088,0
+            -90.532941,14.601818,0
+            -90.533424,14.602495,0
+            -90.533656,14.602842,0
+            -90.533779,14.603015,0
+            -90.533857,14.603125,0
+            -90.534044,14.603312,0
+            -90.534523,14.603759,0
+            -90.535306,14.604434,0
+            -90.536014,14.605054,0
+            -90.53675,14.60567,0
+            -90.537024,14.60595,0
+            -90.537664,14.606506,0
+            -90.538266,14.607034,0
+            -90.538275,14.607049,0
+            -90.53828,14.607069,0
+            -90.53828,14.607092,0
+            -90.538276,14.607105,0
+            -90.538013,14.607653,0
+            -90.537785,14.608222,0
+            -90.537409,14.608937,0
+            -90.53708,14.609627,0
+            -90.537077,14.609649,0
+            -90.53708,14.609669,0
+            -90.537094,14.60969,0
+            -90.537265,14.609825,0
+            -90.537551,14.610075,0
+            -90.537557,14.610085,0
+            -90.537561,14.610097,0
+            -90.537561,14.610109,0
+            -90.537555,14.610126,0
+            -90.537544,14.61014,0
+            -90.537261,14.610445,0
+            -90.536839,14.610885,0
+            -90.536502,14.611252,0
+            -90.536184,14.611605,0
+            -90.536096,14.611673,0
+            -90.536036,14.611709,0
+            -90.535985,14.611727,0
+            -90.535917,14.611739,0
+            -90.535843,14.611746,0
+            -90.5357,14.611749,0
+            -90.535495,14.611748,0
+            -90.535405,14.611739,0
+            -90.535269,14.611714,0
+            -90.535109,14.611666,0
+            -90.535031,14.611636,0
+            -90.53471,14.61151,0
+            -90.53452,14.611435,0
+            -90.534442,14.611411,0
+            -90.534205,14.611351,0
+            -90.534062,14.611317,0
+            -90.533854,14.611271,0
+            -90.533807,14.611257,0
+            -90.533768,14.611238,0
+            -90.533731,14.61121,0
+            -90.533649,14.611128,0
+            -90.533577,14.611054,0
+            -90.53328,14.610719,0
+            -90.533068,14.610509,0
+            -90.532779,14.610195,0
+            -90.532528,14.609871,0
+            -90.532363,14.609618,0
+            -90.532217,14.609287,0
+            -90.531966,14.608646,0
+            -90.531809,14.608127,0
+            -90.531661,14.60772,0
+            -90.531545,14.607488,0
+            -90.531384,14.607194,0
+            -90.530978,14.606687,0
+            -90.530585,14.60619,0
+            -90.530154,14.605666,0
+            -90.52968,14.605077,0
+            -90.529266,14.604561,0
+            -90.528865,14.604066,0
+            -90.528648,14.603794,0
+            -90.528564,14.603635,0
+            -90.528479,14.603456,0
+            -90.528453,14.603391,0
+            -90.528437,14.603346,0
+            -90.528421,14.60329,0
+            -90.528414,14.603229,0
+            -90.528412,14.603168,0
+            -90.528412,14.603095,0
+            -90.528414,14.603033,0
+            -90.528418,14.603004,0
+            -90.528421,14.602979,0
+            -90.528432,14.602956,0
+            -90.528449,14.602937,0
+            -90.528472,14.602919,0
+            -90.528913,14.602591,0
+            -90.529829,14.601923,0
+            -90.530306,14.601564,0
+            -90.530326,14.601538,0
+            -90.53033,14.601511,0
+            -90.530327,14.601492,0
+            -90.530078,14.601161,0
+            -90.529794,14.600804,0
+            -90.529579,14.600548,0
+            -90.529553,14.60051,0
+            -90.529536,14.600479,0
+            -90.529529,14.600435,0
+            -90.529535,14.600399,0
+            -90.529593,14.600146,0
+            -90.52969,14.599813,0
+            -90.529818,14.59953,0
+            -90.529965,14.599223,0
+            -90.530078,14.598953,0
+            -90.530145,14.598774,0
+            -90.53018,14.59855,0
+            -90.530188,14.598421,0
+            -90.530191,14.598271,0
+            -90.530173,14.598084,0
+            -90.530158,14.59791,0
+            -90.530179,14.597817,0
+            -90.530223,14.597643,0
+            -90.530258,14.597508,0
+            -90.530356,14.597151,0
+            -90.530467,14.596722,0
+            -90.53069,14.595884,0
+            -90.530861,14.595199,0
+            -90.531003,14.594656,0
+            -90.53113,14.594233,0
+            -90.531248,14.593808,0
+            -90.531357,14.593403,0
+            -90.531476,14.592985,0
+            -90.531585,14.592588,0
+            -90.531698,14.592146,0
+            -90.531808,14.591728,0
+            -90.53188,14.591521,0
+            -90.531872,14.591453,0
+            -90.531898,14.591292,0
+            -90.532025,14.590767,0
+            -90.532033,14.590662,0
+            -90.532025,14.590607,0
+            -90.532001,14.590558,0
+            -90.531964,14.590498,0
+            -90.531929,14.59047,0
+            -90.531859,14.590428,0
+            -90.531347,14.590257,0
+            -90.531288,14.590241,0
+            -90.531274,14.590202,0
+            -90.531272,14.590171,0
+            -90.531258,14.590114,0
+            -90.531223,14.590057,0
+            -90.531175,14.590018,0
+            -90.531124,14.589989,0
+            -90.531105,14.589963,0
+            -90.531113,14.589924,0
+            -90.531202,14.589688,0
+            -90.531355,14.589182,0
+            -90.531532,14.588652,0
+            -90.531698,14.588154,0
+            -90.531867,14.58763,0
+            -90.531998,14.587266,0
+            -90.532049,14.587106,0
+            -90.532098,14.586994,0
+            -90.532143,14.586926,0
+            -90.532163,14.586895,0
+            -90.532193,14.586877,0
+            -90.532234,14.58687,0
+            -90.532283,14.586848,0
+            -90.532316,14.586828,0
+            -90.532332,14.5868,0
+            -90.532348,14.586776,0
+            -90.532363,14.586768,0
+            -90.532391,14.586772,0
+            -90.532544,14.586819,0
+            -90.532929,14.586925,0
+            -90.533093,14.586973,0
+            -90.533116,14.586977,0
+            -90.533129,14.586977,0
+            -90.533129,14.586944,0
+            -90.533191,14.586726,0
+            -90.53325,14.586438,0
+            -90.53329,14.586252,0
+            -90.533328,14.586036,0
+            -90.53337,14.585815,0
+            -90.533412,14.585614,0
+            -90.533436,14.585505,0
+            -90.533484,14.585272,0
+            -90.533513,14.585114,0
+            -90.53355,14.584933,0
+            -90.533617,14.584598,0
+            -90.533656,14.584364,0
+            -90.533659,14.584329,0
+            -90.533659,14.584306,0
+            -90.533641,14.584281,0
+            -90.533569,14.584196,0
+            -90.533428,14.584031,0
+            -90.533117,14.583674,0
+            -90.532955,14.583496,0
+            -90.532763,14.583291,0
+            -90.532582,14.583094,0
+            -90.532492,14.582995,0
+            -90.532417,14.582954,0
+            -90.532298,14.582926,0
+            -90.532256,14.58292,0
+            -90.532239,14.582905,0
+            -90.532228,14.582876,0
+            -90.532216,14.582831,0
+            -90.532205,14.582802,0
+            -90.532188,14.582791,0
+            -90.532165,14.5828,0
+            -90.532078,14.582848,0
+            -90.53196,14.582915,0
+            -90.531916,14.582961,0
+            -90.531827,14.583124,0
+            -90.531733,14.58332,0
+            -90.53167,14.583462,0
+            -90.531615,14.583721,0
+            -90.531574,14.583915,0
+            -90.531535,14.584107,0
+            -90.531496,14.584295,0
+            -90.531452,14.584505,0
+            -90.531426,14.584646,0
+            -90.531359,14.584877,0
+            -90.531338,14.584986,0
+            -90.531311,14.585007,0
+            -90.531276,14.584994,0
+            -90.531217,14.58495,0
+            -90.531018,14.584804,0
+            -90.530742,14.584607,0
+            -90.530493,14.584415,0
+            -90.530385,14.584327,0
+            -90.530283,14.584275,0
+            -90.530069,14.584174,0
+            -90.529809,14.584046,0
+            -90.529616,14.583966,0
+            -90.529581,14.583943,0
+            -90.529546,14.583893,0
+            -90.529527,14.583836,0
+            -90.529516,14.583769,0
+            -90.529511,14.583675,0
+            -90.529524,14.583603,0
+            -90.529546,14.58352,0
+            -90.529573,14.583424,0
+            -90.529677,14.583102,0
+            -90.529782,14.582803,0
+            -90.529905,14.582479,0
+            -90.529996,14.58218,0
+            -90.530136,14.581721,0
+            -90.530289,14.581196,0
+            -90.530439,14.580732,0
+            -90.530667,14.579974,0
+            -90.530908,14.579242,0
+            -90.53108,14.57871,0
+            -90.53122,14.578234,0
+            -90.531364,14.577767,0
+            -90.531509,14.5773,0
+            -90.531657,14.576807,0
+            -90.531742,14.576529,0
+            -90.531858,14.576194,0
+            -90.532038,14.575649,0
+            -90.532067,14.575574,0
+            -90.532099,14.575514,0
+            -90.532504,14.575166,0
+            -90.532609,14.57508,0
+            -90.532869,14.574759,0
+            -90.533167,14.57439,0
+            -90.533456,14.57406,0
+            -90.533778,14.573757,0
+            -90.534116,14.573437,0
+            -90.534326,14.573263,0
+            -90.534575,14.573064,0
+            -90.534661,14.572952,0
+            -90.534846,14.572404,0
+            -90.534999,14.571947,0
+            -90.535192,14.57142,0
+            -90.535294,14.571135,0
+            -90.535436,14.570691,0
+            -90.53553,14.570346,0
+            -90.535664,14.569754,0
+            -90.535715,14.569468,0
+            -90.535758,14.569294,0
+            -90.535798,14.568964,0
+            -90.535833,14.568761,0
+            -90.53588,14.568461,0
+            -90.535946,14.568056,0
+            -90.536014,14.56764,0
+            -90.536041,14.567454,0
+            -90.536069,14.567444,0
+            -90.536096,14.567458,0
+            -90.536127,14.567467,0
+            -90.53617,14.567456,0
+            -90.536206,14.567434,0
+            -90.536227,14.567394,0
+            -90.536227,14.567365,0
+            -90.53622,14.56733,0
+            -90.536202,14.567302,0
+            -90.536178,14.56728,0
+            -90.536137,14.567269,0
+            -90.536084,14.567278,0
+            -90.536053,14.567296,0
+            -90.536029,14.567332,0
+            -90.536019,14.567369,0
+            -90.536015,14.567408,0
+            -90.535999,14.567437,0
+            -90.535988,14.567477,0
+            -90.535968,14.567602,0
+            -90.535943,14.567756,0
+            -90.535913,14.567908,0
+            -90.535888,14.568058,0
+            -90.535852,14.568267,0
+            -90.535814,14.568508,0
+            -90.535779,14.568696,0
+            -90.535748,14.568915,0
+            -90.535722,14.56911,0
+            -90.535697,14.569273,0
+            -90.535664,14.569451,0
+            -90.535608,14.569689,0
+            -90.535532,14.570038,0
+            -90.535461,14.570338,0
+            -90.53544,14.570412,0
+            -90.535382,14.570639,0
+            -90.535299,14.570913,0
+            -90.53519,14.571237,0
+            -90.535076,14.571545,0
+            -90.534976,14.57182,0
+            -90.534904,14.572025,0
+            -90.534798,14.572331,0
+            -90.534726,14.572552,0
+            -90.53467,14.572769,0
+            -90.534612,14.572917,0
+            -90.534558,14.573005,0
+            -90.534492,14.573056,0
+            -90.534317,14.573179,0
+            -90.534148,14.573328,0
+            -90.533965,14.573488,0
+            -90.533777,14.57366,0
+            -90.533639,14.573788,0
+            -90.533464,14.573949,0
+            -90.533318,14.574107,0
+            -90.533086,14.574386,0
+            -90.532893,14.574624,0
+            -90.532665,14.574903,0
+            -90.53257,14.575022,0
+            -90.532244,14.575302,0
+            -90.532079,14.575444,0
+            -90.532026,14.575509,0
+            -90.531993,14.575567,0
+            -90.531944,14.575709,0
+            -90.53181,14.576133,0
+            -90.531658,14.576587,0
+            -90.531484,14.577155,0
+            -90.531375,14.577498,0
+            -90.53127,14.577852,0
+            -90.531194,14.578093,0
+            -90.531108,14.578381,0
+            -90.530971,14.578834,0
+            -90.530814,14.579312,0
+            -90.530654,14.579817,0
+            -90.530519,14.580249,0
+            -90.530397,14.580632,0
+            -90.530333,14.580858,0
+            -90.530254,14.581116,0
+            -90.530187,14.58134,0
+            -90.530101,14.581617,0
+            -90.530029,14.581865,0
+            -90.529952,14.582104,0
+            -90.529878,14.582353,0
+            -90.529797,14.582589,0
+            -90.529634,14.583025,0
+            -90.52953,14.583331,0
+            -90.529468,14.583534,0
+            -90.529444,14.58369,0
+            -90.529451,14.583805,0
+            -90.529471,14.583888,0
+            -90.529532,14.583978,0
+            -90.529569,14.584005,0
+            -90.529958,14.584191,0
+            -90.530294,14.58435,0
+            -90.530346,14.584374,0
+            -90.530505,14.584503,0
+            -90.530672,14.584628,0
+            -90.530849,14.584752,0
+            -90.531,14.584868,0
+            -90.53114,14.584978,0
+            -90.531242,14.585029,0
+            -90.531308,14.585052,0
+            -90.531344,14.58505,0
+            -90.53136,14.58503,0
+            -90.53138,14.584993,0
+            -90.531409,14.58483,0
+            -90.531422,14.584755,0
+            -90.531449,14.584611,0
+            -90.531496,14.584385,0
+            -90.531525,14.584262,0
+            -90.531582,14.583978,0
+            -90.531611,14.583819,0
+            -90.531663,14.583573,0
+            -90.531689,14.58347,0
+            -90.531775,14.583281,0
+            -90.531856,14.583108,0
+            -90.531932,14.582969,0
+            -90.531969,14.582932,0
+            -90.532087,14.582862,0
+            -90.532103,14.582858,0
+            -90.532117,14.582862,0
+            -90.532133,14.582877,0
+            -90.532194,14.582899,0
+            -90.532256,14.582936,0
+            -90.532303,14.582946,0
+            -90.532451,14.582991,0
+            -90.532697,14.583256,0
+            -90.532849,14.583414,0
+            -90.53298,14.583551,0
+            -90.533187,14.583776,0
+            -90.533337,14.583956,0
+            -90.533489,14.58414,0
+            -90.533631,14.584301,0
+            -90.533643,14.584315,0
+            -90.533638,14.58434,0
+            -90.533609,14.584518,0
+            -90.533581,14.584675,0
+            -90.533538,14.584907,0
+            -90.533488,14.585142,0
+            -90.533434,14.585424,0
+            -90.533366,14.585735,0
+            -90.533308,14.586036,0
+            -90.533235,14.586405,0
+            -90.533171,14.586723,0
+            -90.533134,14.586849,0
+            -90.533125,14.58687,0
+            -90.533097,14.58687,0
+            -90.532949,14.586826,0
+            -90.532712,14.586757,0
+            -90.532552,14.586715,0
+            -90.532432,14.586676,0
+            -90.532405,14.586666,0
+            -90.532385,14.58665,0
+            -90.532367,14.586622,0
+            -90.532362,14.586578,0
+            -90.532342,14.586528,0
+            -90.53231,14.586483,0
+            -90.53228,14.586452,0
+            -90.532226,14.586423,0
+            -90.532173,14.58641,0
+            -90.532112,14.586406,0
+            -90.532051,14.586417,0
+            -90.531996,14.586443,0
+            -90.53196,14.586467,0
+            -90.53193,14.586505,0
+            -90.531903,14.586548,0
+            -90.531889,14.586597,0
+            -90.531882,14.586648,0
+            -90.531889,14.58671,0
+            -90.531909,14.58675,0
+            -90.531938,14.586797,0
+            -90.531957,14.586837,0
+            -90.531966,14.58687,0
+            -90.53197,14.586923,0
+            -90.531964,14.586982,0
+            -90.531954,14.587023,0
+            -90.531937,14.587101,0
+            -90.531915,14.587173,0
+            -90.531871,14.587293,0
+            -90.531823,14.587434,0
+            -90.531765,14.587615,0
+            -90.531694,14.58785,0
+            -90.53164,14.588022,0
+            -90.531555,14.58826,0
+            -90.53149,14.588428,0
+            -90.531419,14.588654,0
+            -90.531372,14.588801,0
+            -90.531288,14.589062,0
+            -90.531225,14.589259,0
+            -90.53116,14.589437,0
+            -90.531066,14.589711,0
+            -90.531002,14.589896,0
+            -90.53099,14.589917,0
+            -90.530974,14.589938,0
+            -90.530936,14.589953,0
+            -90.530876,14.589966,0
+            -90.530834,14.58999,0
+            -90.530804,14.590023,0
+            -90.530766,14.590084,0
+            -90.530737,14.590153,0
+            -90.530737,14.590204,0
+            -90.530749,14.59028,0
+            -90.530786,14.590341,0
+            -90.530821,14.590374,0
+            -90.530836,14.590397,0
+            -90.53084,14.590418,0
+            -90.530836,14.590443,0
+            -90.530818,14.590583,0
+            -90.530793,14.590688,0
+            -90.530745,14.590838,0
+            -90.530691,14.591018,0
+            -90.53064,14.591153,0
+            -90.530597,14.591278,0
+            -90.53053,14.591469,0
+            -90.530491,14.59158,0
+            -90.530427,14.591738,0
+            -90.53037,14.591865,0
+            -90.530314,14.591979,0
+            -90.530219,14.592143,0
+            -90.530032,14.592391,0
+            -90.529916,14.592527,0
+            -90.529811,14.592618,0
+            -90.529648,14.592754,0
+            -90.529556,14.59282,0
+            -90.529401,14.592919,0
+            -90.529287,14.592977,0
+            -90.529143,14.593051,0
+            -90.529,14.593121,0
+            -90.528827,14.593208,0
+            -90.528709,14.593267,0
+            -90.528576,14.593338,0
+            -90.528431,14.593406,0
+            -90.528268,14.593487,0
+            -90.528148,14.593555,0
+            -90.528054,14.593617,0
+            -90.527975,14.593676,0
+            -90.527897,14.593759,0
+            -90.527809,14.593843,0
+            -90.527742,14.593924,0
+            -90.5277,14.593995,0
+            -90.527662,14.594067,0
+            -90.527619,14.594155,0
+            -90.52756,14.594287,0
+            -90.527511,14.594383,0
+            -90.52745,14.594472,0
+            -90.527364,14.594542,0
+            -90.527206,14.594635,0
+            -90.526811,14.594835,0
+            -90.526471,14.595004,0
+            -90.526369,14.59505,0
+            -90.526253,14.595139,0
+            -90.526154,14.595261,0
+            -90.526079,14.595419,0
+            -90.525972,14.595692,0
+            -90.525867,14.595936,0
+            -90.525773,14.596164,0
+            -90.525712,14.596252,0
+            -90.52562,14.596304,0
+            -90.525535,14.596369,0
+            -90.52546,14.596462,0
+            -90.525298,14.596725,0
+            -90.525198,14.596888,0
+            -90.525138,14.596891,0
+            -90.525041,14.596896,0
+            -90.524939,14.596912,0
+            -90.524749,14.596992,0
+            -90.524655,14.597018,0
+            -90.524569,14.597072,0
+            -90.524515,14.597101,0
+            -90.524475,14.59715,0
+            -90.524438,14.597207,0
+            -90.524419,14.59728,0
+            -90.52443,14.597355,0
+            -90.524454,14.59741,0
+            -90.524491,14.597451,0
+            -90.52454,14.597488,0
+            -90.524598,14.597508,0
+            -90.524649,14.597508,0
+            -90.524698,14.597501,0
+            -90.524765,14.59747,0
+            -90.524867,14.597389,0
+            -90.524974,14.597275,0
+            -90.525151,14.596966,0
+            -90.525198,14.596888,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+    </Folder>
+    <Folder>
+      <name>Cercanía con Transmetro a minutos caminando_402</name>
+      <Placemark>
+        <name>Estación Trébol de Línea 12</name>
+        <styleUrl>#icon-1899-DB4436-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -90.5360836,14.612639,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Hacia Estación Trébol de Línea 12</name>
+        <styleUrl>#line-0F9D58-2356-nodesc</styleUrl>
+        <LineString>
+          <tessellate>1</tessellate>
+          <coordinates>
+            -90.5345904,14.6114614,0
+            -90.5356853,14.6117147,0
+            -90.5359374,14.6118004,0
+            -90.5358074,14.6120924,0
+            -90.5361051,14.6124739,0
+            -90.5361691,14.6125537,0
+            -90.5361021,14.6125861,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+    </Folder>
+    <Folder>
+      <name>Flechas 402</name>
+      <Placemark>
+        <name>Flecha 402</name>
+        <styleUrl>#line-0F9D58-2550-nodesc</styleUrl>
+        <LineString>
+          <tessellate>1</tessellate>
+          <coordinates>
+            -90.5359194,14.5686482,0
+            -90.535757,14.568852,0
+            -90.5356669,14.5686126,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <name>Flecha 402</name>
+        <styleUrl>#line-0F9D58-2356-nodesc</styleUrl>
+        <LineString>
+          <tessellate>1</tessellate>
+          <coordinates>
+            -90.5327883,14.5749087,0
+            -90.5326152,14.5749678,0
+            -90.5326287,14.5748062,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <name>Flecha 402</name>
+        <styleUrl>#line-0F9D58-2356-nodesc</styleUrl>
+        <LineString>
+          <tessellate>1</tessellate>
+          <coordinates>
+            -90.5296147,14.5833728,0
+            -90.5294752,14.5835025,0
+            -90.5294296,14.583313,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <name>Flecha 402</name>
+        <styleUrl>#line-0F9D58-2356-nodesc</styleUrl>
+        <LineString>
+          <tessellate>1</tessellate>
+          <coordinates>
+            -90.531583,14.58433,0
+            -90.5315408,14.5841781,0
+            -90.5314274,14.5843021,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <name>Flecha 402</name>
+        <styleUrl>#line-0F9D58-2744-nodesc</styleUrl>
+        <LineString>
+          <tessellate>1</tessellate>
+          <coordinates>
+            -90.5334372,14.5839941,0
+            -90.533458,14.5841038,0
+            -90.5333474,14.5840591,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <name>Flecha 402</name>
+        <styleUrl>#line-0F9D58-2355-nodesc</styleUrl>
+        <LineString>
+          <tessellate>1</tessellate>
+          <coordinates>
+            -90.5327926,14.5868424,0
+            -90.532712,14.586757,0
+            -90.5328221,14.5867256,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <name>Flecha 402</name>
+        <styleUrl>#line-0F9D58-2356-nodesc</styleUrl>
+        <LineString>
+          <tessellate>1</tessellate>
+          <coordinates>
+            -90.5313962,14.5889134,0
+            -90.5312929,14.5890429,0
+            -90.5312628,14.5888826,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <name>Flecha 402</name>
+        <styleUrl>#line-0F9D58-2550-nodesc</styleUrl>
+        <LineString>
+          <tessellate>1</tessellate>
+          <coordinates>
+            -90.5282239,14.5936114,0
+            -90.5279986,14.593653,0
+            -90.5280764,14.5934531,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <name>Flecha 402</name>
+        <styleUrl>#line-0F9D58-2744-nodesc</styleUrl>
+        <LineString>
+          <tessellate>1</tessellate>
+          <coordinates>
+            -90.5297179,14.5979306,0
+            -90.529905,14.598154,0
+            -90.5296214,14.5982109,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <name>Flecha 402</name>
+        <styleUrl>#line-0F9D58-2550-nodesc</styleUrl>
+        <LineString>
+          <tessellate>1</tessellate>
+          <coordinates>
+            -90.5338922,14.6028562,0
+            -90.5339083,14.6031832,0
+            -90.5335918,14.6030379,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <name>Flecha 402</name>
+        <styleUrl>#line-0F9D58-2356-nodesc</styleUrl>
+        <LineString>
+          <tessellate>1</tessellate>
+          <coordinates>
+            -90.5376298,14.608749,0
+            -90.5374515,14.6088529,0
+            -90.5374287,14.608666,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <name>Flecha 402</name>
+        <styleUrl>#line-0F9D58-2356-nodesc</styleUrl>
+        <LineString>
+          <tessellate>1</tessellate>
+          <coordinates>
+            -90.5352795,14.6118345,0
+            -90.535109,14.611666,0
+            -90.5353224,14.6115749,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <name>Flecha 402</name>
+        <styleUrl>#line-0F9D58-2356-nodesc</styleUrl>
+        <LineString>
+          <tessellate>1</tessellate>
+          <coordinates>
+            -90.5317472,14.6076719,0
+            -90.5315702,14.6075369,0
+            -90.5315166,14.6077446,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <name>Flecha 402</name>
+        <styleUrl>#line-0F9D58-2356-nodesc</styleUrl>
+        <LineString>
+          <tessellate>1</tessellate>
+          <coordinates>
+            -90.5294566,14.6024082,0
+            -90.5295317,14.6021278,0
+            -90.5292421,14.6021798,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <name>Flecha 402</name>
+        <styleUrl>#line-0F9D58-2356-nodesc</styleUrl>
+        <LineString>
+          <tessellate>1</tessellate>
+          <coordinates>
+            -90.5302772,14.598737,0
+            -90.5301833,14.5984774,0
+            -90.5300224,14.5986955,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <name>Flecha 402</name>
+        <styleUrl>#line-0F9D58-2550-nodesc</styleUrl>
+        <LineString>
+          <tessellate>1</tessellate>
+          <coordinates>
+            -90.5313633,14.5939413,0
+            -90.5312882,14.5936505,0
+            -90.5310576,14.5938738,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <name>Flecha 402</name>
+        <styleUrl>#line-0F9D58-2550-nodesc</styleUrl>
+        <LineString>
+          <tessellate>1</tessellate>
+          <coordinates>
+            -90.5317388,14.5882736,0
+            -90.5317174,14.5880802,0
+            -90.5315845,14.588234,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <name>Flecha 402</name>
+        <styleUrl>#line-0F9D58-2356-nodesc</styleUrl>
+        <LineString>
+          <tessellate>1</tessellate>
+          <coordinates>
+            -90.5333574,14.5862028,0
+            -90.5333212,14.58606,0
+            -90.533234,14.5861794,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <name>Flecha 402</name>
+        <styleUrl>#line-0F9D58-2356-nodesc</styleUrl>
+        <LineString>
+          <tessellate>1</tessellate>
+          <coordinates>
+            -90.5334333,14.5857078,0
+            -90.5333441,14.5858447,0
+            -90.5333113,14.585687,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <name>Flecha 402</name>
+        <styleUrl>#line-0F9D58-2356-nodesc</styleUrl>
+        <LineString>
+          <tessellate>1</tessellate>
+          <coordinates>
+            -90.5328117,14.5832253,0
+            -90.5326695,14.5831902,0
+            -90.5327097,14.5833239,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <name>Flecha 402</name>
+        <styleUrl>#line-0F9D58-2550-nodesc</styleUrl>
+        <LineString>
+          <tessellate>1</tessellate>
+          <coordinates>
+            -90.5316158,14.5839976,0
+            -90.531535,14.584107,0
+            -90.5314858,14.5839729,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <name>Flecha 402</name>
+        <styleUrl>#line-0F9D58-2550-nodesc</styleUrl>
+        <LineString>
+          <tessellate>1</tessellate>
+          <coordinates>
+            -90.5301249,14.5843041,0
+            -90.5300511,14.5841653,0
+            -90.5302053,14.5841614,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <name>Flecha 402</name>
+        <styleUrl>#line-0F9D58-2356-nodesc</styleUrl>
+        <LineString>
+          <tessellate>1</tessellate>
+          <coordinates>
+            -90.5302015,14.5818984,0
+            -90.5301553,14.5816608,0
+            -90.5299856,14.581849,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <name>Flecha 402</name>
+        <styleUrl>#line-0F9D58-2550-nodesc</styleUrl>
+        <LineString>
+          <tessellate>1</tessellate>
+          <coordinates>
+            -90.5330229,14.5747384,0
+            -90.5330417,14.5745437,0
+            -90.5328647,14.5746423,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <name>Flecha 402</name>
+        <styleUrl>#line-0F9D58-2550-nodesc</styleUrl>
+        <LineString>
+          <tessellate>1</tessellate>
+          <coordinates>
+            -90.5357681,14.5696862,0
+            -90.535715,14.569468,0
+            -90.535579,14.5696486,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+    </Folder>
+  </Document>
+</kml>

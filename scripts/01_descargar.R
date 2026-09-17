@@ -4,7 +4,7 @@
 
 mapas <- data.frame(
   id_linea = c("L1", "L2", "L6", "L7", "L12", "L13", "L18", "sistema",
-               "R5", "R104", "R105", "R801"),
+               "R5", "R104", "R105", "R402", "R801"),
   mid = c(
     "1FtqnCdWA93KLFeP-OUwlIOQMMz4Hlt4",
     "1PBO6JzswSAvHnTIeq_H8x9byg8s4CtY",
@@ -17,14 +17,17 @@ mapas <- data.frame(
     "1Ut7wqvzMdvqISaWjpnhms6jjMbu4_wc",
     "1i0rnw4_AQ-sJtQiudMC1NsxjmR0Moq4",
     "1sk-gaA8P3bcodCdP2tRf9uMrnXYTNns",
+    "1PJMEyhCNMtpdEPrvuXwch8gUI5wEss8",
     "1Lb4SyhD-_PFo5WsHLdPQqo-NEzaZBos"
   ),
   stringsAsFactors = FALSE
 )
 
-# Pendientes: Ruta 402 y Ruta 802 (no se localizaron sus páginas oficiales).
-# La 802 tiene trazo y paradas dentro de sistema.kml; la 402 no aparece
-# en ninguna fuente descargada hasta ahora.
+# Pendientes:
+# - Ruta 802: no se localizó su página individual. Sus paradas y trazo
+#   sí están dentro de sistema.kml.
+# - Ruta 404 (Santa Fe zona 13 - Plazuela España): ruta nueva, posterior
+#   a las fuentes consultadas. Falta localizar su mapa.
 
 dir.create("data/raw", recursive = TRUE, showWarnings = FALSE)
 
