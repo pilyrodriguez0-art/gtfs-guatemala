@@ -75,6 +75,7 @@ limpiar_nombre <- function(x) {
   x <- gsub("^L[ÍIíi]nea", "Línea", x)  # corrige "LÍnea", "LInea", "linea"
   x <- gsub("^RUTA\\b", "Ruta", x)      # "RUTA 104" -> "Ruta 104"
   x <- gsub("^ruta\\b", "Ruta", x)
+  x <- gsub("^Estacion\\b", "Estación", x)  # la Muni escribe ambas formas
   x
 }
 
@@ -84,13 +85,14 @@ cercanias$nombre <- limpiar_nombre(cercanias$nombre)
 
 # --- Identificador normalizado ------------------------------------------
 # El nombre es para leer; el id es para emparejar tablas.
+# ignore.case cubre "RUTA 5", "Ruta 801", "ruta 104".
 
 extraer_id <- function(x) {
-  n_linea <- sub(".*[Ll]ínea\\s*(\\d+).*", "\\1", x)
-  n_ruta  <- sub(".*[Rr]uta\\s*(\\d+).*", "\\1", x)
+  n_linea <- sub(".*[Ll][ÍIíi]nea\\s*(\\d+).*", "\\1", x)
+  n_ruta  <- sub(".*[Rr][Uu][Tt][Aa]\\s*(\\d+).*", "\\1", x)
   
-  ifelse(grepl("[Ll]ínea\\s*\\d+", x), paste0("L", n_linea),
-         ifelse(grepl("[Rr]uta\\s*\\d+", x),  paste0("R", n_ruta),
+  ifelse(grepl("l[íi]nea\\s*\\d+", x, ignore.case = TRUE), paste0("L", n_linea),
+         ifelse(grepl("ruta\\s*\\d+", x, ignore.case = TRUE),     paste0("R", n_ruta),
                 NA_character_))
 }
 
@@ -109,7 +111,7 @@ cercanias$id_ruta <- con_respaldo(cercanias$capa, cercanias$id_linea)
 # Transmetro y TuBus tienen tarifas y horarios distintos.
 
 detectar_sistema <- function(capa) {
-  ifelse(grepl("TUBUS|Ruta\\s*\\d+", capa, ignore.case = TRUE), "tubus",
+  ifelse(grepl("TUBUS|ruta\\s*\\d+", capa, ignore.case = TRUE), "tubus",
          ifelse(grepl("TRANSMETRO|Línea", capa, ignore.case = TRUE), "transmetro",
                 NA_character_))
 }
