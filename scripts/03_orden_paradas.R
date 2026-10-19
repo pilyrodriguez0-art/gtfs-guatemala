@@ -1,34 +1,51 @@
 # 03_orden_paradas.R
 # Reconstruye el orden de las paradas a lo largo de cada recorrido.
 #
-# Problema: los KML dan la ubicación de cada parada pero no el orden
-# del recorrido. Los PDFs de rutero sí lo traen, pero dos rutas son
-# imagen y el Transmetro no tiene ruteros de ese tipo.
+# Los KML dan la ubicación de cada parada pero no el orden del
+# recorrido. Se usan tres métodos, según lo que ofrezca la fuente.
 #
-# Método: cada parada se proyecta sobre el trazo de su recorrido y se
-# calcula cuánto hay que avanzar por la línea para llegar a ella.
-# Ordenar por esa distancia reconstruye la secuencia.
+# MÉTODO 1 — Secuencia del rutero en PDF (el más confiable)
+# Cinco rutas de TuBus tienen rutero con texto extraíble. Su tabla
+# da el orden real, incluidas las paradas prestadas de otra serie
+# (como la #084 de la ruta 801, por la que pasa la 402).
 #
-# La unidad de trabajo es la CAPA, no la ruta: una ruta puede tener
-# ramales, y cada ramal es un recorrido propio con su propio trazo.
+# MÉTODO 2 — Tabla manual
+# La ruta 5 no tiene números ni rutero legible, pero su mapa oficial
+# muestra el circuito con claridad. La secuencia se transcribió a mano
+# desde ese mapa.
 #
-# LIMITACIONES CONOCIDAS
-# 1. El método da el orden pero no el sentido. Una línea dibujada al
-#    revés produce la secuencia invertida. La tabla de referencia de
-#    abajo corrige esto comparando con la parada inicial que declara
-#    la Muni.
-# 2. En recorridos circulares (como la Línea 7, que hace un bucle por
-#    el centro histórico) el punto donde arranca la línea dibujada no
-#    coincide con el inicio administrativo de la ruta. La secuencia es
-#    correcta; solo empieza en otro punto del circuito. Se decidió no
-#    corregirlo porque GTFS no lo requiere y el ruteo tampoco.
+# MÉTODO 3 — Proyección geométrica (respaldo)
+# Para el Transmetro y la ruta 104, que no tienen rutero legible.
+# Cada parada se proyecta sobre el trazo con st_line_project() y se
+# ordena por la distancia recorrida.
+#
+# LIMITACIONES DEL MÉTODO 3
+# 1. Da el orden pero no el sentido. La tabla de inicios corrige esto.
+# 2. En recorridos circulares el punto de arranque de la línea dibujada
+#    no coincide con el inicio administrativo.
+# 3. Las estaciones de doble abordaje (una sola parada que sirve ambos
+#    sentidos) quedan mal ubicadas, porque su posición es ambigua.
+#    Fue el caso de Arrivillaga y Vivibien en la ruta 5, motivo por el
+#    que esa ruta pasó a tabla manual.
+#
+# NOTA SOBRE LOS NOMBRES
+# Algunos nombres del KML terminan en espacio no separable (U+00A0),
+# que Google My Maps introduce al copiar texto. trimws() no lo limpia,
+# así que hay que convertirlo a espacio normal primero.
 
 library(sf)
 library(dplyr)
+library(readr)
 
-# --- Tabla de referencia ------------------------------------------------
-# Patrón de texto que identifica la parada inicial de cada ruta,
-# según las descripciones oficiales de la Municipalidad.
+# --- Limpieza de texto --------------------------------------------------
+
+limpiar_texto <- function(x) {
+  x <- gsub("\u00a0", " ", x)   # espacio no separable -> espacio normal
+  x <- gsub("\\s+", " ", x)     # espacios múltiples -> uno solo
+  trimws(x)
+}
+
+# --- Tabla de referencia: parada inicial de cada ruta -------------------
 
 inicios <- tibble::tribble(
   ~id_ruta, ~patron_inicio,          ~descripcion_oficial,
@@ -39,45 +56,98 @@ inicios <- tibble::tribble(
   "L12",    "Centra Sur",            "Centra Sur - Plaza Barrios Z1",
   "L13",    "Hangares",              "Hangares Z13 - Tipografía Z1",
   "L18",    "Atl[aá]ntida",          "Atlántida Z18 - FEGUA Z1",
-  "R5",     "Parque Col[oó]n",       "Parque Colón Z1 - Puente de la Penitenciaría Z4",
-  "R104",   "San Antonio",           "Barrio San Antonio Z6 - Cementerio La Villa Z14",
-  "R105",   "Jocotenango",           "Parque Jocotenango Z2 - 9a Av. Z7",
-  "R305",   "Vista Hermosa",         "Blvr. Vista Hermosa Z15 - Terminal Z9",
-  "R402",   "Santa Fe",              "Col. Santa Fe Z13 - Av. Petapa y 9a av. Z12",
-  "R801",   "Los Pinos",             "Parque Los Pinos Z7 - Terminal Z9",
-  "R802",   "Los Pinos",             "Parque Los Pinos Z7 - 4a Av. Z1"
+  "R104",   "San Antonio",           "Barrio San Antonio Z6 - Cementerio La Villa Z14"
+)
+
+# --- Tabla manual: orden de la ruta 5 -----------------------------------
+# Transcrito del mapa oficial (V1-Ruta-5-Tubus). Circuito cerrado:
+# baja desde Parque Colón por el oriente hasta Penitenciaría y regresa.
+# Arrivillaga y Vivibien son estaciones de doble abordaje: una sola
+# parada para ambos sentidos.
+
+orden_r5 <- c(
+  "Parque Colon",
+  "Matamoros",
+  "Cipreses Norte",
+  "Jardines de la Asunción Norte",
+  "Arrivillaga",
+  "Vivibien",
+  "Parque Navidad",
+  "Mercado La Palmita",
+  "La Palmita",
+  "Palacio de los Deportes Norte",
+  "Puente de la Penitenciaría",
+  "Palacio de los Deportes Sur",
+  "Jardines de la Asunción Sur",
+  "Cipreses Sur"
 )
 
 # --- Carga --------------------------------------------------------------
 
 paradas <- st_read("data/processed/paradas.geojson", quiet = TRUE)
 trazos  <- st_read("data/processed/trazos.geojson",  quiet = TRUE)
+ruteros <- read_csv("data/processed/ruteros_tubus.csv", show_col_types = FALSE)
 
-# --- Función de ordenamiento --------------------------------------------
-# Trabaja sobre una capa concreta de un archivo concreto.
+# Google My Maps guarda una coordenada Z (altura) que estorba
+paradas <- st_zm(paradas, drop = TRUE)
+trazos  <- st_zm(trazos,  drop = TRUE)
 
-ordenar_capa <- function(archivo, nombre_capa) {
+# Limpiar los nombres de entrada
+paradas$nombre <- limpiar_texto(paradas$nombre)
+trazos$nombre  <- limpiar_texto(trazos$nombre)
+
+# --- Método 1: por secuencia del rutero ---------------------------------
+
+ordenar_por_rutero <- function(p, ruta) {
   
-  p <- paradas |> filter(id_linea == archivo, capa == nombre_capa)
-  t <- trazos  |> filter(id_linea == archivo, capa == nombre_capa)
+  r <- ruteros |> filter(id_ruta == ruta) |> arrange(orden)
+  if (nrow(r) == 0) return(NULL)
   
-  if (nrow(p) == 0) return(NULL)
+  p$n_parada <- sub(".*#(\\d{3}).*", "\\1", p$nombre)
+  p$pos <- match(p$n_parada, r$n_parada)
+  
+  if (any(is.na(p$pos))) {
+    message("  ", ruta, ": ", sum(is.na(p$pos)),
+            " paradas sin correspondencia en el rutero")
+  }
+  
+  p <- p |> arrange(pos)
+  p$metodo <- "rutero"
+  p
+}
+
+# --- Método 2: tabla manual ---------------------------------------------
+
+ordenar_por_tabla <- function(p, tabla) {
+  
+  limpio <- limpiar_texto(sub("^Estación\\s+", "", p$nombre))
+  p$pos <- match(limpio, tabla)
+  
+  if (any(is.na(p$pos))) {
+    message("  ruta 5: sin correspondencia -> ",
+            paste(limpio[is.na(p$pos)], collapse = " | "))
+  }
+  
+  p <- p |> arrange(pos)
+  p$metodo <- "tabla_manual"
+  p
+}
+
+# --- Método 3: proyección geométrica ------------------------------------
+
+ordenar_por_geometria <- function(p, t, nombre_capa) {
   
   if (nrow(t) == 0) {
     message("  sin trazo: ", nombre_capa)
     return(NULL)
   }
   
-  # Unir todos los segmentos de la capa en una sola línea continua.
-  # Google My Maps a veces guarda un recorrido partido en tramos.
   geom_t <- suppressWarnings(st_union(st_geometry(t)))
   
-  # st_line_merge solo acepta MULTILINESTRING
   if (inherits(geom_t, "sfc_MULTILINESTRING")) {
     geom_t <- suppressWarnings(st_line_merge(geom_t))
   }
   
-  # Si aún quedan varias partes, usar la más larga
   partes <- suppressWarnings(st_cast(geom_t, "LINESTRING"))
   if (length(partes) > 1) {
     geom_t <- partes[which.max(as.numeric(st_length(partes)))]
@@ -85,10 +155,7 @@ ordenar_capa <- function(archivo, nombre_capa) {
   
   d <- tryCatch(
     suppressWarnings(st_line_project(geom_t, st_geometry(p))),
-    error = function(e) {
-      message("  error al proyectar: ", nombre_capa)
-      NULL
-    }
+    error = function(e) NULL
   )
   
   if (is.null(d) || length(d) != nrow(p)) {
@@ -99,10 +166,8 @@ ordenar_capa <- function(archivo, nombre_capa) {
   p$avance <- as.numeric(d)
   p <- p |> arrange(avance)
   
-  # Corregir el sentido si la línea está dibujada al revés
   ruta <- p$id_ruta[1]
   patron <- inicios$patron_inicio[inicios$id_ruta == ruta]
-  p$sentido_corregido <- FALSE
   
   if (length(patron) == 1 && !is.na(patron)) {
     coincide <- grepl(patron, p$nombre, ignore.case = TRUE)
@@ -110,14 +175,40 @@ ordenar_capa <- function(archivo, nombre_capa) {
       pos <- which(coincide)[1]
       if (pos > nrow(p) / 2) {
         p <- p[rev(seq_len(nrow(p))), ]
-        p$sentido_corregido <- TRUE
         message("  sentido invertido: ", nombre_capa)
       }
     }
   }
   
-  p$secuencia <- seq_len(nrow(p))
+  p$metodo <- "geometria"
   p
+}
+
+# --- Ordenamiento de una capa -------------------------------------------
+
+ordenar_capa <- function(archivo, nombre_capa) {
+  
+  p <- paradas |> filter(id_linea == archivo, capa == nombre_capa)
+  t <- trazos  |> filter(id_linea == archivo, capa == nombre_capa)
+  
+  if (nrow(p) == 0) return(NULL)
+  
+  ruta <- p$id_ruta[1]
+  con_rutero <- !is.na(ruta) && ruta %in% ruteros$id_ruta
+  es_r5 <- !is.na(ruta) && ruta == "R5"
+  
+  r <- if (con_rutero && all(grepl("#\\d{3}", p$nombre))) {
+    ordenar_por_rutero(p, ruta)
+  } else if (es_r5) {
+    ordenar_por_tabla(p, orden_r5)
+  } else {
+    ordenar_por_geometria(p, t, nombre_capa)
+  }
+  
+  if (is.null(r)) return(NULL)
+  
+  r$secuencia <- seq_len(nrow(r))
+  r
 }
 
 # --- Recorrer todas las capas con paradas -------------------------------
@@ -129,16 +220,15 @@ combinaciones <- paradas |>
 resultados <- list()
 
 for (i in seq_len(nrow(combinaciones))) {
-  a <- combinaciones$id_linea[i]
-  c <- combinaciones$capa[i]
-  r <- ordenar_capa(a, c)
+  r <- ordenar_capa(combinaciones$id_linea[i], combinaciones$capa[i])
   if (!is.null(r)) resultados[[length(resultados) + 1]] <- r
 }
 
-ordenadas <- do.call(rbind, resultados) |> st_as_sf()
+ordenadas <- bind_rows(resultados) |> st_as_sf()
 
 message("Capas ordenadas: ", length(resultados), " de ", nrow(combinaciones))
 message("Paradas con secuencia: ", nrow(ordenadas))
+print(table(ordenadas$metodo))
 
 # --- Escribir -----------------------------------------------------------
 
