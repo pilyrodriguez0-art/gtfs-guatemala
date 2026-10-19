@@ -4,7 +4,7 @@
 # Notas técnicas aprendidas en el camino:
 # 1. Los KML de Google My Maps guardan una coordenada Z (altura) que
 #    Leaflet no maneja: hay que quitarla con st_zm().
-# 2. CartoDB ahora exige clave de API, y los servidores de OpenStreetMap
+# 2. CartoDB exige clave de API, y los servidores de OpenStreetMap
 #    bloquean las peticiones desde archivos locales por su política de
 #    uso. Se usan los mapas base de Esri, gratuitos y sin clave.
 # 3. Solo las paradas tienen popup. Si los trazos también lo tuvieran,
@@ -12,6 +12,8 @@
 #    de la parada, lo que confunde.
 # 4. La ruta 305 no tiene mapa individual publicado por la Muni, así
 #    que sus datos vienen del mapa del sistema.
+# 5. Los colores siguen la señalética oficial del Transmetro. Los de
+#    TuBus se eligieron con contraste suficiente entre rutas vecinas.
 
 library(sf)
 library(dplyr)
@@ -23,13 +25,10 @@ dir.create("docs", showWarnings = FALSE)
 trazos  <- st_read("data/processed/trazos.geojson", quiet = TRUE)
 paradas <- st_read("data/processed/paradas_ordenadas.geojson", quiet = TRUE)
 
-# Quitar la coordenada Z
 trazos  <- st_zm(trazos,  drop = TRUE)
 paradas <- st_zm(paradas, drop = TRUE)
 
 # --- Elegir fuente por ruta ----------------------------------------------
-# Los mapas individuales están más actualizados, pero algunas rutas
-# solo existen en el mapa del sistema.
 
 rutas_con_mapa <- paradas |>
   st_drop_geometry() |>
@@ -48,24 +47,44 @@ elegir_fuente <- function(d) {
 t <- elegir_fuente(trazos)
 p <- elegir_fuente(paradas)
 
-# --- Colores -------------------------------------------------------------
+# --- Colores oficiales ---------------------------------------------------
+# Transmetro: según la señalética de la Muni.
+# TuBus: elegidos para contrastar entre sí y con el Transmetro.
+
+colores <- c(
+  L1   = "#6a1b9a",   # morado
+  L2   = "#2e7d32",   # verde
+  L6   = "#ef6c00",   # naranja
+  L7   = "#c62828",   # rojo
+  L12  = "#1565c0",   # azul
+  L13  = "#f9a825",   # amarillo
+  L18  = "#00acc1",   # celeste
+  R5   = "#ad1457",   # magenta
+  R104 = "#558b2f",   # verde oliva
+  R105 = "#4527a0",   # índigo
+  R305 = "#00695c",   # verde azulado
+  R402 = "#5d4037",   # café
+  R801 = "#283593",   # azul oscuro
+  R802 = "#d84315"    # terracota
+)
 
 rutas <- sort(unique(p$id_ruta))
 
-colores <- c(
-  "#e6194b", "#3cb44b", "#4363d8", "#f58231", "#911eb4",
-  "#1a9e9e", "#f032e6", "#9acd00", "#c77b7b", "#008080",
-  "#9a6324", "#800000", "#808000", "#000075"
-)[seq_along(rutas)]
-
-names(colores) <- rutas
-
 # --- Etiquetas -----------------------------------------------------------
+# Incluye la dirección cuando la fuente la trae.
 
 p$etiqueta <- paste0(
+  "<div style='font-family:sans-serif;font-size:13px;line-height:1.5'>",
   "<b>", ifelse(p$sistema == "transmetro", "Transmetro", "TuBus"),
   " · Ruta ", sub("^[LR]", "", p$id_ruta), "</b><br>",
-  p$nombre
+  "<b style='font-size:14px'>", p$nombre, "</b>",
+  ifelse(
+    is.na(p$direccion) | p$direccion == "",
+    "",
+    paste0("<br><span style='color:#555'>", p$direccion, "</span>")
+  ),
+  "<br><span style='color:#999;font-size:11px'>Parada ", p$secuencia,
+  " del recorrido</span></div>"
 )
 
 # --- Construir el mapa ---------------------------------------------------
@@ -87,15 +106,17 @@ for (r in rutas) {
   )
   grupos <- c(grupos, nombre_grupo)
   
+  color_r <- unname(colores[r])
+  
   if (nrow(tr) > 0) {
     m <- m |> addPolylines(
-      data = tr, color = colores[[r]], weight = 4,
+      data = tr, color = color_r, weight = 4,
       opacity = 0.75, group = nombre_grupo
     )
   }
   
   m <- m |> addCircleMarkers(
-    data = pr, radius = 4, color = colores[[r]],
+    data = pr, radius = 4, color = color_r,
     stroke = TRUE, weight = 1.5, fillColor = "#ffffff",
     fillOpacity = 1, popup = ~etiqueta, group = nombre_grupo
   )
@@ -112,8 +133,9 @@ m <- m |>
       "font-size:12px;max-width:250px;line-height:1.4'>",
       "<b style='font-size:14px'>Transmetro y TuBus</b><br>",
       "Ciudad de Guatemala<br><br>",
-      "<span style='color:#555'>Clic en una parada para ver su nombre. ",
-      "Usá el control de capas para mostrar u ocultar rutas.</span><br><br>",
+      "<span style='color:#555'>Clic en una parada para ver su nombre ",
+      "y dirección. Usá el control de capas para mostrar u ocultar ",
+      "rutas.</span><br><br>",
       "<span style='color:#888;font-size:11px'>Datos: Municipalidad de ",
       "Guatemala</span></div>"
     ),

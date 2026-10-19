@@ -18,11 +18,12 @@ leer_kml <- function(ruta) {
     if (nrow(x) == 0) return(NULL)
     
     tibble::tibble(
-      id_linea = id_linea,
-      capa     = capa,
-      orden    = seq_len(nrow(x)),
-      nombre   = if ("Name" %in% names(x)) x$Name else NA_character_,
-      geometry = st_geometry(x)
+      id_linea  = id_linea,
+      capa      = capa,
+      orden     = seq_len(nrow(x)),
+      nombre    = if ("Name" %in% names(x)) x$Name else NA_character_,
+      direccion = if ("Description" %in% names(x)) x$Description else NA_character_,
+      geometry  = st_geometry(x)
     )
   })
 }
@@ -66,26 +67,35 @@ if (nrow(lineas) > 0) {
 
 trazos <- rbind(poligonos, lineas)
 
-# --- Normalización de nombres -------------------------------------------
+# --- Normalización de texto ---------------------------------------------
+# Los nombres traen espacios no separables (U+00A0) que Google My Maps
+# introduce al copiar texto. trimws() no los limpia.
+
+limpiar_texto <- function(x) {
+  x <- gsub("\u00a0", " ", x)
+  x <- gsub("[\r\n]+", " ", x)
+  x <- gsub("\\s+", " ", x)
+  trimws(x)
+}
 
 limpiar_nombre <- function(x) {
-  x <- gsub("[\r\n]+", " ", x)          # saltos de línea rompen el CSV
-  x <- gsub("\\s+", " ", x)             # espacios múltiples a uno solo
-  x <- trimws(x)                        # espacios al inicio y al final
-  x <- gsub("^L[ÍIíi]nea", "Línea", x)  # corrige "LÍnea", "LInea", "linea"
-  x <- gsub("^RUTA\\b", "Ruta", x)      # "RUTA 104" -> "Ruta 104"
+  x <- limpiar_texto(x)
+  x <- gsub("^L[ÍIíi]nea", "Línea", x)
+  x <- gsub("^RUTA\\b", "Ruta", x)
   x <- gsub("^ruta\\b", "Ruta", x)
-  x <- gsub("^Estacion\\b", "Estación", x)  # la Muni escribe ambas formas
+  x <- gsub("^Estacion\\b", "Estación", x)
   x
 }
 
-paradas$nombre   <- limpiar_nombre(paradas$nombre)
-trazos$nombre    <- limpiar_nombre(trazos$nombre)
-cercanias$nombre <- limpiar_nombre(cercanias$nombre)
+paradas$nombre     <- limpiar_nombre(paradas$nombre)
+trazos$nombre      <- limpiar_nombre(trazos$nombre)
+cercanias$nombre   <- limpiar_nombre(cercanias$nombre)
+
+paradas$direccion   <- limpiar_texto(paradas$direccion)
+trazos$direccion    <- limpiar_texto(trazos$direccion)
+cercanias$direccion <- limpiar_texto(cercanias$direccion)
 
 # --- Identificador normalizado ------------------------------------------
-# El nombre es para leer; el id es para emparejar tablas.
-# ignore.case cubre "RUTA 5", "Ruta 801", "ruta 104".
 
 extraer_id <- function(x) {
   n_linea <- sub(".*[Ll][ÍIíi]nea\\s*(\\d+).*", "\\1", x)
@@ -96,8 +106,6 @@ extraer_id <- function(x) {
                 NA_character_))
 }
 
-# Si no se puede extraer de la capa, se usa el archivo de origen,
-# que ya lleva el identificador (R104.kml -> R104).
 con_respaldo <- function(capa, id_linea) {
   id <- extraer_id(capa)
   ifelse(is.na(id) & id_linea != "sistema", id_linea, id)
@@ -108,7 +116,6 @@ paradas$id_ruta   <- con_respaldo(paradas$capa, paradas$id_linea)
 cercanias$id_ruta <- con_respaldo(cercanias$capa, cercanias$id_linea)
 
 # --- Sistema operador ---------------------------------------------------
-# Transmetro y TuBus tienen tarifas y horarios distintos.
 
 detectar_sistema <- function(capa) {
   ifelse(grepl("TUBUS|ruta\\s*\\d+", capa, ignore.case = TRUE), "tubus",
@@ -125,6 +132,7 @@ cercanias$sistema <- detectar_sistema(cercanias$capa)
 message("Paradas encontradas:    ", nrow(paradas))
 message("Trazos encontrados:     ", nrow(trazos))
 message("Conexiones encontradas: ", nrow(cercanias))
+message("Paradas con dirección:  ", sum(!is.na(paradas$direccion)))
 
 st_write(paradas, "data/processed/paradas.geojson",
          delete_dsn = TRUE, quiet = TRUE)
