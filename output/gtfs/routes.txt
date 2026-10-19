@@ -1,0 +1,15 @@
+route_id,agency_id,route_short_name,route_long_name,route_type,route_desc
+L1,muniguate,1,San Sebastián - Centro Cívico,3,Transmetro
+L12,muniguate,12,Centra Sur - Plaza Barrios,3,Transmetro
+L13,muniguate,13,Hangares - Tipografía,3,Transmetro
+L18,muniguate,18,Atlántida - FEGUA,3,Transmetro
+L2,muniguate,2,Hipódromo del Norte - San Sebastián,3,Transmetro
+L6,muniguate,6,Proyectos - FEGUA,3,Transmetro
+L7,muniguate,7,USAC Periférico - La Merced,3,Transmetro
+R104,muniguate,104,Barrio San Antonio - Cementerio La Villa,3,TuBus
+R105,muniguate,105,Parque Jocotenango - 9a Avenida zona 7,3,TuBus
+R305,muniguate,305,Bulevar Vista Hermosa - Terminal,3,TuBus
+R402,muniguate,402,Colonia Santa Fe - Avenida Petapa,3,TuBus
+R5,muniguate,5,Parque Colón - Puente de la Penitenciaría,3,TuBus
+R801,muniguate,801,Parque Los Pinos - Terminal,3,TuBus
+R802,muniguate,802,Parque Los Pinos - 4a Avenida zona 1,3,TuBus

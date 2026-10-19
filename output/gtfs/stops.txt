@@ -1,0 +1,350 @@
+stop_id,stop_name,stop_lat,stop_lon
+S0001,4 Grados Sur,14.62434425,-90.5163992
+S0002,4 de febrero - Dir. La Merced,14.6449107,-90.5396798
+S0003,4 de febrero - Dir. USAC Periférico,14.64450715059055,-90.5408251319619
+S0004,Academia,14.6590338,-90.49405490000001
+S0005,Acueducto,14.59360005,-90.5217229
+S0006,Archivo General,14.64243375530965,-90.51569510876149
+S0007,Atlántida,14.65104915,-90.47798995
+S0008,Atlántida - San Rafael - Paraíso,14.65102005,-90.4779891
+S0009,Banco de Guatemala,14.6261689,-90.514641
+S0010,Beatas de Belén,14.633918099999999,-90.51267920000001
+S0011,Bethania - Dir. Colón,14.645551,-90.536595
+S0012,Bethania - Dir. La Merced,14.6455512,-90.5365946
+S0013,Bethania - Dir. USAC Periférico,14.6458907528765,-90.5368127538542
+S0014,Bolívar - Dir. Centra Sur,14.6198421,-90.52725285
+S0015,Bolívar - Dir. Plaza Barrios,14.61906175,-90.52781494999999
+S0016,CEJUSA - Dir. La Merced,14.60943698219685,-90.55652487144644
+S0017,CEJUSA - Dir. USAC Periférico,14.610095026651749,-90.5564311391118
+S0018,Cantón Exposición,14.62237,-90.5151468
+S0019,Capuchinas - Líneas 6 y 18,14.638554433333333,-90.50989203333333
+S0020,Centra Sur,14.5644739,-90.56375915000001
+S0021,Centro Cívico,14.62772695,-90.5148189
+S0022,Centro Zona 6,14.65494395,-90.49607510000001
+S0023,Cerro del Carmen - Líneas 6 y 18,14.648124533333332,-90.504911
+S0024,Cipresales,14.66531977035,-90.4937941098
+S0025,Ciudad de Plata II - Dir. La Merced,14.63830621768955,-90.55055601576416
+S0026,Ciudad de Plata II - Dir. USAC Periférico,14.63848975,-90.5507532
+S0027,Colón - Líneas 6 y 18,14.639985966666666,-90.50837083333333
+S0028,Corpus Christi,14.6568319,-90.4968482
+S0029,Correos,14.63716219155,-90.5122480612
+S0030,Cruz Roja,14.64424023709855,-90.51094488964605
+S0031,Don Bosco,14.62506105,-90.522144
+S0032,El Calvario,14.630198199999999,-90.5155678
+S0033,El Carmen,14.596330949999999,-90.555506
+S0034,Estación Arrivillaga,14.626814,-90.495695
+S0035,Estación Cipreses Norte,14.6361734,-90.4932092
+S0036,Estación Cipreses Sur,14.6354168,-90.493313
+S0037,Estación Jardines de la Asunción Norte,14.633008,-90.4942283
+S0038,Estación Jardines de la Asunción Sur,14.632392,-90.494629
+S0039,Estación La Palmita ,14.621709,-90.505708
+S0040,Estación Matamoros ,14.6404764,-90.5037943
+S0041,Estación Mercado La Palmita ,14.622502,-90.506793
+S0042,Estación Palacio de los Deportes Norte,14.622884,-90.512888
+S0043,Estación Palacio de los Deportes Sur,14.622983,-90.512408
+S0044,Estación Parque Colon,14.639506,-90.507199
+S0045,Estación Parque Navidad,14.624694,-90.501337
+S0046,Estación Puente de la Penitenciaría,14.624905,-90.51506
+S0047,Estación Vivibien,14.624372,-90.499584
+S0048,Exposición ,14.6192991,-90.51719295000001
+S0049,Francos Monroy - Líneas 6 y 18,14.632644,-90.50937
+S0050,Francos Monroy  - Líneas 6 y 18,14.6326441,-90.50936985
+S0051,Fuerza Aérea,14.587585950000001,-90.5233682
+S0052,Granai - Dir. La Merced,14.5996351126786,-90.55913518652494
+S0053,Granai - Dir. USAC Periférico,14.599572124892699,-90.55953024123079
+S0054,Gómez Carrillo,14.63453517675,-90.51578802739999
+S0055,Hangares,14.58007305,-90.52438425
+S0056,Hipódromo del Norte,14.65954285,-90.50977990000001
+S0057,IGSS Zona 6,14.65156885,-90.49746805000001
+S0058,IGSS Zona 9,14.604091050000001,-90.5183362
+S0059,Incienso - Dir. La Merced,14.64871078683105,-90.5309660867228
+S0060,Incienso - Dir. USAC Periférico,14.6487937944266,-90.53139810285904
+S0061,Industria,14.60939775,-90.5190428
+S0062,Javier,14.5869638,-90.56280305
+S0063,Jocotenango,14.651009949999999,-90.51311785
+S0064,José Martí,14.652949,-90.4999841
+S0065,Juan Pablo II,14.574241,-90.524253
+S0066,La Merced,14.643470050000001,-90.50792515
+S0067,Las Charcas - Dir. Centra sur,14.593476800000001,-90.5584881
+S0068,Las Charcas - Dir. Plaza Barrios,14.592420050000001,-90.5590069
+S0069,Los Arcos,14.59206625,-90.520798
+S0070,Mariscal - Dir. Centra Sur,14.6057488,-90.54406595
+S0071,Mariscal - Dir. Plaza Barrios,14.604719171749998,-90.5450987875
+S0072,Mercado Central,14.64233712365,-90.5115008908
+S0073,Monte María,14.580631050000001,-90.56795205
+S0074,Montúfar,14.6005328,-90.52077209999999
+S0075,Parada #001 / Barrio San Antonio,14.658221,-90.486817
+S0076,Parada #002 / Barrio San Antonio,14.65527,-90.489158
+S0077,Parada #003 / Barrio San Antonio,14.653312,-90.489939
+S0078,Parada #004 / Barrio San Antonio,14.651462,-90.490644
+S0079,Parada #005 / 8ª Calle,14.652241,-90.493353
+S0080,Parada #006 / 8ª calle,14.654173,-90.497746
+S0081,Parada #007 / 14 avenida,14.653728,-90.500033
+S0082,Parada #008 / Barrio La Parroquia,14.647558,-90.501714
+S0083,Parada #009 / Barrio San José,14.644703,-90.503346
+S0084,Parada #010 / Barrio San José,14.642461,-90.504586
+S0085,Parada #011 / Barrio San José,14.640158,-90.505245
+S0086,Parada #012 / Parque Colón,14.639829,-90.507202
+S0087,Parada #013 / Barrio Gerona,14.63637,-90.507651
+S0088,Parada #014 / Barrio Gerona,14.633291,-90.508069
+S0089,Parada #015 / 12 Avenida,14.62909,-90.508619
+S0090,Parada #016 / Col. 25 de Junio,14.623805,-90.509396
+S0091,Parada #017 / Col. San Pedrito,14.619408,-90.50999
+S0092,Parada #018 / Col. San Pedrito,14.615398,-90.510546
+S0093,Parada #019 / 6ª Avenida,14.609624,-90.510407
+S0094,Parada #020 / Ciudad Vieja,14.606162,-90.510454
+S0095,Parada #021 / Col. Las Margaritas,14.601929,-90.509963
+S0096,Parada #022 / Diagonal 6,14.599299,-90.508606
+S0097,Parada #023 / Col. Oakland,14.596586,-90.507194
+S0098,Parada #024 / Col. Oakland,14.594364,-90.50547
+S0099,Parada #025 / Col. La Villa,14.589302,-90.50307
+S0100,Parada #026 / Cantón 21,14.583789,-90.504708
+S0101,Parada #027 / Cantón 21,14.583845,-90.50833
+S0102,Parada #028 / Cantón Victoria,14.579862,-90.50966
+S0103,Parada #029 / Cementerio La Villa,14.580986,-90.50868
+S0104,Parada #030 / Cantón 21,14.583473,-90.504738
+S0105,Parada #031 / Cantón 21,14.581542,-90.50037
+S0106,Parada #032 / Cantón 21,14.580317,-90.498559
+S0107,Parada #033 / 20 Calle,14.584335,-90.499592
+S0108,Parada #034 / 20 Calle,14.585863,-90.501028
+S0109,Parada #035 / Col. La Villa,14.589579,-90.503075
+S0110,Parada #036 / Col. Oakland,14.59356,-90.504676
+S0111,Parada #037 / Col. Oakland,14.597004,-90.507197
+S0112,Parada #038 / Diagonal 6,14.598441,-90.50785
+S0113,Parada #039 / Col. Las Margaritas,14.60167,-90.50961
+S0114,Parada #040 / Ciudad Vieja,14.604486,-90.513787
+S0115,Parada #041 / Ciudad Vieja,14.607666,-90.512912
+S0116,Parada #042 / 2ª Avenida,14.610324,-90.512553
+S0117,Parada #043 / 2ª Avenida,14.614844,-90.511778
+S0118,Parada #044 / Col. San Pedrito,14.617768,-90.511254
+S0119,Parada #045 / 10ª Avenida,14.622104,-90.511945
+S0120,Parada #046 / 10ª Avenida,14.624319,-90.511559
+S0121,Parada #047 / 11 Avenida,14.629992,-90.509721
+S0122,Parada #048 / 11 Avenida,14.633141,-90.50929
+S0123,Parada #049 / 11 Avenida,14.636182,-90.50888
+S0124,Parada #050 / 11 Avenida,14.641064,-90.508206
+S0125,Parada #051 / 5ª Calle,14.642325,-90.507075
+S0126,Parada #052 / Barrio San José,14.643702,-90.504546
+S0127,Parada #053 / Barrio Candelaria,14.647551,-90.502681
+S0128,Parada #054 / Barrio La Parroquia,14.649471,-90.501843
+S0129,Parada #055 / 6ª Calle,14.651255,-90.497395
+S0130,Parada #056 / 6ª Calle,14.650809,-90.493767
+S0131,Parada #057 / Barrio San Antonio,14.651224,-90.490624
+S0132,Parada #058 / Barrio San Antonio,14.653041,-90.489911
+S0133,Parada #059 / Barrio San Antonio,14.65613,-90.487587
+S0134,Parada #060 / Barrio San Antonio,14.657947,-90.486882
+S0135,Parada #061 / 7ª Calle,14.652793,-90.49948
+S0136,Parada #062 / 9ª Calle,14.5804505,-90.506172
+S0137,Parada #063 / Parque Los Pinos,14.659797,-90.528477
+S0138,Parada #064 / Col. Sakerty I,14.657044,-90.529952
+S0139,Parada #065 / Col. Sakerty II,14.654922,-90.531066
+S0140,Parada #066 / Col. Banvi I,14.651214,-90.5331015
+S0141,Parada #067 / Col. Bethania,14.649813,-90.534145
+S0142,Parada #068 / Col. Bethania,14.647769499999999,-90.535628
+S0143,Parada #069 / Col. Kjell Laugerud,14.646152,-90.536846
+S0144,Parada #070 / Col. Niño Dormido,14.645051,-90.539993
+S0145,Parada #071 / Col. El Incienso,14.643849,-90.542134
+S0146,Parada #072 / Cond. Bosques de Linda Villa,14.6425,-90.545315
+S0147,Parada #073 / Col. Ciudad de Plata II,14.640516,-90.54735
+S0148,Parada #074 / Col. Ciudad de Plata I,14.637743,-90.546683
+S0149,Parada #075 / Col. Ciudad de Plata I,14.634277,-90.547598
+S0150,Parada #076 / Col. Quinta Samayoa,14.628732,-90.545297
+S0151,Parada #077 / Col. Quinta Samayoa,14.6259236,-90.543059
+S0152,Parada #078 / 9ª Avenida,14.6219794,-90.5417077
+S0153,Parada #079 / 9ª Avenida,14.620595,-90.543529
+S0154,Parada #080 / Calz. San Juan,14.619092,-90.543187
+S0155,Parada #081 / Calz. Roosevelt,14.61647,-90.540316
+S0156,Parada #082 / Calz. Roosevelt,14.61384,-90.535921
+S0157,Parada #083 / Blvr. Liberación,14.612177,-90.534638
+S0158,Parada #084 / Blvr. Liberación,14.6085997,-90.5320597
+S0159,Parada #085 / Avenida La Castellana,14.606431,-90.527203
+S0160,Parada #086 / Avenida La Castellana,14.60854,-90.526215
+S0161,Parada #087 / Terminal,14.610788,-90.5212
+S0162,Parada #088 / Cantón Tívoli,14.61083,-90.523074
+S0163,Parada #089 / Avenida La Castellana,14.609842,-90.525858
+S0164,Parada #090 / Avenida La Castellana,14.60591,-90.527709
+S0165,Parada #091 / Blvr. Liberación,14.6090215,-90.5317791
+S0166,Parada #092 / Blvr. Liberación,14.612242,-90.533961
+S0167,Parada #093 / Calz. Roosevelt,14.614043,-90.535466
+S0168,Parada #094 / Calz. Roosevelt,14.61589,-90.538006
+S0169,Parada #095 / Col. Quinta Samayoa,14.6190266,-90.5426927
+S0170,Parada #096 / Col. Quinta Samayoa,14.6222846,-90.5436798
+S0171,Parada #097 / Col. Quinta Samayoa,14.623307,-90.542322
+S0172,Parada #098 / Col. Castillo Lara,14.626064,-90.542945
+S0173,Parada #099 / Col. Quinta Samayoa,14.629781,-90.545939
+S0174,Parada #100 / Col. Kaminal Juyú II,14.63451,-90.547428
+S0175,Parada #101 / Col. Ciudad de Plata II,14.637737,-90.546556
+S0176,Parada #102 / Col. Mario Julio Salazar,14.640923,-90.54621
+S0177,Parada #103 / Col. El Incienso,14.643297,-90.542633
+S0178,Parada #104 / Col. 4 de Febrero,14.64477,-90.539829
+S0179,Parada #105 / Alcaldía Auxiliar Z.7,14.64737225,-90.5358401
+S0180,Parada #106 / Col. Bethania,14.649547,-90.534113
+S0181,Parada #107 / Parque Tecún Umán,14.65149,-90.532673
+S0182,Parada #108 / Col. Sakerty II,14.655066349999998,-90.53075335
+S0183,Parada #109 / Col. Sakerty I,14.6571745,-90.529628
+S0184,Parada #110 / Anillo Periférico norte,14.645513,-90.536389
+S0185,Parada #111 / Anillo Periférico norte,14.648802,-90.53079
+S0186,Parada #112 / Anillo Periférico norte,14.648647,-90.529282
+S0187,Parada #113 / Anillo Periférico norte,14.64489,-90.525071
+S0188,Parada #114 / Barrio Recolección,14.649127,-90.519209
+S0189,Parada #115 / Barrio Recolección,14.648726,-90.516348
+S0190,Parada #116 / Barrio Recolección,14.647346,-90.51502
+S0191,Parada #117 / Barrio Recolección,14.643776,-90.515504
+S0192,Parada #118 / 4ª Avenida,14.64083,-90.515928
+S0193,Parada #119 / 4ª Avenida,14.638553,-90.516224
+S0194,Parada #120 / 4ª Avenida,14.634046,-90.516864
+S0195,Parada #121 / 4ª Avenida,14.630678,-90.517283
+S0196,Parada #122 / El Pueblito,14.630432,-90.518585
+S0197,Parada #123 / 3ª Avenida,14.6334165,-90.518203
+S0198,Parada #124 / 3ª Avenida,14.6371046,-90.5176494
+S0199,Parada #125 / 3ª Avenida,14.640794,-90.51715
+S0200,Parada #126 / 3ª Avenida,14.6428917,-90.516845
+S0201,Parada #127 / Barrio Recolección,14.645277,-90.51767
+S0202,"Parada #128 / Avenida Elena, Barrio Recolección",14.645762,-90.520647
+S0203,Parada #128 / Barrio Recolección,14.6457363,-90.5206923
+S0204,Parada #129 / Avenida Elena,14.6428625,-90.5216373
+S0205,Parada #130 / Anillo Periférico sur,14.64894,-90.529255
+S0206,Parada #131 / Col. Madre Dormida,14.648999,-90.531015
+S0207,Parada #132 / Anillo Periférico sur,14.645743,-90.535319
+S0208,Parada #133 / Blvr. Vista Hermosa,14.582059,-90.485073
+S0209,Parada #134 / Blvr. Vista Hermosa,14.585826,-90.487969
+S0210,Parada #135 / Blvr. Vista Hermosa,14.589167,-90.490422
+S0211,Parada #136 / Blvr. Vista Hermosa,14.592508,-90.492939
+S0212,Parada #137 / Blvr. Vista Hermosa,14.594729,-90.494543
+S0213,Parada #138 / Blvr. Vista Hermosa,14.600847,-90.498926
+S0214,"Parada #139 / Blvr. Vista Hermosa, inicio columpio Vista Hermosa",14.605748,-90.501301
+S0215,Parada #140 / Blvr. de la Tribuna,14.614229,-90.504425
+S0216,Parada #141 / 6ª avenida “A”,14.614065,-90.509458
+S0217,Parada #142 / Jardín Botánico,14.614004,-90.512886
+S0218,Parada #143 / Jardín Botánico,14.614414,-90.516097
+S0219,Parada #144 / Terminal,14.613394,-90.519577
+S0220,Parada #145 / Jardín Botánico,14.612607,-90.514851
+S0221,Parada #146 / Guardia de Honor,14.612186,-90.512555
+S0222,"Parada #147 / Blvr. Vista Hermosa, final columpio sur",14.605907,-90.501636
+S0223,Parada #148 / Plaza de la Marimba,14.600528,-90.49952
+S0224,Parada #149 / Blvr. Vista Hermosa,14.596695,-90.496657
+S0225,Parada #150 / Blvr. Vista Hermosa,14.594285,-90.494762
+S0226,Parada #151 / Blvr. Vista Hermosa,14.592397,-90.493358
+S0227,Parada #152 / Blvr. Vista Hermosa,14.58891,-90.49075
+S0228,Parada #153 / Blvr. Vista Hermosa,14.585575,-90.488259
+S0229,Parada #154 / Parque Jocotenango,14.65129,-90.513134
+S0230,Parada #155 / 7ª avenida,14.650657,-90.511183
+S0231,Parada #156 / Cervecería Centro Americana,14.653005,-90.514477
+S0232,Parada #157 / Blvr. Castillo Lara,14.656138,-90.514748
+S0233,Parada #158 / Blvr. Castillo Lara,14.653152,-90.516826
+S0234,Parada #159 / INCA/Parque El Sauce,14.649034,-90.517378
+S0235,Parada #160 / 2ª avenida,14.645469,-90.517831
+S0236,Parada #161 / Avenida Elena,14.643756,-90.521384
+S0237,"Parada #162 / Avenida Elena, Hospital San Juan de Dios",14.639924,-90.522054
+S0238,"Parada #163 / Avenida Elena, CAI",14.6374434,-90.5224412
+S0239,"Parada #164 / Avenida Elena, Teatro de Bellas Artes",14.634952,-90.522801
+S0240,"Parada #165 / Avenida Elena, Mercado Cervantes",14.632417,-90.523176
+S0241,Parada #166 / 19 calle,14.630834,-90.519946
+S0242,Parada #167 / Plaza El Amate,14.630164,-90.51743
+S0243,Parada #168 / 20 calle,14.630055,-90.520562
+S0244,Parada #169 / Asilo San Vicente de Paúl,14.630397,-90.522913
+S0245,Parada #170 / Cementerio General,14.630312,-90.526981
+S0246,Parada #171 / Centro de Salud zona 3,14.6260646,-90.5289451
+S0247,Parada #172 / 6ª avenida,14.624165,-90.529499
+S0248,Parada #173 / 6ª avenida,14.620275,-90.530023
+S0249,Parada #174 / MuniTec zona 3,14.617502,-90.533456
+S0250,Parada #175 / Colonia Landívar,14.619422,-90.536553
+S0251,Parada #176 / Colonia Landívar,14.620546,-90.539327
+S0252,Parada #177 / 9ª avenida,14.62301,-90.540399
+S0253,Parada #178 / Colonia Landívar,14.618795,-90.537366
+S0254,Parada #179 / Colonia Landívar,14.617975,-90.53547
+S0255,Parada #180 / 8ª avenida,14.617705,-90.53213
+S0256,Parada #181 / 32 calle,14.619512,-90.528372
+S0257,Parada #182 / Radio Cultural TGN,14.621668,-90.527944
+S0258,Parada #183 / Altura 3,14.625596,-90.527418
+S0259,"Parada #184 / Avenida del Cementerio, Cementerio General",14.628607,-90.527014
+S0260,"Parada #185 / Avenida del Cementerio, Cementerio General",14.631271,-90.52665
+S0261,Parada #186 / Avenida del Cementerio,14.633783,-90.525529
+S0262,"Parada #187 / Avenida del Cementerio, Centro de Educación Especial ""Álida España""",14.636968,-90.523402
+S0263,"Parada #188 / Avenida Elena, Hospital San Juan de Dios",14.639958,-90.521853
+S0264,"Parada #189 / Avenida Elena, Liga Nacional Contra la Tuberculosis",14.64209,-90.521528
+S0265,Parada #190 / Avenida Elena,14.645685,-90.520964
+S0266,Parada #191 / 3ª calle,14.646401,-90.517105
+S0267,Parada #192 / INCA,14.648655,-90.51602
+S0268,Parada #193 / Alcaldía Auxiliar zona 2,14.651471,-90.515623
+S0269,Parada #194 / Col. Santa Fe,14.567495,-90.535976
+S0270,Parada #195 / 10ª avenida,14.570318,-90.53545
+S0271,Parada #196 / Hospital de la Fuerza Aérea Guatemalteca,14.573078,-90.534394
+S0272,Parada #197 / 11 avenida,14.576845,-90.53156
+S0273,Parada #198 / 11 avenida,14.578856,-90.530944
+S0274,Parada #199 / Aeroclub Guatemala,14.582456,-90.529792
+S0275,"Parada #200 / 16 calle ""A""",14.58447,-90.53043
+S0276,Parada #201 / 17 calle,14.583485,-90.532844
+S0277,Parada #202 / 7ª avenida,14.586683,-90.533138
+S0278,Parada #203 / Aeropuerto Internacional La Aurora,14.588486,-90.531434
+S0279,Parada #204 / Blvr. Aeropuerto,14.595936,-90.525831
+S0280,Parada #205 / 5ª calle,14.597793,-90.528249
+S0281,Parada #206 / 5ª calle,14.59943,-90.530915
+S0282,Parada #207 / 5ª calle,14.601874,-90.532846
+S0283,Parada #208 / 8ª calle,14.604673,-90.535483
+S0284,Parada #209 / Avenida Petapa,14.607657,-90.537965
+S0285,Parada #210 / 6ª avenida,14.610539,-90.537106
+S0286,Parada #211 / Avenida Petapa,14.611389,-90.534603
+S0287,Parada #212 / Blvr. Liberación,14.605904,-90.530411
+S0288,Parada #213 / Blvr. Liberación,14.603377,-90.528491
+S0289,Parada #214 / 3ª calle,14.600554,-90.529648
+S0290,Parada #215 / Instituto Técnico Vocacional Dr. Imrich Fischmann,14.597497,-90.530334
+S0291,Parada #216 / Contraloría General de Cuentas,14.593052,-90.531514
+S0292,Parada #217 / Aeropuerto Internacional La Aurora dirección sur,14.588592,-90.531586
+S0293,Parada #218 / INSIVUMEH,14.586978,-90.532978
+S0294,Parada #219 / 17 calle,14.583454,-90.532976
+S0295,Parada #220 / Club La Aurora,14.584497,-90.531369
+S0296,Parada #221 / 11 avenida,14.582635,-90.529864
+S0297,Parada #222 / 11 avenida,14.57887,-90.531056
+S0298,Parada #223 / 11 avenida,14.577085,-90.531591
+S0299,Parada #224 / Hospital de la Fuerza Aérea Guatemalteca dirección sur,14.572992,-90.534662
+S0300,Parada #225 / 10ª avenida,14.570415,-90.535548
+S0301,Paraíso,14.658979949999999,-90.44667115
+S0302,Parque Centenario,14.6420648,-90.51480415
+S0303,Parroquia,14.6499869,-90.4997928
+S0304,Pasaje Aycinena,14.640319,-90.51306794999999
+S0305,Paseo de las Letras,14.629904100000001,-90.51333514999999
+S0306,Plaza Argentina,14.585852,-90.5225371
+S0307,Plaza Barrios,14.63016115,-90.51226395
+S0308,Plaza Barrios/FEGUA - Líneas 6 y 18,14.630527933333333,-90.51163306666668
+S0309,Plaza Berlín,14.569946,-90.526851
+S0310,Plaza El Amate,14.63133185,-90.5168362
+S0311,Plaza España,14.5997192,-90.5191372
+S0312,Plaza Municipal,14.6275978,-90.51580995
+S0313,Plaza de la República,14.61961385,-90.51549415
+S0314,Portales,14.6487308,-90.48198794999999
+S0315,Proyectos,14.67332895,-90.48746195
+S0316,Proyectos 4-4,14.66755894595,-90.49193905405
+S0317,Quintanal,14.658560600000001,-90.4959889
+S0318,Reformita - Dir. Centra Sur,14.602391749999999,-90.54800025
+S0319,Reformita - Dir. Plaza Barrios,14.601026079899999,-90.5496040421
+S0320,Rodolfo Robles - Dir. La Merced,14.607071808686001,-90.55821098221574
+S0321,Rodolfo Robles - Dir. USAC Periférico,14.60767314735055,-90.55809402320494
+S0322,Roosevelt - Dir. La Merced,14.62625785,-90.55828345
+S0323,Roosevelt - Dir. USAC Periférico,14.62604115,-90.55900915000001
+S0324,San Agustín,14.6384671,-90.5152968
+S0325,San Jorge - Dir. La Merced,14.6183580280893,-90.55568576082185
+S0326,San Jorge - Dir. USAC Periférico,14.6192971969697,-90.55655611487694
+S0327,San José de la Montaña,14.653841799999999,-90.51194315000001
+S0328,San Juan - Dir. La Merced,14.630239991741401,-90.55474403526284
+S0329,San Juan - Dir. USAC Periférico,14.6304202021105,-90.5549738103213
+S0330,San Juan de Dios,14.64123015,-90.51888995
+S0331,San Martín - Dir. Atlántida,14.6452718,-90.49672615
+S0332,San Martín - Dir. Plaza Barrios/FEGUA,14.644934899999999,-90.49645185
+S0333,San Rafael,14.654981988,-90.45206109515
+S0334,San Sebastián - Líneas 1 y 2,14.6458221,-90.51308983333334
+S0335,Santa Cecilia,14.61457295,-90.53312205
+S0336,Santa Teresa,14.64405115,-90.50916484999999
+S0337,Santuario de Guadalupe,14.64208805,-90.51930315
+S0338,Seis 26,14.6092,-90.51737205
+S0339,Simeón Cañas,14.65394985,-90.51187995000001
+S0340,Sur 2,14.63131385,-90.51628819999999
+S0341,Terminal,14.6135588,-90.518269
+S0342,Tipografía,14.630882100000001,-90.51437175
+S0343,Torre del Reformador,14.61412775,-90.51641405000001
+S0344,Trébol,14.612670023,-90.5357210194
+S0345,Tívoli,14.60449425,-90.520057
+S0346,USAC Periférico,14.593119049999999,-90.55051495000001
+S0347,Victorias,14.64842775,-90.4934378
+S0348,Villa Linda - Dir. USAC Periférico,14.6422299697754,-90.545502905799
+S0349,Villa Linda - Dir. La Merced,14.641330199999999,-90.54625494999999
