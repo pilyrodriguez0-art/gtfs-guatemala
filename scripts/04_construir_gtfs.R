@@ -213,4 +213,4 @@ write_csv(select(trips, route_id, service_id, trip_id, direction_id),
 write_csv(stop_times,  "output/gtfs/stop_times.txt")
 write_csv(frequencies, "output/gtfs/frequencies.txt")
 
-message("GTFS escrito en output/gtfs/")
+message("GTFS escrito en output/gtfs/")nrow(routes); nrow(stops); nrow(trips); nrow(stop_times)
