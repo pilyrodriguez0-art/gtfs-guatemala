@@ -12,10 +12,16 @@
 # La unidad de trabajo es la CAPA, no la ruta: una ruta puede tener
 # ramales, y cada ramal es un recorrido propio con su propio trazo.
 #
-# Limitación: el método da el orden pero no el sentido. Una línea
-# dibujada al revés produce la secuencia invertida. Por eso se usa
-# la tabla de referencia de abajo, con la parada inicial que declara
-# la Muni para cada ruta.
+# LIMITACIONES CONOCIDAS
+# 1. El método da el orden pero no el sentido. Una línea dibujada al
+#    revés produce la secuencia invertida. La tabla de referencia de
+#    abajo corrige esto comparando con la parada inicial que declara
+#    la Muni.
+# 2. En recorridos circulares (como la Línea 7, que hace un bucle por
+#    el centro histórico) el punto donde arranca la línea dibujada no
+#    coincide con el inicio administrativo de la ruta. La secuencia es
+#    correcta; solo empieza en otro punto del circuito. Se decidió no
+#    corregirlo porque GTFS no lo requiere y el ruteo tampoco.
 
 library(sf)
 library(dplyr)
@@ -96,6 +102,7 @@ ordenar_capa <- function(archivo, nombre_capa) {
   # Corregir el sentido si la línea está dibujada al revés
   ruta <- p$id_ruta[1]
   patron <- inicios$patron_inicio[inicios$id_ruta == ruta]
+  p$sentido_corregido <- FALSE
   
   if (length(patron) == 1 && !is.na(patron)) {
     coincide <- grepl(patron, p$nombre, ignore.case = TRUE)
@@ -103,6 +110,7 @@ ordenar_capa <- function(archivo, nombre_capa) {
       pos <- which(coincide)[1]
       if (pos > nrow(p) / 2) {
         p <- p[rev(seq_len(nrow(p))), ]
+        p$sentido_corregido <- TRUE
         message("  sentido invertido: ", nombre_capa)
       }
     }
@@ -123,10 +131,18 @@ resultados <- list()
 for (i in seq_len(nrow(combinaciones))) {
   a <- combinaciones$id_linea[i]
   c <- combinaciones$capa[i]
-  message("--- ", a, " / ", c)
   r <- ordenar_capa(a, c)
   if (!is.null(r)) resultados[[length(resultados) + 1]] <- r
 }
 
-message("Capas ordenadas con éxito: ", length(resultados),
-        " de ", nrow(combinaciones))
+ordenadas <- do.call(rbind, resultados) |> st_as_sf()
+
+message("Capas ordenadas: ", length(resultados), " de ", nrow(combinaciones))
+message("Paradas con secuencia: ", nrow(ordenadas))
+
+# --- Escribir -----------------------------------------------------------
+
+st_write(ordenadas, "data/processed/paradas_ordenadas.geojson",
+         delete_dsn = TRUE, quiet = TRUE)
+
+message("Listo. data/processed/paradas_ordenadas.geojson")
