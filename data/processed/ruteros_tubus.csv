@@ -1,0 +1,177 @@
+id_ruta,n_parada,direccion,zona,orden
+R105,154,"Avenida Siméon Cañas y 4a calle, Parque Jocotenango     2                  2      ± 1 min     ESTACIÓN JOCOTENANGO",NA,1
+R105,155,7a avenida y 4a calle,2,2
+R105,156,"Anillo Periférico y 6a calle, Cervecería Centro Americana",2,3
+R105,157,"3a avenida, Blvr. Castillo Lara",2,4
+R105,158,"6a avenida, Blvr. Castillo Lara",2,5
+R105,159,"2a avenida y 1a calle, INCA/Parque El Sauce             1                  RUTA",NA,6
+R105,160,2a avenida y 4a calle                                   1                  RUTA,NA,7
+R105,128,"4a calle y Avenida Elena, Barrio Recolección            1           RUTA 105 802",NA,8
+R105,161,Avenida Elena y 6a calle,3,9
+R105,162,"Avenida Elena y 10a calle, Hospital San Juan de Dios",3,10
+R105,163,"Avenida Elena y 13 calle, CAI",3,11
+R105,164,"Avenida Elena y 15 calle, Teatro de Bellas Artes",3,12
+R105,165,"Avenida Elena y 18 calle, Mercado Cervantes",3,13
+R105,166,19 calle y 2a avenida                                   1                  RUTA,NA,14
+R105,167,"4a avenida y 20 calle, Plaza El Amate",1,15
+R105,168,20 calle y 1a avenida “A”,1,16
+R105,169,"20 calle y Avenida Elena, Asilo San Vicente de Paúl",1,17
+R105,170,"Avenida del Cementerio y 21 calle, Cementerio General",3,18
+R105,171,"26 calle y 6a avenida, Centro de Salud zona 3",3,19
+R105,172,6a avenida y 28 calle,3,20
+R105,173,6a avenida y 32 calle,3,21
+R105,174,"7a avenida y 38 calle, MuniTec zona 3",3,22
+R105,175,"8a calle y 4a avenida, Colonia Landívar",7,23
+R105,176,"8a calle y 7a avenida, Colonia Landívar",7,24
+R105,177,9a avenida y 9a calle                                   7                  RUTA,NA,25
+R105,178,"7a calle y 4a avenida, Colonia Landívar",7,26
+R105,179,"7a calle y 2a avenida, Colonia Landívar",7,27
+R105,180,8a avenida y 37 calle,3,28
+R105,181,32 calle y 4a avenida                                   3                  12     ± 3 min     ESTACIÓN BOLÍVAR (DIRECCIÓN CENTRA SUR),NA,29
+R105,182,"4a avenida y 30 calle, Radio Cultural TGN",3,30
+R105,183,"4a avenida y 26 calle, Proyecto Vivienda Prioritaria Altura 3",3,31
+R105,184,"Avenida del Cementerio y 22 calle, Cementerio General",3,32
+R105,185,"Avenida del Cementerio y 19 calle, Cementerio General",3,33
+R105,186,Avenida del Cementerio y 16 calle,3,34
+R105,187,"Avenida del Cementerio y 13 calle “B”, Centro de Educación Especial “Álida España”",3,35
+R105,188,"Avenida Elena y 10a calle, Hospital San Juan de Dios",1,36
+R105,189,"Avenida Elena y 9a calle,                               1                                     ESTACIONES SANTUARIO 7      ± 2 min     DE GUADALUPE Y SAN JUAN DE DIOS Liga Nacional Contra la Tuberculosis",NA,37
+R105,190,Avenida Elena y 4a calle,1,38
+R105,191,3a calle y 2a avenida “A”,1,39
+R105,192,"3a avenida y 1a calle, INCA",1,40
+R105,193,"3a avenida y 4a calle, Alcaldía Auxiliar zona 2 Encuentra mapas, horarios                                                               Únicas formas de pago: y más información, ingresando al código QR o a la página: www.muniguate.com/                                 Síguenos en: movilidadurbana/                                   @TuBusMuniGuate                                   VERSIÓN 1 - VIGENTE A PARTIR DE MARZO 2025",2,41
+R305,133,"2a calle y 25 avenida, Blvr. Vista Hermosa",15,1
+R305,134,"2a calle y 22 avenida, Blvr. Vista Hermosa, Col. Vista Hermosa I",15,2
+R305,135,"2a calle y 20 avenida, Blvr. Vista Hermosa, Col. Vista Hermosa I",15,3
+R305,136,"2a calle y 19 avenida Blvr. Vista Hermosa, Col. Vista Hermosa I",15,4
+R305,137,"2a calle y 18 avenida, Blvr. Vista Hermosa, Col. Vista Hermosa I",15,5
+R305,138,"2a calle y 16 avenida, Blvr. Vista Hermosa",15,6
+R305,139,"Inicio columpio Vista Hermosa, 2a calle y 14 avenida, Blvr. Vista Hermosa",15,7
+R305,140,"32 calle y 29 avenida, Blvr. de la Tribuna",5,8
+R305,141,6a avenida “A” y 0 calle                                        10           RUTA,NA,9
+R305,142,"1a calle y 2 avenida, Jardín Botánico                           10           RUTA",NA,10
+R305,143,1a calle y 7a avenida                                            4           13     ± 1 min     ESTACIÓN TORRE DEL REFORMADOR,NA,11
+R305,144,2a calle y 5a avenida “C”                                        9           13     ± 1 a 3 min ESTACIÓN TORRE DEL REFORMADOR Y TERMINAL ± 4 min,NA,12
+R305,145,2 calle y Avenida Reforma,NA,13
+R305,146,"2a calle y 2a avenida, Guardia de Honor                         10           RUTA",NA,14
+R305,147,"Final columpio sur, 2a calle y 14 avenida, Blvr. Vista Hermosa",15,15
+R305,148,"2a calle y 16 avenida, Blvr. Vista Hermosa, Col. El Maestro, Plaza de la Marimba",15,16
+R305,149,"2a calle y 17 avenida “B”, Blvr. Vista Hermosa, Col. El Maestro",15,17
+R305,150,"2a calle y 18 avenida, Blvr. Vista Hermosa, Col. Vista Hermosa II",15,18
+R305,151,"2a calle y 18 avenida “A”, Blvr. Vista Hermosa, Col. Vista Hermosa II",15,19
+R305,152,"2a calle y 21 avenida, Blvr. Vista Hermosa, Col. Vista Hermosa II",15,20
+R305,153,"2a calle y 23 avenida, Blvr. Vista Hermosa, Col. Vista Hermosa II Encuentra mapas, horarios                                                                 Únicas formas de pago: y más información, ingresando al código QR o a la página: www.muniguate.com/                                         Síguenos en: movilidadurbana/                                           @TuBusMuniGuate                      VERSIÓN 4 - ACTUALIZACIÓN VIGENTE A PARTIR DE MARZO 2025",15,21
+R402,194,"10a avenida y 28 calle, Colonia Santa Fe",13,1
+R402,195,10a avenida y 26 calle,13,2
+R402,196,"10a avenida y 24 calle, Hospital de la Fuerza Aérea Guatemalteca",13,3
+R402,197,11 avenida y 21 calle,13,4
+R402,198,11 avenida y 19 calle,13,5
+R402,199,"11 avenida y 17 calle, Aeroclub Guatemala",13,6
+R402,200,16 calle “A” y 10a avenida,13,7
+R402,201,17 calle y 8a avenida,13,8
+R402,202,7a avenida y 15 calle,13,9
+R402,203,Aeropuerto Internacional La Aurora y 8a avenida,13,10
+R402,204,Blvr. Aeropuerto y 6a calle,13,11
+R402,205,5a calle y 8a avenida,13,12
+R402,206,5a calle y 7a avenida,13,13
+R402,207,5a calle y 4a avenida,13,14
+R402,208,8a calle y 17 avenida,13,15
+R402,209,Avenida Petapa y 7a calle,12,16
+R402,210,6a avenida y 4a calle,12,17
+R402,211,Avenida Petapa y 9a avenida                                   12                        ± 4 min   ESTACIÓN TRÉBOL,NA,18
+R402,084,Blvr. Liberación antes de la pasarela IGSS Pamplona           12          RUTA 402 801,NA,19
+R402,212,Blvr. Liberación y 2a avenida,13,20
+R402,213,Blvr. Liberación y 6a avenida,13,21
+R402,214,3a calle y 7a avenida,13,22
+R402,215,"7a avenida, Instituto Técnico Vocacional Dr. Imrich Fischmann",13,23
+R402,216,"7a avenida y 8a calle, Contraloría General de Cuentas",13,24
+R402,217,"8a avenida, Aeropuerto Internacional La Aurora",13,25
+R402,218,"15 calle y 7a avenida, INSIVUMEH",13,26
+R402,219,17 calle y 8a avenida,13,27
+R402,220,"9a avenida y 16 calle “A”, Club La Aurora",13,28
+R402,221,11 avenida y 17 calle,13,29
+R402,222,11 avenida y 19 calle,13,30
+R402,223,11 avenida y 21 calle,13,31
+R402,224,"10a avenida y 24 calle, Hospital de la Fuerza Aérea Guatemalteca",13,32
+R402,225,"10a avenida y 26 calle Encuentra mapas, horarios                                                                     Únicas formas de pago: y más información, ingresando al código QR o a la página: www.muniguate.com/                                       Síguenos en: movilidadurbana/                                         @TuBusMuniGuate                                VERSIÓN 1 - VIGENTE A PARTIR DE MARZO 2025",13,33
+R801,063,"Parque Los Pinos, 33 avenida y 39 calle, Colonia            7           RUTA 801 802 El Amparo I",NA,1
+R801,064,"33 avenida y 36 calle, Colonia Sakerty I                    7           RUTA 801 802",NA,2
+R801,065,"33 avenida y 35 calle “A”, Colonia Sakerty II               7           RUTA 801 802",NA,3
+R801,066,"33 avenida y 33 calle “A”, Colonia Banvi I, frente a        7           RUTA 801 802 Parque Tecún Umán",NA,4
+R801,067,"33 avenida y 31 calle, Colonia Bethania                     7           RUTA 801 802",NA,5
+R801,068,"33 avenida y 26 calle, Colonia Bethania                     7           RUTA 801 802",NA,6
+R801,069,"33 avenida y 24 calle, Colonia Kjell Laugerud               7                         ± 0 min   ESTACIÓN BETHANIA SENTIDO SUR",NA,7
+R801,070,"Anillo Periférico y 22 calle, Colonia Niño Dormido          7                         ± 1 min   ESTACIÓN 4 DE FEBRERO SENTIDO SUR",NA,8
+R801,071,"Anillo Periférico sur y 31 avenida, Colonia El Incienso",7,9
+R801,072,"Anillo Periférico sur y 20 calle , Cond. Bosques de         7                         ± 0 min   ESTACIÓN VILLA LINDA SENTIDO SUR Linda Villa",NA,10
+R801,073,"Diagonal 24 y 16 calle, Colonia Ciudad de Plata II",7,11
+R801,074,"Diagonal 24 y 14 calle, Colonia Ciudad de Plata I",7,12
+R801,075,"Parque Kaminaljuyú, diagonal 24 y 13 calle, Colonia Ciudad de Plata I",7,13
+R801,076,"9a calle y 14 avenida, Colonia Quinta Samayoa",7,14
+R801,077,"9a calle y 12 avenida, Colonia Quinta Samayoa",7,15
+R801,078,9a avenida y 6a calle,7,16
+R801,079,9a avenida y 4a calle,7,17
+R801,080,Calz. San Juan y 11 avenida,7,18
+R801,081,"Pasarela Hosp. Roosevelt, calzada Roosevelt y 6a avenida, Colonia El Progreso",11,19
+R801,082,"Calz. Roosevelt, cuchilla antes del puente El Trébol        11                        ± 4 min   ESTACIÓN TRÉBOL",NA,20
+R801,083,Blvr. Liberación después del puente El Trébol               12                        ± 7 min   ESTACIÓN TRÉBOL,NA,21
+R801,084,Blvr. Liberación antes de la pasarela IGSS Pamplona         12          RUTA 402 801,NA,22
+R801,085,"Avenida La Castellana y 9a calle, Cantón Tívoli",9,23
+R801,086,"Parque de la Industria, avenida La Castellana y 8a calle, Cantón Guarda Viejo",9,24
+R801,087,"Terminal, 4a avenida y 4a calle, Cantón Tívoli              9                         ± 5 a 7 min ESTACIONES INDUSTRIA Y SEIS ± 4 min",26,25
+R801,088,"5 calle y 2 avenida, Cantón Tívoli a         a",NA,26
+R801,089,"Parque de la Industria, avenida La Castellana y 39 calle, Cantón Guarda Viejo",8,27
+R801,090,"Avenida La Castellana y 41 calle, Cantón Guarda Viejo",8,28
+R801,091,Blvr. Liberación y 11 avenida,8,29
+R801,092,Blvr. Liberación y 4a avenida                               8                         ± 9 min   ESTACIÓN TRÉBOL,NA,30
+R801,093,Calzada Roosevelt y Cuchilla Trébol                         8                         ± 5 min   ESTACIÓN SANTA CECILIA,NA,31
+R801,094,"Pasarela Hosp. Roosevelt, calzada Roosevelt y 4a avenida, Colonia Landívar",7,32
+R801,095,"Calz. San Juan y 8a avenida, Colonia Quinta Samayoa",7,33
+R801,096,"10a avenida y 5a calle, Colonia Quinta Samayoa",7,34
+R801,097,"10a avenida y 7a calle “A”, Colonia Quinta Samayoa",7,35
+R801,098,"9a calle y Calle de La Verbena, Colonia Castillo Lara",7,36
+R801,099,"9a calle y 15 avenida, Colonia Quinta Samayoa",7,37
+R801,100,"Diagonal 24 y 13 calle, Colonia Kaminal Juyú II",7,38
+R801,101,"Diagonal 24 y 14 calle, Colonia Ciudad de Plata II",7,39
+R801,102,"31 avenida y 18 calle, Colonia Mario Julio Salazar          7                         ± 0 min   ESTACIÓN VILLA LINDA SENTIDO NORTE",NA,40
+R801,103,"Anillo Periférico y 21 calle, Colonia El Incienso",7,41
+R801,104,"Anillo Periférico y 30 avenida, Colonia 4 de febrero        7                         ± 0 min   ESTACIÓN 4 DE FEBRERO SENTIDO NORTE",NA,42
+R801,105,"33 avenida y 26 calle, Colonia Bethania 801 802",7,43
+R801,106,"33 avenida y 30 calle, Colonia Bethania 801 802",7,44
+R801,107,33 avenida y 33 calle 801 802,7,45
+R801,108,"33 avenida y 35 calle “B”, Colonia Sakerty II 801 802",7,46
+R801,109,"33 avenida y 36 calle, Colonia Sakerty I 801 802 Encuentra mapas, horarios                                                                   Únicas formas de pago: y más información, ingresando al código QR o a la página: www.muniguate.com/                                     Síguenos en: movilidadurbana/                                       @TuBusMuniGuate                              VERSIÓN 4 - ACTUALIZACIÓN VIGENTE A PARTIR DE MARZO 2025",7,47
+R802,063,"Parque Los Pinos, 33 avenida y 39 calle, Colonia               7           RUTA 801 802 El Amparo I",NA,1
+R802,064,"33 avenida y 36 calle, Colonia Sakerty I                       7           RUTA 801 802",NA,2
+R802,065,"33 avenida y 35 calle “A”, Colonia Sakerty II                  7           RUTA 801 802",NA,3
+R802,066,"33 avenida y 33 calle “A”, Colonia Banvi I, frente a           7           RUTA 801 802 Parque Tecún Umán",NA,4
+R802,067,"33 avenida y 31 calle, Colonia Bethania                        7           RUTA 801 802",NA,5
+R802,068,"33 avenida y 26 calle, Colonia Bethania                        7           RUTA 801 802",NA,6
+R802,110,"29 avenida “D”, Anillo Periférico norte                        7                         ± 1 min   ESTACIÓN BETHANIA SENTIDO NORTE",NA,7
+R802,111,"Anillo Periférico norte, pasarela Subestación                  7                         ± 0 min   ESTACIÓN INCIENSO SENTIDO NORTE Eléctrica Incienso",NA,8
+R802,112,"Anillo Periférico norte, puente El Incienso",7,9
+R802,113,"5a calle, Anillo Periférico norte",3,10
+R802,114,"1a calle y Avenida Elena “B”, Barrio Recolección",1,11
+R802,115,"1a calle y 3a avenida, Barrio Recolección",1,12
+R802,116,"4a avenida y 2a calle, Barrio Recolección                      1                           ± 4 min   ESTACIÓN SAN SEBASTIÁN",NA,13
+R802,117,"4a avenida y 5a calle, Barrio Recolección                      1                           ± 2 a 4 min ESTACIÓN PARQUE CENTENARIO Y ARCHIVO GENERAL",NA,14
+R802,118,4a avenida y 9a calle “A”                                      1                           ± 3 a 4 min ESTACIÓN ARCHIVO GENERAL Y PARQUE CENTENARIO,NA,15
+R802,119,4a avenida y 11 calle                                          1                         ± 2 min   ESTACIÓN SAN AGUSTÍN,NA,16
+R802,120,4a avenida y 15 calle                                          1                         ± 2 min   ESTACIÓN GÓMEZ CARRILLO,NA,17
+R802,121,4a avenida y 19 calle                                          1                         ± 1 min   ESTACIÓN PLAZA EL AMATE,NA,18
+R802,122,"El Pueblito, 3a avenida y 19 calle, Barrio San Gaspar",1,19
+R802,123,3a avenida y 15 calle “A”,1,20
+R802,124,3a avenida y 12 calle “A”,1,21
+R802,125,3a avenida y 9a calle                                          1                         ± 3 a 4 min ESTACIONES SAN JUAN DE DIOS Y SANTUARIO DE GUADALUPE,NA,22
+R802,126,3a avenida y 6a calle,1,23
+R802,127,"4a calle y 2a avenida, Barrio Recolección",1,24
+R802,128,"4a calle y Avenida Elena, Barrio Recolección                   1           RUTA 105 802",NA,25
+R802,129,Avenida Elena y 7a calle,3,26
+R802,130,Anillo Periférico sur y puente El Incienso,7,27
+R802,131,"Anillo Periférico sur y 31 av. “A”, Col. Madre Dormida         7                         ± 0 min   ESTACIÓN INCIENSO SENTIDO SUR",NA,28
+R802,132,Anillo Periférico sur y 25 calle                               7                         ± 3 min   ESTACIÓN BETHANIA SENTIDO SUR,NA,29
+R802,105,"Alcaldía Auxiliar Z.7, 33 avenida y 26 calle, Colonia          7           RUTA 801 802 Bethania",NA,30
+R802,106,"33 avenida y 30 calle, Colonia Bethania                        7           RUTA 801 802",NA,31
+R802,107,"Parque Tecún Umán, 33 avenida y 33 calle “A”                   7           RUTA 801 802",NA,32
+R802,108,"33 avenida y 35 calle “B”, Colonia Sakerty II                  7           RUTA 801 802",NA,33
+R802,109,"33 avenida y 36 calle, Colonia Sakerty I                       7           RUTA 801 802 Encuentra mapas, horarios                                                                      Únicas formas de pago: y más información, ingresando al código QR o a la página: www.muniguate.com/                                        Síguenos en: movilidadurbana/                                          @TuBusMuniGuate                              VERSIÓN 4 - ACTUALIZACIÓN VIGENTE A PARTIR DE MARZO 2025",NA,34
