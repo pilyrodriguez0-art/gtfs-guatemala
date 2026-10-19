@@ -9,6 +9,27 @@
 # más actualizados que el mapa del sistema. Se comprobó que la
 # estación "Bethania - Dir. Colón" existe en el mapa de la Línea 7
 # pero no en la capa maestra del sistema.
+#
+# SENTIDOS DE CIRCULACIÓN — LIMITACIÓN DOCUMENTADA
+# Las fuentes oficiales no permiten separar ida y vuelta de forma
+# confiable:
+#
+# - Transmetro: no hay ruteros. Los nombres marcan dirección ("Dir.
+#   La Merced") solo en tres de siete líneas. Tres líneas no tienen
+#   ninguna estación duplicada, lo que sugiere recorridos circulares.
+#
+# - TuBus: los ruteros numeran las paradas, pero esa numeración es
+#   GLOBAL del sistema, no por ruta. Los saltos en la secuencia
+#   corresponden a paradas compartidas entre rutas, no a cambios de
+#   sentido. Ejemplo: la ruta 801 recorre las paradas 063 a 109 sin
+#   interrupción; la 802 comparte con ella los tramos 063-068 y
+#   105-109, y la parada 128 aparece en la ruta 105 porque es de la
+#   802. Lo mismo con la 084 en la ruta 402.
+#
+# Por eso cada recorrido se modela como un solo viaje. Inventar un
+# corte sería peor que no separarlos: produciría tiempos de viaje
+# falsos. Los ramales sí son viajes distintos, porque vienen como
+# capas separadas en los mapas.
 
 library(sf)
 library(dplyr)
@@ -19,7 +40,6 @@ dir.create("output/gtfs", recursive = TRUE, showWarnings = FALSE)
 ordenadas <- st_read("data/processed/paradas_ordenadas.geojson", quiet = TRUE)
 
 # --- Elegir fuente por ruta ---------------------------------------------
-# Si una ruta tiene mapa individual, se usa ese. Si no, el del sistema.
 
 rutas_con_mapa <- ordenadas |>
   st_drop_geometry() |>
@@ -36,7 +56,6 @@ base <- ordenadas |>
 message("Paradas tras elegir fuente: ", nrow(base))
 
 # --- agency.txt ---------------------------------------------------------
-# Quién opera el sistema. Un solo operador: la Muni.
 
 agency <- tibble(
   agency_id       = "muniguate",
@@ -47,11 +66,6 @@ agency <- tibble(
 )
 
 # --- routes.txt ---------------------------------------------------------
-# route_type 3 = autobús, según el estándar GTFS.
-#
-# Se excluyen las paradas sin id_ruta: son las 108 estaciones de la
-# capa maestra del Transmetro, que sirven a varias líneas y no
-# constituyen una ruta. Siguen presentes en stops.txt.
 
 descripciones <- tibble::tribble(
   ~id_ruta, ~nombre_largo,
@@ -89,8 +103,6 @@ routes <- base |>
 message("Rutas: ", nrow(routes))
 
 # --- stops.txt ----------------------------------------------------------
-# Una fila por parada física. Se deduplica por nombre, promediando
-# las coordenadas cuando una misma parada aparece en varias fuentes.
 
 coords <- st_coordinates(base)
 
@@ -108,10 +120,97 @@ stops <- base |>
 
 message("Paradas únicas: ", nrow(stops))
 
-# --- Escribir lo que ya está listo --------------------------------------
+# --- calendar.txt -------------------------------------------------------
+# Tres tipos de día, según publica la Muni sus horarios.
 
-write_csv(agency, "output/gtfs/agency.txt")
-write_csv(routes, "output/gtfs/routes.txt")
-write_csv(stops,  "output/gtfs/stops.txt")
+calendar <- tibble::tribble(
+  ~service_id, ~monday, ~tuesday, ~wednesday, ~thursday, ~friday, ~saturday, ~sunday,
+  "LV",        1, 1, 1, 1, 1, 0, 0,
+  "SAB",       0, 0, 0, 0, 0, 1, 0,
+  "DOM",       0, 0, 0, 0, 0, 0, 1
+) |>
+  mutate(start_date = "20260101", end_date = "20271231")
 
-message("Escritos: agency.txt, routes.txt, stops.txt")
+# --- trips.txt ----------------------------------------------------------
+# Un viaje por cada recorrido y tipo de día. Cada capa es un recorrido:
+# los ramales (como "Línea 13 - Plaza Argentina - Plaza Berlín") son
+# viajes propios.
+
+secuencias <- base |>
+  st_drop_geometry() |>
+  filter(!is.na(id_ruta)) |>
+  select(id_ruta, capa, secuencia, nombre) |>
+  arrange(id_ruta, capa, secuencia)
+
+viajes_base <- secuencias |> distinct(id_ruta, capa)
+
+trips <- tidyr::crossing(viajes_base, service_id = calendar$service_id) |>
+  mutate(
+    trip_id = paste(id_ruta, gsub("[^A-Za-z0-9]", "", capa),
+                    service_id, sep = "_"),
+    direction_id = 0L
+  ) |>
+  select(route_id = id_ruta, service_id, trip_id, direction_id, capa)
+
+message("Viajes: ", nrow(trips))
+
+# --- stop_times.txt -----------------------------------------------------
+# Con frequencies.txt, los tiempos son desplazamientos desde el inicio
+# del viaje, no horas del reloj.
+#
+# Se asumen 2 minutos entre paradas. Es una estimación: la Muni no
+# publica tiempos parada a parada, salvo en algunos ruteros de TuBus
+# donde aparecen intervalos de 4 a 7 minutos entre tramos largos.
+
+minutos_entre_paradas <- 2
+
+stop_times <- trips |>
+  left_join(secuencias, by = c("route_id" = "id_ruta", "capa"),
+            relationship = "many-to-many") |>
+  left_join(stops, by = c("nombre" = "stop_name")) |>
+  arrange(trip_id, secuencia) |>
+  group_by(trip_id) |>
+  mutate(
+    stop_sequence  = row_number(),
+    minutos        = (stop_sequence - 1) * minutos_entre_paradas,
+    arrival_time   = sprintf("%02d:%02d:00", minutos %/% 60, minutos %% 60),
+    departure_time = arrival_time
+  ) |>
+  ungroup() |>
+  select(trip_id, arrival_time, departure_time, stop_id, stop_sequence)
+
+message("Filas en stop_times: ", nrow(stop_times))
+
+# --- frequencies.txt ----------------------------------------------------
+# Rangos de operación según publica la Muni. headway_secs es el
+# intervalo entre buses: 600 = uno cada 10 minutos.
+
+frequencies <- trips |>
+  select(trip_id, service_id) |>
+  mutate(
+    start_time = case_when(
+      service_id == "LV"  ~ "05:00:00",
+      service_id == "SAB" ~ "05:30:00",
+      TRUE                ~ "06:00:00"
+    ),
+    end_time = case_when(
+      service_id == "LV"  ~ "21:00:00",
+      service_id == "SAB" ~ "19:00:00",
+      TRUE                ~ "18:00:00"
+    ),
+    headway_secs = 600L
+  ) |>
+  select(trip_id, start_time, end_time, headway_secs)
+
+# --- Escribir -----------------------------------------------------------
+
+write_csv(agency,      "output/gtfs/agency.txt")
+write_csv(routes,      "output/gtfs/routes.txt")
+write_csv(stops,       "output/gtfs/stops.txt")
+write_csv(calendar,    "output/gtfs/calendar.txt")
+write_csv(select(trips, route_id, service_id, trip_id, direction_id),
+          "output/gtfs/trips.txt")
+write_csv(stop_times,  "output/gtfs/stop_times.txt")
+write_csv(frequencies, "output/gtfs/frequencies.txt")
+
+message("GTFS escrito en output/gtfs/")
