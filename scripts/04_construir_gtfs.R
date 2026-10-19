@@ -8,7 +8,8 @@
 # Fuente primaria: los mapas individuales de cada ruta, que están
 # más actualizados que el mapa del sistema. Se comprobó que la
 # estación "Bethania - Dir. Colón" existe en el mapa de la Línea 7
-# pero no en la capa maestra del sistema.
+# pero no en la capa maestra del sistema, donde la misma parada
+# aparece con otro nombre ("Bethania - Dir. La Merced").
 #
 # SENTIDOS DE CIRCULACIÓN — LIMITACIÓN DOCUMENTADA
 # Las fuentes oficiales no permiten separar ida y vuelta de forma
@@ -118,10 +119,7 @@ stops <- base |>
   mutate(stop_id = paste0("S", sprintf("%04d", row_number()))) |>
   select(stop_id, stop_name = nombre, stop_lat, stop_lon)
 
-message("Paradas únicas: ", nrow(stops))
-
 # --- calendar.txt -------------------------------------------------------
-# Tres tipos de día, según publica la Muni sus horarios.
 
 calendar <- tibble::tribble(
   ~service_id, ~monday, ~tuesday, ~wednesday, ~thursday, ~friday, ~saturday, ~sunday,
@@ -132,9 +130,6 @@ calendar <- tibble::tribble(
   mutate(start_date = "20260101", end_date = "20271231")
 
 # --- trips.txt ----------------------------------------------------------
-# Un viaje por cada recorrido y tipo de día. Cada capa es un recorrido:
-# los ramales (como "Línea 13 - Plaza Argentina - Plaza Berlín") son
-# viajes propios.
 
 secuencias <- base |>
   st_drop_geometry() |>
@@ -181,9 +176,19 @@ stop_times <- trips |>
 
 message("Filas en stop_times: ", nrow(stop_times))
 
+# --- Eliminar paradas huérfanas -----------------------------------------
+# Una parada que no aparece en ningún viaje suele venir de una
+# discrepancia entre las dos fuentes de la Muni: la misma estación
+# con dos nombres distintos. Caso detectado: "Bethania - Dir. Colón"
+# en el mapa de la Línea 7 y "Bethania - Dir. La Merced" en el mapa
+# del sistema. El feed es válido con ellas, pero queda más limpio sin.
+
+antes <- nrow(stops)
+stops <- stops |> filter(stop_id %in% stop_times$stop_id)
+message("Paradas huérfanas eliminadas: ", antes - nrow(stops))
+message("Paradas únicas: ", nrow(stops))
+
 # --- frequencies.txt ----------------------------------------------------
-# Rangos de operación según publica la Muni. headway_secs es el
-# intervalo entre buses: 600 = uno cada 10 minutos.
 
 frequencies <- trips |>
   select(trip_id, service_id) |>
@@ -213,4 +218,4 @@ write_csv(select(trips, route_id, service_id, trip_id, direction_id),
 write_csv(stop_times,  "output/gtfs/stop_times.txt")
 write_csv(frequencies, "output/gtfs/frequencies.txt")
 
-message("GTFS escrito en output/gtfs/")nrow(routes); nrow(stops); nrow(trips); nrow(stop_times)
+message("GTFS escrito en output/gtfs/")
